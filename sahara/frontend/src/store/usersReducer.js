@@ -1,0 +1,1 @@
+const RECEIVE_USER = ''

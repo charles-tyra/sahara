@@ -81,6 +81,4 @@ test:
 #
 production:
   <<: *default
-  database: sahara_production
-  username: sahara
-  password: <%= ENV["SAHARA_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>

@@ -39,6 +39,7 @@ const initializeApp = () => {
   );
 }
 
+
 if (
   sessionStorage.getItem('currentUser') === null ||
   sessionStorage.getItem('X-CSRF-Token') === null

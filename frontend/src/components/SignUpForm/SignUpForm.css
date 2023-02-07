@@ -59,4 +59,17 @@ img {
 #privacy-notice {
    font-size: 12px;
    line-height: 1.5;
-} */
+}
+
+#gradient {
+   display: block;
+   width: 100%;
+   height: 44px;
+   background-color: transparent;
+   background: -webkit-linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff);
+   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0), #fff);
+   z-index: 1;
+   content: "";
+}
+
+*/

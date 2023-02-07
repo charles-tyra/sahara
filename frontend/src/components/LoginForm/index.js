@@ -41,40 +41,40 @@ function LoginForm() {
             <img src={logo} id='nav-bar-logo' alt='' />
          </div>
          <div id='login-page-container'>
-            <h2>Sign In</h2>
+            <h2>Sign in</h2>
             <form onSubmit={handleSubmit}>
                <ul>
                   {errors.map(error => <li key={error}>{error}</li>)}
                </ul>
-               <label class='amber-thick'>
-                  Email
+               <label className='amber-thick'>Email</label>
                   <br />
                   <input
                      type='text'
                      value={email}
                      onChange={e => setEmail(e.target.value)}
-                     class='amber-light'
+                     className='amber'
                   />
-               </label>
                <br />
-               <label>
-                  Password
+               <label className='amber-thick'>Password</label>
                   <br />
                   <input
                      type='password'
                      value={password}
                      onChange={e => setPassword(e.target.value)}
+                     className='amber'
                      required
                   />
-               </label>
                <br />
-               <button type='submit'>Continue</button>
+               <button type='submit' className="amber">Continue</button>
             </form>
-            <div class="amber-thin" id="privacy-notice">
-               By creating an account, you agree to Charles' <a href={github}>Github informational center
-               </a> and <a href={puppies}>Puppy emporium</a>
+            <div className="amber" id="privacy-notice">
+               By continuing, you agree to Charles' <a href={github}>Github Data Folder
+               </a> and <a href={puppies}>Puppy Emporium</a>.
             </div>
          </div>
+         <div id='divider' />
+         <div id='new-to' class='amber'>New to Sahara?</div>
+         <a href='/signup' id='signup-button'><button id='default-button' class='amber'>Create your Sahara account</button></a>
       </div>
    )
 }

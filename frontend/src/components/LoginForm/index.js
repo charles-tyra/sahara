@@ -15,7 +15,7 @@ function LoginForm() {
 
    if (sessionUser) return <Redirect to="/" />
 
-   const ErrorDiv = ({ errors }) => {
+   const ErrorDiv = () => {
       if (errors[0]) {
          return (
             <div id='error-div' className='amber'>
@@ -57,7 +57,7 @@ function LoginForm() {
          <div id='nav-bar'>
             <img src={logo} id='nav-bar-logo' alt='' />
          </div>
-         <ErrorDiv errors={errors}/>
+         <ErrorDiv />
          <div id='login-page-container'>
             <h2>Sign in</h2>
             <form onSubmit={handleSubmit}>
@@ -77,7 +77,6 @@ function LoginForm() {
                      value={password}
                      onChange={e => setPassword(e.target.value)}
                      className='amber'
-                     required
                   />
                <br />
                <button type='submit' className="amber">Continue</button>

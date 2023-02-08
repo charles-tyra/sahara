@@ -84,7 +84,6 @@ function LoginForm() {
                   placeholder='At least 6 characters'
                   onChange={e => setPassword(e.target.value)}
                   className='amber'
-                  required
                />
                <br />
                <label className='amber-thick'>Re-enter password</label>
@@ -94,7 +93,6 @@ function LoginForm() {
                   value={confirmPassword}
                   onChange={e => setConfirmPassword(e.target.value)}
                   className='amber'
-                  required
                />
                <br />
                <button type='submit' className="amber" id='continue'>Verify email</button>

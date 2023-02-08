@@ -1,6 +1,6 @@
 import alert from '../../assets/images/error_alert.png'
 
-const ErrorDiv = ({errors}) => {
+const ErrorDiv = ( {errors} ) => {
    if (
       (errors.includes('We cannot find an account with that email address') ||
       errors.includes('Your password is incorrect')) && 

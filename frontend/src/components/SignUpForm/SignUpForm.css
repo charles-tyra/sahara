@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
    font-family: amber-light;
    src: url(../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Lt.ttf)
 }
@@ -135,11 +135,6 @@ button#continue {
 }
 
 #signup-button {
-   position: relative;
-   top: 34px;
-}
-
-#default-button {
    background: #e7e9ec;
    border-radius: 3px;
    border-color: #adb1b8 #a2a6ac #8d9096;
@@ -149,4 +144,4 @@ button#continue {
    text-align: center;
    vertical-align: middle;
    height: 31px;
-}
+} */

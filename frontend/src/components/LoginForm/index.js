@@ -33,7 +33,6 @@ function LoginForm() {
       setErrors([]);
 
       let tempErrors = [];
-
       if (!password) tempErrors.push('Enter your password');
       if (!email) tempErrors.push('Enter your email');
 
@@ -62,44 +61,45 @@ function LoginForm() {
 
    return (
       <div id='login-page'>
-         <div id='nav-bar'>
-            <img src={logo} id='nav-bar-logo' alt='' />
+         <div id='amazon-logo-container'>
+            <a href='/'>
+               <img src={logo} id='nav-bar-logo' alt='' />
+            </a>
          </div>
          <ErrorDiv errors={errors} />
          <div id='login-page-container'>
-            <h2>Sign in</h2>
+            <h2 id='sign-in-h2'>Sign in</h2>
             <form onSubmit={handleSubmit}>
-               <div class='input-container'>
+               <div class='login-input-container'>
                   <label className='amber-thick'>Email</label>
                      <input
                         type='text'
                         value={email}
                         onChange={e => setEmail(e.target.value)}
-                        className={checkEmail() ? 'error-border' : '' }
+                        className={checkEmail() ? 'login-input error-border' : 'login-input'}
                      />
                      <LoginErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
                </div>
-               <div class='input-container'>
+               <div class='login-input-container'>
                   <label className='amber-thick'>Password</label>
                      <input
                         type='password'
                         value={password}
                         onChange={e => setPassword(e.target.value)}
-                        className={checkPassword() ? 'error-border' : ''}
+                        className={checkPassword() ? 'login-input error-border' : 'login-input'}
                      />
                      <LoginErrorDiv boolean={checkPassword()} errors={errors} />
-
                </div>
-               <button type='submit'>Continue</button>
+               <button type='submit' class='login-button'>Continue</button>
             </form>
-            <div id="privacy-notice">
+            <div id="login-privacy-notice">
                By continuing, you agree to Charles' <a href={github}>Github Data Folder
                </a> and <a href={puppies}>Puppy Emporium</a>.
             </div>
          </div>
          <div id='divider' />
-         <div id='new-to'>New to Sahara?</div>
-         <a href='/signup' id='signup-button'><button id='default-button'>Create your Sahara account</button></a>
+         <div id='login-new-to'>New to Sahara?</div>
+         <a href='/signup' id='signup-redirect'><button className='login-button' id='signup-button'>Create your Sahara account</button></a>
       </div>
    )
 }

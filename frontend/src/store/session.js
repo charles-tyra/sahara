@@ -55,6 +55,37 @@ export const login = user => async dispatch => {
    return response;
 };
 
+export const signup = user => async dispatch => {
+   const { name, email, password } = user;
+   const split = name.split(" ");
+
+   const first_name = split[0];
+   const last_name = split.slice(1).join(" ");
+
+   const response = await csrfFetch("/api/users", {
+      method: "POST",
+      body: JSON.stringify({
+         first_name,
+         last_name,
+         email,
+         password
+      })
+   });
+
+   const data = await response.json();
+   storeCurrentUser(data.user);
+   dispatch(setCurrentUser(data.user));
+   return response;
+};
+
+export const logout = () => async (dispatch) => {
+   const response = await csrfFetch("/api/session", {
+      method: "DELETE"
+   });
+   storeCurrentUser(null);
+   dispatch(removeCurrentUser());
+   return response;
+};
 
 const initialState = { user: JSON.parse(sessionStorage.getItem('currentUser')) };
 

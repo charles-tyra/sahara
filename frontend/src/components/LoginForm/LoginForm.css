@@ -186,3 +186,32 @@ button {
    vertical-align: middle;
    height: 31px;
 }
+
+div#error-div {
+   margin-bottom: 14px;
+   padding: 14px 18px;
+   padding-left: 63px;
+   width: 348px;
+
+   border: 1px solid;
+   border-color: #c40000;
+   border-radius: 4px;
+
+   box-shadow: 0 0 0 4px #fcf4f4 inset;
+}
+
+#error-heading {
+   font-weight: 400;
+   font-size: 17px;
+   line-height: 1.255;
+   padding-bottom: 4px;
+
+   color: #c40000;
+}
+
+img#alert {
+   width: 30px;
+   position: absolute;
+   left: 323px;
+   top: 75px;
+}

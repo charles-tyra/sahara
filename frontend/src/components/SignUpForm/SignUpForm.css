@@ -146,6 +146,10 @@ button {
    top: 27px;
 }
 
+button#continue {
+   margin-bottom: 14px;
+}
+
 #new-to {
    line-height: 1;
    font-size: 12px;

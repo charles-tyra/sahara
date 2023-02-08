@@ -5,14 +5,21 @@ import SignUpForm from './components/SignUpForm/index'
 
 function App() {
   return (
-    <Switch>
-      <Route path='/login'>
-        <LoginForm />
-      </Route>
-      <Route path='/signup'>
-        <SignUpForm />
-      </Route>
-    </Switch>
+    <>
+      <Switch>
+        <Route path='/login'>
+          <LoginForm />
+        </Route>
+        <Route path='/signup'>
+          <SignUpForm />
+        </Route>
+        <Route path='/'>
+          <a href="/login">Log In</a>
+          <br />
+          <a href="/signup">Sign Up</a>
+        </Route>
+      </Switch>
+    </>
   );
 }
 

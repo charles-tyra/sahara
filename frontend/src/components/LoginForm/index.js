@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './LoginForm.css'
 import logo from '../../assets/images/amazon_logo.png'
+import alert from '../../assets/images/error_alert.png'
 
 function LoginForm() {
    const dispatch = useDispatch();
@@ -13,6 +14,22 @@ function LoginForm() {
    const [errors, setErrors] = useState([]);
 
    if (sessionUser) return <Redirect to="/" />
+
+   const ErrorDiv = ({ errors }) => {
+      if (errors[0]) {
+         return (
+            <div id='error-div' className='amber'>
+               <img src={alert} id='alert'></img>
+               <h3 id='error-heading'>There was a problem</h3>
+               <p>{errors}</p>
+            </div>
+         )
+      } else {
+         return (
+            <div></div>
+         )
+      };
+   }
 
    const handleSubmit = e => {
       e.preventDefault();
@@ -40,12 +57,10 @@ function LoginForm() {
          <div id='nav-bar'>
             <img src={logo} id='nav-bar-logo' alt='' />
          </div>
+         <ErrorDiv errors={errors}/>
          <div id='login-page-container'>
             <h2>Sign in</h2>
             <form onSubmit={handleSubmit}>
-               <ul>
-                  {errors.map(error => <li key={error}>{error}</li>)}
-               </ul>
                <label className='amber-thick'>Email</label>
                   <br />
                   <input

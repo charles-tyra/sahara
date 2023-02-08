@@ -1,6 +1,5 @@
 class Api::SessionsController < ApplicationController
-   before_action :require_logged_in, only: [:create]
-   before_action :require_logged_out, only: [:destroy]
+   before_action :require_logged_in, only: [:destroy]
    
    def show
       @user = current_user
@@ -21,7 +20,12 @@ class Api::SessionsController < ApplicationController
          login(@user)
          render 'api/users/show'
       else
-         render json: { errors: ['Invalid credentials'] }, status: 422
+         @user = User.find_by(email: email)
+         if @user
+            render json: { errors: ['Your password is incorrect'] }, status: 422
+         else
+            render json: { errors: ['We cannot find an account with that email address'] }, status: 422
+         end
       end
    end
 

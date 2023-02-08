@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './LoginForm.css'
 import logo from '../../assets/images/amazon_logo.png'
-import alert from '../../assets/images/error_alert.png'
+import ErrorDiv from './errorDiv';
 
 function LoginForm() {
    const dispatch = useDispatch();
@@ -13,28 +13,32 @@ function LoginForm() {
    const [password, setPassword] = useState('');
    const [errors, setErrors] = useState([]);
 
-   if (sessionUser) return <Redirect to="/" />
+   const checkEmail = () => {
+      if (!email && errors && errors.includes('Enter your email')) {
+         return true;
+      }
+      return false;
+   };
 
-   const ErrorDiv = () => {
-      if (errors[0]) {
-         return (
-            <div id='error-div'>
-               <img src={alert} id='alert'></img>
-               <h3 id='error-heading'>There was a problem</h3>
-               <div id='errors'>{errors}</div>
-            </div>
-         )
-      } else {
-         return (
-            <div></div>
-         )
-      };
-   }
+   const checkPassword = () => {
+      if (!password && errors && errors.includes('Enter your password')) {
+         return true;
+      }
+      return false;
+   };
+
+   if (sessionUser) return <Redirect to="/" />;
+
 
    const handleSubmit = e => {
       e.preventDefault();
 
       setErrors([]);
+
+      if (!password && !email) return setErrors(['Enter your email', 'Enter your password'])
+      else if(!password) return setErrors(['Enter your password'])
+      else if(!email) return setErrors(['Enter your email'])
+
       return dispatch(sessionActions.login({ email, password }))
          .catch(async res => {
             let data;
@@ -57,17 +61,18 @@ function LoginForm() {
          <div id='nav-bar'>
             <img src={logo} id='nav-bar-logo' alt='' />
          </div>
-         <ErrorDiv />
+         <ErrorDiv errors={errors} />
          <div id='login-page-container'>
             <h2>Sign in</h2>
             <form onSubmit={handleSubmit}>
                <label className='amber-thick'>Email</label>
                   <br />
-                  <input
-                     type='text'
-                     value={email}
-                     onChange={e => setEmail(e.target.value)}
-                  />
+               <input
+                  type='text'
+                  value={email}
+                  onChange={e => setEmail(e.target.value)}
+                  className={checkEmail() ? 'error-border' : '' }
+               />
                <br />
                <label className='amber-thick'>Password</label>
                   <br />
@@ -75,6 +80,7 @@ function LoginForm() {
                      type='password'
                      value={password}
                      onChange={e => setPassword(e.target.value)}
+                     className={checkPassword() ? 'error-border' : ''}
                   />
                <br />
                <button type='submit'>Continue</button>

@@ -127,3 +127,12 @@ table {
    border-collapse: collapse;
    border-spacing: 0;
 } 
+
+body {
+   display: flex;
+   justify-content: center;
+   font-size: 13px;
+   line-height: 19px;
+   font-family: amber;
+   padding-top: 9px;
+}

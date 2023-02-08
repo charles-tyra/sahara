@@ -2,8 +2,10 @@ import alert from '../../assets/images/error_alert.png'
 
 const ErrorDiv = ({errors}) => {
    if (
-      errors.includes('We cannot find an account with that email address') ||
-      errors.includes('Your password is incorrect')
+      (errors.includes('We cannot find an account with that email address') ||
+      errors.includes('Your password is incorrect')) && 
+      (!errors.includes('Enter your password') &&
+      !errors.includes('Enter your email'))
    ) {
       return (
          <div id='error-div' className='error-border'>

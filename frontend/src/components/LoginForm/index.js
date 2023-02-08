@@ -14,16 +14,12 @@ function LoginForm() {
    const [errors, setErrors] = useState([]);
 
    const checkEmail = () => {
-      if (!email && errors && errors.includes('Enter your email')) {
-         return true;
-      }
+      if (!email && errors && errors.includes('Enter your email')) return true;
       return false;
    };
 
    const checkPassword = () => {
-      if (!password && errors && errors.includes('Enter your password')) {
-         return true;
-      }
+      if (!password && errors && errors.includes('Enter your password')) return true;
       return false;
    };
 
@@ -35,9 +31,10 @@ function LoginForm() {
 
       setErrors([]);
 
-      if (!password && !email) return setErrors(['Enter your email', 'Enter your password'])
-      else if(!password) return setErrors(['Enter your password'])
-      else if(!email) return setErrors(['Enter your email'])
+      let tempErrors = [];
+
+      if (!password) tempErrors.push('Enter your password');
+      if (!email) tempErrors.push('Enter your email');
 
       return dispatch(sessionActions.login({ email, password }))
          .catch(async res => {
@@ -47,9 +44,15 @@ function LoginForm() {
             } catch {
                data = await res.text();
             };
-            if (data?.errors) setErrors(data.errors);
-            else if (data) setErrors([data]);
-            else setErrors([res.statusText]);
+            if (data?.errors) { 
+               for(let i = 0; i < data.errors.length; i++) {
+                  tempErrors.push(data.errors[i]);
+               }
+               setErrors(tempErrors);
+            } else if (data) { 
+               tempErrors.push(data);
+               setErrors(tempErrors);
+            } else setErrors([res.statusText]);
          });
    }
 

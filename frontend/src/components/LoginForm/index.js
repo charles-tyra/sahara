@@ -76,7 +76,7 @@ function LoginForm() {
                         type='text'
                         value={email}
                         onChange={e => setEmail(e.target.value)}
-                        className={checkEmail() ? 'login-input error-border' : 'login-input'}
+                        className={checkEmail() ? 'error-border login-input' : 'login-input'}
                      />
                      <LoginErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
                </div>

@@ -1,4 +1,4 @@
-/* @font-face {
+@font-face {
    font-family: amber-light;
    src: url(../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Lt.ttf)
 }
@@ -144,4 +144,4 @@ button#continue {
    text-align: center;
    vertical-align: middle;
    height: 31px;
-} */
+}

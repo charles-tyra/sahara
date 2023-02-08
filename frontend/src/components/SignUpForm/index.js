@@ -63,7 +63,6 @@ function LoginForm() {
                   placeholder='First and last name'
                   value={name}
                   onChange={e => setName(e.target.value)}
-                  className='amber'
                   id='name'
                />
                <br />
@@ -73,7 +72,6 @@ function LoginForm() {
                   type='text'
                   value={email}
                   onChange={e => setEmail(e.target.value)}
-                  className='amber'
                />
                <br />
                <label className='amber-thick'>Password</label>
@@ -83,7 +81,6 @@ function LoginForm() {
                   value={password}
                   placeholder='At least 6 characters'
                   onChange={e => setPassword(e.target.value)}
-                  className='amber'
                />
                <br />
                <label className='amber-thick'>Re-enter password</label>
@@ -92,18 +89,17 @@ function LoginForm() {
                   type='password'
                   value={confirmPassword}
                   onChange={e => setConfirmPassword(e.target.value)}
-                  className='amber'
                />
                <br />
-               <button type='submit' className="amber" id='continue'>Verify email</button>
+               <button type='submit' id='continue'>Verify email</button>
             </form>
-            <button type='submit' className="amber" onClick={demoUser}>Demo User</button>
-            <div className="amber" id="privacy-notice">
+            <button type='submit' onClick={demoUser}>Demo User</button>
+            <div id="privacy-notice">
                By creating an account, you agree to Charles' <br/><a href={github}>Github Data Folder
                </a> and <a href={puppies}>Puppy Emporium</a>.
             </div>
             <div id='gradient-divider' />
-            <div class='amber'>Already have an account? <a href='/login'>Sign in</a></div>
+            <div>Already have an account? <a href='/login'>Sign in</a></div>
          </div>
       </div>
    )

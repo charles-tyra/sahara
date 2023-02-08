@@ -18,10 +18,10 @@ function LoginForm() {
    const ErrorDiv = () => {
       if (errors[0]) {
          return (
-            <div id='error-div' className='amber'>
+            <div id='error-div'>
                <img src={alert} id='alert'></img>
                <h3 id='error-heading'>There was a problem</h3>
-               <p>{errors}</p>
+               <div id='errors'>{errors}</div>
             </div>
          )
       } else {
@@ -67,7 +67,6 @@ function LoginForm() {
                      type='text'
                      value={email}
                      onChange={e => setEmail(e.target.value)}
-                     className='amber'
                   />
                <br />
                <label className='amber-thick'>Password</label>
@@ -76,19 +75,18 @@ function LoginForm() {
                      type='password'
                      value={password}
                      onChange={e => setPassword(e.target.value)}
-                     className='amber'
                   />
                <br />
-               <button type='submit' className="amber">Continue</button>
+               <button type='submit'>Continue</button>
             </form>
-            <div className="amber" id="privacy-notice">
+            <div id="privacy-notice">
                By continuing, you agree to Charles' <a href={github}>Github Data Folder
                </a> and <a href={puppies}>Puppy Emporium</a>.
             </div>
          </div>
          <div id='divider' />
-         <div id='new-to' class='amber'>New to Sahara?</div>
-         <a href='/signup' id='signup-button'><button id='default-button' class='amber'>Create your Sahara account</button></a>
+         <div id='new-to'>New to Sahara?</div>
+         <a href='/signup' id='signup-button'><button id='default-button'>Create your Sahara account</button></a>
       </div>
    )
 }

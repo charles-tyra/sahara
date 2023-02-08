@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 import './LoginForm.css'
 import logo from '../../assets/images/amazon_logo.png'
 import ErrorDiv from './errorDiv';
+import InlineErrorDiv from './inlineErrorDiv';
 
 function LoginForm() {
    const dispatch = useDispatch();
@@ -70,12 +71,13 @@ function LoginForm() {
             <form onSubmit={handleSubmit}>
                <label className='amber-thick'>Email</label>
                   <br />
-               <input
-                  type='text'
-                  value={email}
-                  onChange={e => setEmail(e.target.value)}
-                  className={checkEmail() ? 'error-border' : '' }
-               />
+                  <input
+                     type='text'
+                     value={email}
+                     onChange={e => setEmail(e.target.value)}
+                     className={checkEmail() ? 'error-border' : '' }
+                  />
+                  <InlineErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
                <br />
                <label className='amber-thick'>Password</label>
                   <br />
@@ -85,6 +87,7 @@ function LoginForm() {
                      onChange={e => setPassword(e.target.value)}
                      className={checkPassword() ? 'error-border' : ''}
                   />
+                  <InlineErrorDiv boolean={checkPassword()} errors={errors} />
                <br />
                <button type='submit'>Continue</button>
             </form>

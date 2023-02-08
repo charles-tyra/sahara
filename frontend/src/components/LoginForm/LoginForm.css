@@ -55,7 +55,6 @@ input {
    font-family: amber;
 
    padding: 3px 7px;
-   margin-bottom: 16px;
 
    border: 1px solid #a6a6a6;
    border-top-color: #949494;
@@ -76,7 +75,7 @@ button {
    border-width: 1px;
 
    margin-top: 0px;
-   margin-bottom: 26px;
+   margin-bottom: 0px;
 
    cursor: pointer;
 }
@@ -100,6 +99,23 @@ button {
    border-color: #c40000;
 }
 
+.input-container {
+   padding-bottom: 14px;
+   margin-top: 0px;
+}
+
+img.error-mark {
+   width: 15px;
+   background-color: white;
+   padding-right: 5px;
+}
+
+div.inline-error-div {
+   padding-top: 4px;
+   padding-left: 2px;
+   font-size: 12px;
+   color: #c40000;
+}
 
 img#nav-bar-logo {
    justify-content: center;
@@ -217,19 +233,4 @@ img#alert {
    float: left;
    
    padding-bottom: 14px;
-}
-
-img.error-mark {
-   width: 15px;
-   background-color: white;
-   padding-right: 5px;
-}
-
-div.inline-error-div {
-   position: relative;
-   padding-top: 0px;
-   padding-bottom: 0px;
-   font-size: 12px;
-   color: #c40000;
-   bottom: 10px;
 }

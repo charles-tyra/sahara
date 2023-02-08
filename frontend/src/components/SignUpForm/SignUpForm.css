@@ -54,7 +54,6 @@ input {
    font-family: amber;
 
    padding: 3px 7px;
-   margin-bottom: 16px;
 
    border: 1px solid #a6a6a6;
    border-top-color: #949494;
@@ -64,8 +63,6 @@ input {
    
    outline: none;
 }
-
-
 
 button {
    width: 100%;

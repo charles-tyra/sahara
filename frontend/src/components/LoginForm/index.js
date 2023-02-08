@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import './LoginForm.css'
 import logo from '../../assets/images/amazon_logo.png'
 import ErrorDiv from './errorDiv';
-import InlineErrorDiv from './inlineErrorDiv';
+import LoginErrorDiv from './inlineErrorDiv';
 
 function LoginForm() {
    const dispatch = useDispatch();
@@ -69,26 +69,27 @@ function LoginForm() {
          <div id='login-page-container'>
             <h2>Sign in</h2>
             <form onSubmit={handleSubmit}>
-               <label className='amber-thick'>Email</label>
-                  <br />
-                  <input
-                     type='text'
-                     value={email}
-                     onChange={e => setEmail(e.target.value)}
-                     className={checkEmail() ? 'error-border' : '' }
-                  />
-                  <InlineErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
-               <br />
-               <label className='amber-thick'>Password</label>
-                  <br />
-                  <input
-                     type='password'
-                     value={password}
-                     onChange={e => setPassword(e.target.value)}
-                     className={checkPassword() ? 'error-border' : ''}
-                  />
-                  <InlineErrorDiv boolean={checkPassword()} errors={errors} />
-               <br />
+               <div class='input-container'>
+                  <label className='amber-thick'>Email</label>
+                     <input
+                        type='text'
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
+                        className={checkEmail() ? 'error-border' : '' }
+                     />
+                     <LoginErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
+               </div>
+               <div class='input-container'>
+                  <label className='amber-thick'>Password</label>
+                     <input
+                        type='password'
+                        value={password}
+                        onChange={e => setPassword(e.target.value)}
+                        className={checkPassword() ? 'error-border' : ''}
+                     />
+                     <LoginErrorDiv boolean={checkPassword()} errors={errors} />
+
+               </div>
                <button type='submit'>Continue</button>
             </form>
             <div id="privacy-notice">

@@ -10,13 +10,19 @@ function App() {
     <>
       <Switch>
         <Route path='/login'>
-          <LoginForm />
+          <div className='container'>
+            <LoginForm />
+          </div>
         </Route>
         <Route path='/signup'>
-          <SignUpForm />
+          <div className='container'>
+            <SignUpForm />
+          </div>
         </Route>
         <Route path='/'>
-          <SplashPage />
+          <div className='container'>
+            <SplashPage />
+          </div>
         </Route>
       </Switch>
     </>

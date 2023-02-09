@@ -132,7 +132,7 @@ table {
    box-sizing: border-box;
 }
 
-body {
+div.container {
    display: flex;
    justify-content: center;
    font-size: 13px;

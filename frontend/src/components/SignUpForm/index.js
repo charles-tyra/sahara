@@ -7,14 +7,16 @@ import logo from '../../assets/images/amazon_logo.png'
 import SignupErrorDiv from './signupErrorDiv';
 
 function LoginForm() {
-   const dispatch = useDispatch();
-   const sessionUser = useSelector(state => state.session.user);
-
    const [name, setName] = useState('');
    const [email, setEmail] = useState('');
    const [password, setPassword] = useState('');
    const [confirmPassword, setConfirmPassword] = useState('');
    const [errors, setErrors] = useState([]);
+
+   const dispatch = useDispatch();
+   const sessionUser = useSelector(state => state.session.user);
+   if (sessionUser) return <Redirect to="/" />
+
 
    const checkName = () => {
       if (!name && errors && errors.includes('Enter your full name')) return true;
@@ -36,10 +38,6 @@ function LoginForm() {
       else if (errors.includes('Confirm Password field must be the same as the Password field')) return true;
       else return false;
    }
-
-   if (sessionUser) return <Redirect to="/" />
-
-
 
 
    const submitDemoUser = (e) => {
@@ -82,8 +80,9 @@ function LoginForm() {
       return setErrors(tempErrors);
    };
 
-   const github = 'https://github.com/charles-tyra'
-   const puppies = 'https://www.shutterstock.com/search/puppy?c3apidt=71700000027388020&gclid=CjwKCAiAioifBhAXEiwApzCztoRJEEKIyoTaWE07f1LTlGkZHNU9D9Rc-fwZ73LhyrgC-q3m_aZDlBoCHgYQAvD_BwE&gclsrc=aw.ds&kw='
+   const github = 'https://github.com/charles-tyra';
+   const puppies = 'https://www.shutterstock.com/search/puppy?c3apidt=71700000027388020&gclid=CjwKCAiAioifBhAXEiwApzCztoRJEEKIyoTaWE07f1LTlGkZHNU9D9Rc-fwZ73LhyrgC-q3m_aZDlBoCHgYQAvD_BwE&gclsrc=aw.ds&kw=';
+
    return (
       <div id='signup-page'>
          <div id='logo-signup-container'>

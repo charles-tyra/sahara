@@ -13,10 +13,12 @@ function NavBar() {
 
    return (
       <>
-         <a href="/login">Log In</a>
-         <br />
-         <a href="/signup">Sign Up</a>
-         <button onClick={handleLogout}>Log Out</button>
+         <div id='nav-bar'>
+            <a href="/login">Log In</a>
+            <br />
+            <a href="/signup">Sign Up</a>
+            <button onClick={handleLogout}>Log Out</button>
+         </div>
       </>
    )
 }

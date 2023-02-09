@@ -63,7 +63,7 @@ function LoginForm() {
       <div id='login-page'>
          <div id='amazon-logo-container'>
             <a href='/'>
-               <img src={logo} id='nav-bar-logo' alt='' />
+               <img src={logo} id='amazon-logo' alt='' />
             </a>
          </div>
          <ErrorDiv errors={errors} />

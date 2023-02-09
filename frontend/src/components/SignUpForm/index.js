@@ -78,7 +78,8 @@ function LoginForm() {
                } else setErrors([res.statusText]);
             });
       }
-      return setErrors(['Confirm Password field must be the same as the Password field']);
+      tempErrors.push(['Confirm Password field must be the same as the Password field']);
+      return setErrors(tempErrors);
    };
 
    const github = 'https://github.com/charles-tyra'

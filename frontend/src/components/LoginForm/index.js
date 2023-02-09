@@ -70,7 +70,7 @@ function LoginForm() {
          <div id='login-page-container'>
             <h2 id='sign-in-h2'>Sign in</h2>
             <form onSubmit={handleSubmit}>
-               <div class='login-input-container'>
+               <div className='login-input-container'>
                   <label className='amber-thick'>Email</label>
                   <input
                      type='text'
@@ -80,7 +80,7 @@ function LoginForm() {
                   />
                   <LoginErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
                </div>
-               <div class='login-input-container'>
+               <div className='login-input-container'>
                   <label className='amber-thick'>Password</label>
                   <input
                      type='password'
@@ -90,7 +90,7 @@ function LoginForm() {
                   />
                   <LoginErrorDiv boolean={checkPassword()} errors={errors} />
                </div>
-               <button type='submit' class='login-button'>Continue</button>
+               <button type='submit' className='login-button'>Continue</button>
             </form>
             <div id="login-privacy-notice">
                By continuing, you agree to Charles' <a href={github}>Github Data Folder

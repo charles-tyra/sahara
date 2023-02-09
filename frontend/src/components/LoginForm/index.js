@@ -5,7 +5,7 @@ import { Redirect } from 'react-router-dom';
 import './LoginForm.css'
 import logo from '../../assets/images/amazon_logo.png'
 import ErrorDiv from './errorDiv';
-import LoginErrorDiv from './inlineErrorDiv';
+import LoginErrorDiv from './loginErrorDiv';
 
 function LoginForm() {
    const dispatch = useDispatch();
@@ -72,23 +72,23 @@ function LoginForm() {
             <form onSubmit={handleSubmit}>
                <div class='login-input-container'>
                   <label className='amber-thick'>Email</label>
-                     <input
-                        type='text'
-                        value={email}
-                        onChange={e => setEmail(e.target.value)}
-                        className={checkEmail() ? 'error-border login-input' : 'login-input'}
-                     />
-                     <LoginErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
+                  <input
+                     type='text'
+                     value={email}
+                     onChange={e => setEmail(e.target.value)}
+                     className={checkEmail() ? 'error-border login-input' : 'login-input'}
+                  />
+                  <LoginErrorDiv boolean={checkEmail()} errors={errors} variable='email'/>
                </div>
                <div class='login-input-container'>
                   <label className='amber-thick'>Password</label>
-                     <input
-                        type='password'
-                        value={password}
-                        onChange={e => setPassword(e.target.value)}
-                        className={checkPassword() ? 'login-input error-border' : 'login-input'}
-                     />
-                     <LoginErrorDiv boolean={checkPassword()} errors={errors} />
+                  <input
+                     type='password'
+                     value={password}
+                     onChange={e => setPassword(e.target.value)}
+                     className={checkPassword() ? 'login-input error-border' : 'login-input'}
+                  />
+                  <LoginErrorDiv boolean={checkPassword()} errors={errors} />
                </div>
                <button type='submit' class='login-button'>Continue</button>
             </form>

@@ -1,9 +1,4 @@
 @font-face {
-   font-family: amber-light;
-   src: url(../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Lt.ttf)
-}
-
-@font-face {
    font-family: amber;
    src: url(../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Rg.ttf);
 }
@@ -15,18 +10,6 @@
 
 * {
    box-sizing: border-box;
-}
-
-h2 {
-   font-weight: 400;
-   font-size: 28px;
-   line-height: 1.2;
-   font-family: amber;
-
-   padding-bottom: 4px;
-   margin: 0;
-
-   margin-bottom: 10px !important;
 }
 
 body {
@@ -47,23 +30,6 @@ label {
    padding-bottom: 2px;
 }
 
-input {
-   width: 100%;
-   height: 30px;
-   font-size: 100%;
-   font-family: amber;
-
-   padding: 3px 7px;
-
-   border: 1px solid #a6a6a6;
-   border-top-color: #949494;
-   border-radius: 3px;
-   box-shadow: 0 1px 0 rgb(255 255 255 / 50%),
-      0 1px 0 rgb(0 0 0 / 7%) inset;
-   
-   outline: none;
-}
-
 button {
    width: 100%;
    height: 31px;
@@ -77,15 +43,42 @@ button {
    padding: 1px 6px;
    margin-top: 0px;
    margin-bottom: 26px;
+
+   cursor: pointer;
 }
 
-
-.amber-light {
-   font-family: amber-light;
+.amber {
+   font-family: amber;
 }
 
 .amber-thick {
    font-family: amber-thick;
+}
+
+.error-border {
+   box-shadow: 0 0 0 4px #fcf4f4 inset !important;
+   border-color: #c40000 !important;
+}
+
+div.signup-input-container {
+   margin-bottom: 14px;
+}
+
+input.signup-input {
+   width: 100%;
+   height: 30px;
+   font-size: 100%;
+   font-family: amber;
+
+   padding: 3px 7px;
+
+   border: 1px solid #a6a6a6;
+   border-top-color: #949494;
+   border-radius: 3px;
+   box-shadow: 0 1px 0 rgb(255 255 255 / 50%),
+      0 1px 0 rgb(0 0 0 / 7%) inset;
+
+   outline: none;
 }
 
 img#nav-bar-logo {
@@ -93,8 +86,16 @@ img#nav-bar-logo {
    width: 103px;
 }
 
-input#name {
-   margin-bottom: 14px;
+h2#signup-page {
+   font-weight: 400;
+   font-size: 28px;
+   line-height: 1.2;
+   font-family: amber;
+
+   padding-bottom: 4px;
+   margin: 0;
+
+   margin-bottom: 10px !important;
 }
 
 #signup-page {
@@ -122,7 +123,7 @@ input#name {
    margin-bottom: 26px;
 }
 
-#nav-bar {
+#signup-amazon-container {
    display: flex;
    justify-content: center;
 

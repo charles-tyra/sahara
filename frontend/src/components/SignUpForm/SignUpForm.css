@@ -94,7 +94,7 @@ div.inline-error-div {
    color: #c40000;
 }
 
-img#nav-bar-logo {
+img#signup-logo {
    justify-content: center;
    width: 103px;
 }
@@ -136,7 +136,7 @@ h2#signup-page {
    margin-bottom: 26px;
 }
 
-#signup-amazon-container {
+#logo-signup-container {
    display: flex;
    justify-content: center;
 

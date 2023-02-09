@@ -8,7 +8,7 @@ const SignupErrorDiv = ({errors, boolean, variable}) => {
          )
       } else if (variable === 'password') {
          return (
-            <div className='inline-error-div'><img src={mark} className='error-mark' alt=''></img>Enter your password</div>
+            <div className='inline-error-div'><img src={mark} className='error-mark' alt=''></img>Minimum 6 characters</div>
          )
       } else if (variable === 'confirmPassword' && errors.includes('Confirm Password field must be the same as the Password field')) {
          return (

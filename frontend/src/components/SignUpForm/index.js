@@ -86,9 +86,9 @@ function LoginForm() {
    const puppies = 'https://www.shutterstock.com/search/puppy?c3apidt=71700000027388020&gclid=CjwKCAiAioifBhAXEiwApzCztoRJEEKIyoTaWE07f1LTlGkZHNU9D9Rc-fwZ73LhyrgC-q3m_aZDlBoCHgYQAvD_BwE&gclsrc=aw.ds&kw='
    return (
       <div id='signup-page'>
-         <div id='signup-amazon-container'>
+         <div id='logo-signup-container'>
             <a href='/'>
-               <img src={logo} id='nav-bar-logo' alt='' />
+               <img src={logo} id='signup-logo' alt='' />
             </a>
          </div>
          <div id='signup-page-container'>

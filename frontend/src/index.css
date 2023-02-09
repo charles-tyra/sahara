@@ -128,11 +128,14 @@ table {
    border-spacing: 0;
 } 
 
+* {
+   box-sizing: border-box;
+}
+
 body {
    display: flex;
    justify-content: center;
    font-size: 13px;
    line-height: 19px;
    font-family: amber;
-   padding-top: 9px;
 }

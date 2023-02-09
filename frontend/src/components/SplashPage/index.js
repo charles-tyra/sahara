@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-import { useDispatch } from "react-redux";
+import React from "react";
 import NavBar from "./NavBar";
 
 
 function SplashPage() {
-   const dispatch = useDispatch();
-
    return (
       <>
          <NavBar />

@@ -20,10 +20,8 @@ function SessionActionButton() {
    } else {
       return (
          <a href='/login' id='nav-login-link'>
-            <div>
-               <h2 id='nav-login-h2'>Hello,</h2>
-               <button id='nav-login-button'>Sign in</button>
-            </div>
+            <h2 id='nav-login-h2'>Hello, sign in</h2>
+            <div id='nav-login-button'>Click & continue</div>
          </a>
       )
    };

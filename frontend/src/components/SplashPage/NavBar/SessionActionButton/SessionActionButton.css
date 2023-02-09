@@ -9,7 +9,9 @@
 }
 
 a#nav-login-link {
-   text-decoration:none
+   text-decoration:none;
+   width: 95%;
+   line-height: 1.2;
 }
 
 h2#nav-login-h2 {
@@ -18,9 +20,11 @@ h2#nav-login-h2 {
    font-size: 12px;
 }
 
-button#nav-login-button {
-   background-color: #F4DBA9;
+div#nav-login-button {
    color: #fff;
    font-family: amber-thick;
-   border-color: transparent;
+   font-size: 14px;
+   
+   height: 25px;
+   margin-bottom: 0px;
 }

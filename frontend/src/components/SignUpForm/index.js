@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './SignUpForm.css'
 import logo from '../../assets/images/amazon_logo.png'
+import SignupErrorDiv from './signupErrorDiv';
 
 function LoginForm() {
    const dispatch = useDispatch();
@@ -15,7 +16,31 @@ function LoginForm() {
    const [confirmPassword, setConfirmPassword] = useState('');
    const [errors, setErrors] = useState([]);
 
+   const checkName = () => {
+      if (!name && errors && errors.includes('Enter your full name')) return true;
+      return false;
+   }
+
+   const checkEmail = () => {
+      if (!email && errors && errors.includes('Enter your email')) return true;
+      return false;
+   }
+
+   const checkPassword = () => {
+      if (!password && errors && errors.includes('Minimum 6 characters required')) return true;
+      return false;
+   }
+
+   const checkConfirmPassword = () => {
+      if (!confirmPassword && errors && errors.includes('Type your password again')) return true;
+      else if (errors.includes('Confirm Password field must be the same as the Password field')) return true;
+      else return false;
+   }
+
    if (sessionUser) return <Redirect to="/" />
+
+
+
 
    const submitDemoUser = (e) => {
       e.preventDefault();
@@ -27,7 +52,7 @@ function LoginForm() {
       setErrors([]);
 
       let tempErrors = [];
-      if (!name) tempErrors.push('Enter your name');
+      if (!name) tempErrors.push('Enter your full name');
       if (!password) tempErrors.push('Minimum 6 characters required');
       else if (!confirmPassword) tempErrors.push('Type your password again');
       if (!email) tempErrors.push('Enter your email');
@@ -75,8 +100,9 @@ function LoginForm() {
                      placeholder='First and last name'
                      value={name}
                      onChange={e => setName(e.target.value)}
-                     className='signup-input'
+                     className={checkName() ? 'signup-input error-border' : 'signup-input'}
                   />
+                  <SignupErrorDiv boolean={checkName()} errors={errors} variable='name' />
                </div>
                <div className='signup-input-container'>
                   <label className='amber-thick'>Email</label>
@@ -84,8 +110,9 @@ function LoginForm() {
                      type='text'
                      value={email}
                      onChange={e => setEmail(e.target.value)}
-                     className='signup-input'
+                     className={checkEmail() ? 'signup-input error-border' : 'signup-input'}
                   />
+                  <SignupErrorDiv boolean={checkEmail()} errors={errors} variable='email' />
                </div>
                <div className='signup-input-container'>
                   <label className='amber-thick'>Password</label>
@@ -94,8 +121,9 @@ function LoginForm() {
                      value={password}
                      placeholder='At least 6 characters'
                      onChange={e => setPassword(e.target.value)}
-                     className='signup-input'
+                     className={checkPassword() ? 'signup-input error-border' : 'signup-input'}
                   />
+                  <SignupErrorDiv boolean={checkPassword()} errors={errors} variable='password' />
                </div>
                <div className='signup-input-container'>
                   <label className='amber-thick'>Re-enter password</label>
@@ -103,8 +131,9 @@ function LoginForm() {
                      type='password'
                      value={confirmPassword}
                      onChange={e => setConfirmPassword(e.target.value)}
-                     className='signup-input'
+                     className={checkConfirmPassword() ? 'signup-input error-border' : 'signup-input'}
                   />
+                  <SignupErrorDiv boolean={checkConfirmPassword()} errors={errors} variable='confirmPassword' />
                </div>
                <button type='submit' id='continue'>Verify email</button>
             </form>

@@ -8,14 +8,6 @@
    src: url(../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Bd.ttf);
 }
 
-* {
-   box-sizing: border-box;
-}
-
-div {
-   display: block;
-}
-
 label {
    padding-left: 2px;
    padding-bottom: 2px;

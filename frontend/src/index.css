@@ -139,3 +139,7 @@ body {
    line-height: 19px;
    font-family: amber;
 }
+
+div {
+   display: block;
+}

@@ -16,7 +16,6 @@ function NavBar() {
    return (
       <>
          <div id='nav-bar'>
-
             <SessionActionButton />
          </div>
       </>

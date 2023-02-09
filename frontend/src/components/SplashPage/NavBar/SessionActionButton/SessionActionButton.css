@@ -1,0 +1,26 @@
+@font-face {
+   font-family: amber-thick;
+   src: url(../../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Bd.ttf);
+}
+
+@font-face {
+   font-family: amber;
+   src: url(../../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Rg.ttf);
+}
+
+a#nav-login-link {
+   text-decoration:none
+}
+
+h2#nav-login-h2 {
+   color: #fff;
+   font-family: amber;
+   font-size: 12px;
+}
+
+button#nav-login-button {
+   background-color: #F4DBA9;
+   color: #fff;
+   font-family: amber-thick;
+   border-color: transparent;
+}

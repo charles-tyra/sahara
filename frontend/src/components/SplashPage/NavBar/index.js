@@ -7,12 +7,6 @@ import './NavBar.css'
 function NavBar() {
    const dispatch = useDispatch();
 
-   const handleLogout = (e) => {
-      e.preventDefault();
-
-      dispatch(sessionActions.logout());
-   }
-
    return (
       <>
          <div id='nav-bar'>

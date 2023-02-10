@@ -35,8 +35,17 @@ img#nav-bar-logo {
    width: 103px;
 }
 
+div#nav-search-container {
+   display: block!important;
+   padding-top: 5px!important;
+}
+
+div#nav-search-container:hover {
+   border-color: transparent!important;
+}
+
 div#session-button-container {
-   width: 120px;
+   width: 130px;
    padding: 2px;
 }
 

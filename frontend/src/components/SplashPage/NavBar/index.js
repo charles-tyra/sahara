@@ -3,6 +3,7 @@ import SessionActionButton from "./SessionActionButton";
 import './NavBar.css'
 import logo from '../../../assets/images/white_amazon_logo.png'
 import cart from '../../../assets/images/shopping_cart.png'
+import NavSearchBar from "./NavSearchBar";
 
 function NavBar() {
 
@@ -13,6 +14,9 @@ function NavBar() {
                <a href='/'>
                   <img src={logo} id='nav-bar-logo' alt='' />
                </a>
+            </div>
+            <div id='nav-search-container'>
+               <NavSearchBar />
             </div>
             <div id='session-button-container'>
                <SessionActionButton />

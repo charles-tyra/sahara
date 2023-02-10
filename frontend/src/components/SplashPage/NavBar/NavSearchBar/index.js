@@ -5,7 +5,9 @@ function NavSearchBar() {
 
    return (
       <>
-         <form></form>
+         <form>
+            <input id='nav-search-input'></input>
+         </form>
       </>
    )
 }

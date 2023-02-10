@@ -18,6 +18,7 @@ function NavBar() {
                <SessionActionButton />
             </div>
             <div id='cart-container'>
+               <div id='cart-number'>0</div>
                <img src={cart} id='nav-bar-cart' alt="" />      
             </div>
          </div>

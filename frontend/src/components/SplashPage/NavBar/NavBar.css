@@ -21,6 +21,7 @@ div#nav-bar > div {
 
 div#nav-bar > div:hover {
    border:1px solid #fff;
+   cursor: pointer;
 }
 
 div#nav-bar-logo-container {
@@ -45,6 +46,15 @@ div#cart-container {
 }
 
 img#nav-bar-cart {
-   padding: 0 10px;
+   padding: 0 12px;
    width: 60px;
+}
+
+div#cart-number {
+   position: absolute;
+   color: #f08804;
+   font-family: amber-thick;
+   font-size: 18px;
+   padding-bottom: 18px;
+   padding-left: 10px;
 }

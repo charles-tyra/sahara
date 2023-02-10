@@ -9,6 +9,7 @@
 }
 
 a#nav-login-link {
+   padding-top: 8px;
    text-decoration:none;
    width: 95%;
    line-height: 1.2;

@@ -15,6 +15,10 @@ function NavBar() {
                   <img src={logo} id='nav-bar-logo' alt='' />
                </a>
             </div>
+            <div id='welcome-address-container'>
+               <h2 className='nav-bar-h2'>Welcome to sahara,</h2>
+               <div className="nav-bar-text">Make yourself at home</div>
+            </div>
             <div id='nav-search-container'>
                <NavSearchBar />
             </div>

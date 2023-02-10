@@ -2,7 +2,7 @@
 div#nav-bar {
    display: flex;
    flex-direction: row;
-   justify-content: center;
+   justify-content: space-evenly;
    width: 100%;
 
    background-color: #131921;
@@ -17,7 +17,26 @@ div#nav-bar > div {
    align-items: center;
    justify-content: center;
    padding: 2px;
+
+   line-height: 1.2;
 }
+
+
+h2.nav-bar-h2 {
+   color: #fff;
+   font-family: amber;
+   font-size: 12px;
+}
+
+div.nav-bar-text {
+   color: #fff;
+   font-family: amber-thick;
+   font-size: 14px;
+
+   height: 25px;
+   margin-bottom: 0px;
+}
+
 
 div#nav-bar > div:hover {
    border:1px solid #fff;
@@ -28,11 +47,18 @@ div#nav-bar-logo-container {
    display: block;
    padding-left: 0px;
    width: 113px;
+   padding-top: 7px!important;
 }
 
 img#nav-bar-logo {
    display: block;
    width: 103px;
+}
+
+div#welcome-address-container {
+   width: 164px;
+   display: block!important;
+   padding-top: 9px!important;
 }
 
 div#nav-search-container {
@@ -49,9 +75,14 @@ div#session-button-container {
    padding: 2px;
 }
 
-div#cart-container {
+div#order-list-container {
+   display: block!important;
+   width: 77px;
+   padding-top: 9px !important;
+}
 
-   cursor: grabbing;
+div#cart-container {
+   cursor: grabbing!important;
 }
 
 img#nav-bar-cart {
@@ -66,19 +97,4 @@ div#cart-number {
    font-size: 18px;
    padding-bottom: 18px;
    padding-left: 10px;
-}
-
-h2.nav-bar-h2 {
-   color: #fff;
-   font-family: amber;
-   font-size: 12px;
-}
-
-div.nav-bar-text {
-   color: #fff;
-   font-family: amber-thick;
-   font-size: 14px;
-
-   height: 25px;
-   margin-bottom: 0px;
 }

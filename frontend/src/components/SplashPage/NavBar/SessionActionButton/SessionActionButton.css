@@ -8,7 +8,7 @@
    src: url(../../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Rg.ttf);
 }
 
-a#nav-login-link {
+#nav-login-link {
    padding-top: 8px;
    text-decoration:none;
    width: 95%;

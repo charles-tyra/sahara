@@ -14,18 +14,3 @@ a#nav-login-link {
    width: 95%;
    line-height: 1.2;
 }
-
-h2#nav-login-h2 {
-   color: #fff;
-   font-family: amber;
-   font-size: 12px;
-}
-
-div#nav-login-button {
-   color: #fff;
-   font-family: amber-thick;
-   font-size: 14px;
-   
-   height: 25px;
-   margin-bottom: 0px;
-}

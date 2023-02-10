@@ -21,6 +21,10 @@ function NavBar() {
             <div id='session-button-container'>
                <SessionActionButton />
             </div>
+            <div id='order-list-container'>
+               <h2 className="nav-bar-h2"> Returns </h2>
+               <div className='nav-bar-text'>& Orders</div>
+            </div>
             <div id='cart-container'>
                <div id='cart-number'>0</div>
                <img src={cart} id='nav-bar-cart' alt="" />      

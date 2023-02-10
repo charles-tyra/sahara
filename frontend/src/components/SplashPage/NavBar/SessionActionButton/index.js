@@ -16,15 +16,15 @@ function SessionActionButton() {
    if (sessionUser) {
       return (
          <div onClick={handleLogout} id='nav-login-link'> 
-            <h2 id='nav-login-h2'>Hello, {sessionUser.firstName}</h2>
-            <div id='nav-login-button'>Click to log out</div>
+            <h2 className='nav-bar-h2'>Hello, {sessionUser.firstName}</h2>
+            <div className='nav-bar-text'>Click to log out</div>
          </div>
       )
    } else {
       return (
          <a href='/login' id='nav-login-link'>
-            <h2 id='nav-login-h2'>Hello, </h2>
-            <div id='nav-login-button'>Click to sign in</div>
+            <h2 className='nav-bar-h2'>Hello, </h2>
+            <div className='nav-bar-text'>Click to sign in</div>
          </a>
       )
    };

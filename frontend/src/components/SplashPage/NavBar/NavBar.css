@@ -67,3 +67,18 @@ div#cart-number {
    padding-bottom: 18px;
    padding-left: 10px;
 }
+
+h2.nav-bar-h2 {
+   color: #fff;
+   font-family: amber;
+   font-size: 12px;
+}
+
+div.nav-bar-text {
+   color: #fff;
+   font-family: amber-thick;
+   font-size: 14px;
+
+   height: 25px;
+   margin-bottom: 0px;
+}

@@ -1,4 +1,4 @@
-const RECEIVE_USER = 'users/RECEIEVE_USER';
+const RECEIVE_USER = 'users/RECEIVE_USER';
 const REMOVE_USER = 'users/REMOVE_USER';
 
 export const receiveUser = user => {

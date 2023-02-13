@@ -7,16 +7,18 @@ import { getItems, fetchItems } from "../../store/items";
 
 
 
+
 function SplashPage() {
    const dispatch = useDispatch();
    const items = useSelector(getItems);
+   console.log(items);
 
    useEffect(() => {
       dispatch(fetchItems());
    }, [dispatch]);
 
    const listItems = items.map(item => <ItemIndexDiv key={item.id} item={item} />);
-   
+   console.log(listItems);
 
    return (
       <>

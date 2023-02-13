@@ -20,7 +20,7 @@ const receiveItems = items => {
 
 
 export const getItems = state => {
-   if (state && state.items) return Object.values(state.items);
+   if (state && state.item) return Object.values(state.item);
    return [];
 };
 

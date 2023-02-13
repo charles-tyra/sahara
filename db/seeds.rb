@@ -13,8 +13,8 @@ ApplicationRecord.transaction do
    User.create!(email: 'charles.tyra@gmail.com', password: 'tobiedog', first_name: 'Charles', last_name: 'Tyra')
    Item.create!(
       item_name: "Aluminum rug",
-      color: "Gray Gray",
-      material: "",
+      colors: "Gray Gray",
+      material: "unknown",
       dimensions: "3 x 2",
       theme: "Garden Outdoors",
       description: "With its sleek and modern design, the Aluminum Rug will instantly elevate the look of your outdoor space. The aluminum material provides a smooth and flat surface that's easy to clean and maintain, making it the perfect choice for high-traffic areas. Plus, the lightweight construction makes it easy to move and rearrange as needed.",
@@ -22,8 +22,8 @@ ApplicationRecord.transaction do
    )
    Item.create!(
       item_name: "Blocks rug",
-      color: "Black Gray",
-      material: "",
+      colors: "Black Gray",
+      material: "tbd",
       dimensions: "3 x 3",
       theme: "Living room",
       description: "The rug features a bold blue block pattern that is sure to make a statement in any space. The unique design is sure to be a conversation starter and will add a touch of character to any room. Whether you're looking to create a cozy reading nook or simply add some interest to a neutral-toned room, this rug is the perfect choice.",
@@ -31,43 +31,34 @@ ApplicationRecord.transaction do
    )
    Item.create!(
       item_name: "Design kitchen mat",
-      color: "Black Orange",
-      material: "",
+      colors: "Black Orange",
+      material: "tbd",
       dimensions: "2 x 1",
       theme: "Kitchen",
-      description: "",
+      description: "tbd",
       bells: 1000
    )
    Item.create!(
       item_name: "Wooden-deck rug",
-      color: "Black Black",
-      material: "",
+      colors: "Black Black",
+      material: "tbd",
       dimensions: "3 x 2",
       theme: "Outdoors Garden",
-      description: "",
-      bells: 1500
-   )
-   Item.create!(
-      item_name: "Argyle rug",
-      color: "Blue Green",
-      material: "",
-      dimensions: "4 x 2",
-      theme: "Living room Expensive",
-      description: "",
-      bells: 2000
-   )
-   Item.create!(
-      item_name: "Blocks rug",
-      color: "Blue Blue",
-      material: "",
-      dimensions: "3 x 3",
-      theme: "Living room",
-      description: "",
+      description: "tbd",
       bells: 1500
    )
    # Item.create!(
+   #    item_name: "Blocks rug",
+   #    colors: "Blue Blue",
+   #    material: "tbd",
+   #    dimensions: "3 x 3",
+   #    theme: "Living room",
+   #    description: "tbd",
+   #    bells: 1500
+   # )
+   # Item.create!(
    #    item_name: "Design kitchen mat",
-   #    color: "Blue Black",
+   #    colors: "Blue Black",
    #    material: "",
    #    dimensions: "2 x 1",
    #    theme: "Kitchen",
@@ -76,119 +67,119 @@ ApplicationRecord.transaction do
    # )
    Item.create!(
       item_name: "Dotted rug",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "4 x 3",
       theme: "Fancy Child's room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Argyle rug",
-      color: "Blue Green",
-      material: "",
+      colors: "Blue Green",
+      material: "tbd",
       dimensions: "4 x 2",
       theme: "Living room Expensive",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Kilim-style carpet",
-      color: "Blue Black",
-      material: "",
+      colors: "Blue Black",
+      material: "tbd",
       dimensions: "5 x 5",
       theme: "Living room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Kitchen mat",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "2 x 1",
       theme: "Kitchen",
-      description: "",
+      description: "tbd",
       bells: 1000
    )
    Item.create!(
       item_name: "Medium round mat",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "3 x 3",
       theme: "Living room Child's room",
-      description: "",
+      description: "tbd",
       bells: 1500
    )
    Item.create!(
       item_name: "Message mat",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "2 x 1",
       theme: "Child's room",
-      description: "",
+      description: "tbd",
       bells: 1000
    )
    Item.create!(
       item_name: "Persian rug",
-      color: "Blue Beige",
-      material: "",
+      colors: "Blue Beige",
+      material: "tbd",
       dimensions: "5 x 5",
       theme: "Expensive Living room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Shaggy rug",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "5 x 5",
       theme: "Living room Child's room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Small round mat",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "2 x 2",
       theme: "Living room Child's room",
-      description: "",
+      description: "tbd",
       bells: 1000
    )
    Item.create!(
       item_name: "Stripes rug",
-      color: "Blue White",
-      material: "",
+      colors: "Blue White",
+      material: "tbd",
       dimensions: "4 x 3",
       theme: "Fancy Child's room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Vinyl sheet",
-      color: "Blue Colorful",
-      material: "",
+      colors: "Blue Colorful",
+      material: "tbd",
       dimensions: "3 x 2",
       theme: "Ocean Resort Garden",
-      description: "",
+      description: "tbd",
       bells: 1500
    )
    Item.create!(
       item_name: "Wavy rug",
-      color: "Blue Blue",
-      material: "",
+      colors: "Blue Blue",
+      material: "tbd",
       dimensions: "3 x 3",
       theme: "Living room Child's room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
    Item.create!(
       item_name: "Botanical rug",
-      color: "Green Green",
-      material: "",
+      colors: "Green Green",
+      material: "tbd",
       dimensions: "4 x 3",
       theme: "Living room",
-      description: "",
+      description: "tbd",
       bells: 2000
    )
 end

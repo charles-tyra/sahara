@@ -5,20 +5,9 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import configureStore from './store';
-import { restoreSession } from './store/session';
-import { csrfFetch } from './store/csrf';
 
 import * as sessionActions from './store/session';
-
-
-// Only to be used during development
 const store = configureStore();
-if (process.env.NODE_ENV !== 'production') {
-  window.store = store;
-  window.csrfFetch = csrfFetch;
-  window.sessionActions = sessionActions;
-}
-
 
 function Root() {
   return (

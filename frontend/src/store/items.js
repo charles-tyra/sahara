@@ -45,3 +45,19 @@ export const fetchItem = itemId => async dispatch => {
    dispatch(receiveItem(data.item));
    return response;
 }
+
+const itemReducer = ( state = {}, action ) => {
+   const nextState = {...state};
+
+   switch(action.type) {
+      case RECEIVE_ITEM:
+         nextState[action.item.id] = action.item;
+         return nextState;
+      case RECEIVE_ITEMS:
+         return {...nextState, ...action.items}
+      default:
+         return state;
+   }
+};
+
+export default itemReducer;

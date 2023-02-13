@@ -138,6 +138,7 @@ div.container {
    font-size: 13px;
    line-height: 19px;
    font-family: amber;
+   flex-wrap: wrap;
 }
 
 div {

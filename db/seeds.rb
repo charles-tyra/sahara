@@ -182,4 +182,211 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
+   Item.create!(
+      item_name: "Earth rug",
+      colors: "Blue White",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Space Sci Fi",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Fluffy rug",
+      colors: "White White",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Fancy Child's room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Fossil rug",
+      colors: "Purple White",
+      material: "tbd",
+      dimensions: "4 x 4",
+      theme: "Fancy Child's room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Iron entrance mat",
+      colors: "Black Black",
+      material: "tbd",
+      dimensions: "2 x 1",
+      theme: "Shop Cafe",
+      description: "tbd",
+      bells: 1000
+   )
+   Item.create!(
+      item_name: "Lacy rug",
+      colors: "Beige White",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Fancy Expensive",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Magic-circle rug",
+      colors: "Purple Purple",
+      material: "tbd",
+      dimensions: "4 x 3",
+      theme: "Living room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Mush rug",
+      colors: "Red Red",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Fancy Child's room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Oval entrance mat",
+      colors: "Blue Blue",
+      material: "tbd",
+      dimensions: "2 x 1",
+      theme: "Living room",
+      description: "tbd",
+      bells: 1000
+   )
+   Item.create!(
+      item_name: "Red carpet",
+      colors: "Red Red",
+      material: "tbd",
+      dimensions: "3 x 2",
+      theme: "Expensive Party",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Rough rug",
+      colors: "Brown Brown",
+      material: "tbd",
+      dimensions: "2 x 1",
+      theme: "Living room",
+      description: "tbd",
+      bells: 1000
+   )
+   Item.create!(
+      item_name: "Rubber mud mat",
+      colors: "Green Green",
+      material: "tbd",
+      dimensions: "2 x 1",
+      theme: "School",
+      description: "tbd",
+      bells: 1000
+   )
+   Item.create!(
+      item_name: "Shanty mat",
+      colors: "Brown Beige",
+      material: "tbd",
+      dimensions: "4 x 4",
+      theme: "Harmonious Horror",
+      description: "tbd",
+      bells: 2000
+   )
+   Item.create!(
+      item_name: "Sloppy rug",
+      colors: "Aqua Aqua",
+      material: "tbd",
+      dimensions: "4 x 4",
+      theme: "Living room",
+      description: "tbd",
+      bells: 2000
+   )
+   Item.create!(
+      item_name: "Snowflake rug",
+      colors: "Aqua White",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Freezing cold Fancy",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Tatami mat",
+      colors: "Green Yellow",
+      material: "tbd",
+      dimensions: "3 x 2",
+      theme: "Harmonious",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Tropical rug",
+      colors: "Green Beige",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Ocean Resort",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Bone entrance mat",
+      colors: "Green Green",
+      material: "tbd",
+      dimensions: "2 x 1",
+      theme: "Livig room Child's room",
+      description: "tbd",
+      bells: 1000
+   )
+   Item.create!(
+      item_name: "Coconut mat",
+      colors: "Brown",
+      material: "tbd",
+      dimensions: "2 x 1",
+      theme: "Cafe",
+      description: "tbd",
+      bells: 1000
+   )
+   Item.create!(
+      item_name: "Cookie rug",
+      colors: "Orange Yellow",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Ocean Resort",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Imperial rug",
+      colors: "Red Red",
+      material: "tbd",
+      dimensions: "4 x 4",
+      theme: "Ocean Resort",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Record rug",
+      colors: "Black Red",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Living room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Skull rug",
+      colors: "Gray Black",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Horror Child's room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Stage rug",
+      colors: "Colorful Yellow",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Concert Party",
+      description: "tbd",
+      bells: 1500
+   )
 end

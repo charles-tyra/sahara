@@ -13,7 +13,7 @@ enhancer = composeEnhancers(applyMiddleware(thunk, logger));
 const rootReducer = combineReducers({
    session: sessionReducer,
    user: userReducer,
-   item: itemReducer
+   items: itemReducer
 });
 
 const configureStore = (preloadedState = {}) => {

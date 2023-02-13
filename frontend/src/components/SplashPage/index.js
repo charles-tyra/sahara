@@ -1,12 +1,11 @@
 import React from "react";
 import NavBar from "./NavBar";
-import ItemIndexDiv from "./ItemIndexDiv";
+import ItemIndexDiv from "./IndexPage/ItemIndexDiv";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getItems, fetchItems } from "../../store/items";
-
-
-
+import background from '../../assets/images/saharah_background.png'
+import './SplashPage.css';
 
 function SplashPage() {
    const dispatch = useDispatch();
@@ -23,6 +22,7 @@ function SplashPage() {
    return (
       <>
          <NavBar />
+         <img src={background} alt='' id='background-img'/>
          {listItems}
       </>
    )

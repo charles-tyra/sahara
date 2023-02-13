@@ -6,10 +6,11 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-ApplicationRecord.transcation do 
+ApplicationRecord.transaction do 
    User.destroy_all
    Item.destroy_all
 
+   User.create!(email: 'charles.tyra@gmail.com', password: 'tobiedog', first_name: 'Charles', last_name: 'Tyra')
    Item.create!(
       item_name: "Aluminum rug",
       color: "Gray Gray",

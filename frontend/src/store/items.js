@@ -20,7 +20,7 @@ const receiveItems = items => {
 
 
 export const getItems = state => {
-   if (state && state.item) return Object.values(state.items);
+   if (state && state.items) return Object.values(state.items);
    return [];
 };
 
@@ -35,7 +35,6 @@ export const fetchItems = () => async dispatch => {
 
    const data = await response.json();
    dispatch(receiveItems(data.items));
-   return response;
 }
 
 export const fetchItem = itemId => async dispatch => {
@@ -43,7 +42,6 @@ export const fetchItem = itemId => async dispatch => {
 
    const data = await response.json();
    dispatch(receiveItem(data.item));
-   return response;
 }
 
 const itemReducer = ( state = {}, action ) => {

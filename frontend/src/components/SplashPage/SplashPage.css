@@ -19,5 +19,37 @@ div#carousel-container {
    z-index: -1;
    height: 600px;
    width: 1300px;
-   background: linear-gradient(black, transparent);
+}
+
+div#spacer-div {
+   z-index: -3;
+   width: 100%;
+   height: 315px;
+   display: block;
+}
+
+div#themes-container {
+   display: flex;
+   flex-flow: row wrap;
+   width: 1300px;
+   justify-content: space-between;
+}
+
+div.div-spacer {
+   padding: 10px;
+}
+
+div.index-theme-container {
+   background-color: #fff;
+   font-family: amber;
+   min-width: 290px;
+   max-width: 400px;
+   height: 420px;
+   padding: 20px;
+   padding-bottom: 15px;
+}
+
+h2.index-theme-h2 {
+   font-size: 21px;
+   font-family: amber-thick;
 }

@@ -38,6 +38,7 @@ function NavBar() {
                </div>
             </div>
          </div>
+         <div id='under-nav-bar'></div>
       </>
    )
 }

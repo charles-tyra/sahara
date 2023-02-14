@@ -22,14 +22,61 @@ function SplashPage() {
 
    return (
       <>
-         <div id='background-color'></div>
+         <div id='background-color'/>
          <NavBar />
          <div id='carousel-container'>
             <BackgroundCarousel />
          </div>
-
-         <div id='index-theme-container'> 
-            
+         <div id='spacer-div' />
+         <div id='themes-container'>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
+            <div className="div-spacer">
+               <div className='index-theme-container'> 
+                  <h2 className='index-theme-h2'>Welcome to the base index</h2>
+                  Base div.
+               </div>
+            </div>
          </div>
       </>
    )

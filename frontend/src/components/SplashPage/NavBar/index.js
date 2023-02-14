@@ -95,10 +95,10 @@ function NavBar() {
                .gitattributes
             </div>
             <div className="under-nav-filler">
-               .gitignore
+               .erb
             </div>
             <div className="under-nav-filler">
-               .rubyversion
+               .jbuilder
             </div>
             <div className="under-nav-filler">
                .ru

@@ -27,8 +27,10 @@ function SplashPage() {
          <div id='carousel-container'>
             <BackgroundCarousel />
          </div>
-         
-         {listItems}
+
+         <div id='index-theme-container'> 
+            
+         </div>
       </>
    )
 }

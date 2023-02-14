@@ -38,7 +38,81 @@ function NavBar() {
                </div>
             </div>
          </div>
-         <div id='under-nav-bar'></div>
+
+         <div id='under-nav-bar'>
+            <div className="under-nav-filler">
+               Provider
+            </div>
+            <div className="under-nav-filler">
+               BrowserRouter
+            </div>
+            <div className="under-nav-filler">
+               createStore
+            </div>
+            <div className="under-nav-filler">
+               combineReducers
+            </div>
+            <div className="under-nav-filler">
+               applyMiddleware
+            </div>
+            <div className="under-nav-filler">
+               compose
+            </div>
+            <div className="under-nav-filler">
+               thunk
+            </div>
+            <div className="under-nav-filler">
+               logger
+            </div>
+            <div className="under-nav-filler">
+               useEffect
+            </div>
+            <div className="under-nav-filler">
+               useDispatch
+            </div>
+            <div className="under-nav-filler">
+               useSelector
+            </div>
+            <div className="under-nav-filler">
+               react
+            </div>
+            <div className="under-nav-filler">
+               redux
+            </div>
+            <div className="under-nav-filler">
+               .js
+            </div>
+            <div className="under-nav-filler">
+               .css
+            </div>
+            <div className="under-nav-filler">
+               .rb
+            </div>
+            <div className="under-nav-filler">
+               .jsx
+            </div>
+            <div className="under-nav-filler">
+               .gitattributes
+            </div>
+            <div className="under-nav-filler">
+               .gitignore
+            </div>
+            <div className="under-nav-filler">
+               .rubyversion
+            </div>
+            <div className="under-nav-filler">
+               .ru
+            </div>
+            <div className="under-nav-filler">
+               .json
+            </div>
+            <div className="under-nav-filler">
+               .lock
+            </div>
+            <div className="under-nav-filler">
+               .md
+            </div>
+         </div>
       </>
    )
 }

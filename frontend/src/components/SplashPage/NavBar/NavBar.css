@@ -95,6 +95,7 @@ div#nav-search-container:hover {
 div#session-button-container {
    width: 130px;
    padding: 2px;
+   padding-top:10px!important;
 }
 
 div#order-list-container {

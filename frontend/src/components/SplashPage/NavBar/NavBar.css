@@ -25,13 +25,14 @@ div#left-nav-container {
    width: 500px;
    display: flex;
    justify-content: space-evenly;
+   padding-top: 0;
 }
 
 div#right-nav-container {
    width: 500px;
    display: flex;
    justify-content: space-between;
-   padding: 2px 10px;
+   padding: 0px 10px;
 }
 
 h2.nav-bar-h2 {

@@ -10,10 +10,10 @@ div#nav-bar {
    padding: 5px;
 }
 
-div#nav-bar > div {
+div#nav-bar > div > div {
    border: 1px solid transparent;
    border-radius: 2px;
-   display: flex;
+   display: block;
    align-items: center;
    justify-content: center;
    padding: 2px;
@@ -21,11 +21,24 @@ div#nav-bar > div {
    line-height: 1.2;
 }
 
+div#left-nav-container {
+   width: 500px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+div#right-nav-container {
+   width: 500px;
+   display: flex;
+   justify-content: space-between;
+   padding: 2px 10px;
+}
 
 h2.nav-bar-h2 {
    color: #fff;
    font-family: amber;
    font-size: 12px;
+   margin-bottom: 0;
 }
 
 div.nav-bar-text {
@@ -38,7 +51,7 @@ div.nav-bar-text {
 }
 
 
-div#nav-bar > div:hover {
+div#nav-bar > div > div:hover {
    border:1px solid #fff;
    cursor: pointer;
 }
@@ -59,11 +72,13 @@ div#welcome-address-container {
    width: 164px;
    display: block!important;
    padding-top: 9px!important;
+   line-height: 1;
 }
 
 div#nav-search-container {
    display: block!important;
    padding-top: 5px!important;
+   width: 100%;
 }
 
 div#nav-search-container:hover {
@@ -96,5 +111,5 @@ div#cart-number {
    font-family: amber-thick;
    font-size: 18px;
    padding-bottom: 18px;
-   padding-left: 10px;
+   padding-left: 29px;
 }

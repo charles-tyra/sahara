@@ -24,7 +24,10 @@ function SplashPage() {
       <>
          <div id='background-color'></div>
          <NavBar />
-         <BackgroundCarousel />
+         <div id='carousel-container'>
+            <BackgroundCarousel />
+         </div>
+         
          {listItems}
       </>
    )

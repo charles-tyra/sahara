@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getItems, fetchItems } from "../../store/items";
 import background from '../../assets/images/saharah_background.png'
 import './SplashPage.css';
+import BackgroundCarousel from "./IndexPage/BackgroundCarousel";
 
 function SplashPage() {
    const dispatch = useDispatch();
@@ -21,8 +22,9 @@ function SplashPage() {
 
    return (
       <>
+         <div id='background-color'></div>
          <NavBar />
-         <img src={background} alt='' id='background-img'/>
+         <BackgroundCarousel />
          {listItems}
       </>
    )

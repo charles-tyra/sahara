@@ -18,15 +18,17 @@ const ItemIndexDiv = ( {item, theme} ) => {
    //       )
    // })
 
+
+   // <div className='item-div' >
+   //    <a href={itemShowLink} className='item-image'>
+   //       <img src={placeholder} alt='' />
+   //    </a>
+   // </div> 
    const itemShowLink = `/items/${item.id}`
 
    return (
       <div className="item-div-container">
-         <div className = 'item-div' >
-            <a href={itemShowLink} className='item-image'>
-               <img src={placeholder} alt='' />
-            </a>
-         </div> 
+
       </div >
    )
 }

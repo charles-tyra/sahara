@@ -47,6 +47,12 @@ function NavBar() {
                BrowserRouter
             </div>
             <div className="under-nav-filler">
+               Route
+            </div>
+            <div className="under-nav-filler">
+               Switch
+            </div>
+            <div className="under-nav-filler">
                createStore
             </div>
             <div className="under-nav-filler">
@@ -90,9 +96,6 @@ function NavBar() {
             </div>
             <div className="under-nav-filler">
                .jsx
-            </div>
-            <div className="under-nav-filler">
-               .gitattributes
             </div>
             <div className="under-nav-filler">
                .erb

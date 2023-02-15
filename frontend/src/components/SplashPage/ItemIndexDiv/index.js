@@ -3,7 +3,7 @@ import './ItemIndexDiv.css';
 import placeholder from '../../../../assets/images/sahara_placeholder.png';
 // import { Link } from "react-router-dom";
 
-const ItemIndexDiv = ( {item, theme} ) => {
+const ItemIndexDiv = ( {items, theme} ) => {
 
       // later functionality to introduce
    // items.map(item => {
@@ -28,7 +28,11 @@ const ItemIndexDiv = ( {item, theme} ) => {
    const itemShowLink = `/items/${item.id}`
 
    return (
-      <div className="item-div-container">
+      <div className="index-theme-container">
+         <h2 className='index-theme-h2'>Check out these cool {theme} based rugs!</h2>
+         <a href=''>
+            <img />
+         </a>
 
       </div >
    )

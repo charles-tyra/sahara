@@ -25,6 +25,16 @@ div#show-info-container {
    width: 605px;
 }
 
+div#description-div {
+   margin-bottom: 10px;
+}
+
+span.description-span {
+   font-family: amber-thick;
+   width:100px;
+   display: inline-block;
+}
+
 div#show-cart-container {
    border: 1px solid #e6e6e6;
    border-radius: 8px;

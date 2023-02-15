@@ -23,16 +23,18 @@ function ShowPage() {
    } else {
    return (
       <> 
-
          <div id='show-page-container'> 
             <div id='show-image-container'>
                <img src={placeholder} alt=''/>
             </div>
             <div id='show-info-container'>
                <h2>{item.itemName}</h2>
+               <div id='show-review-info'></div>
                <div></div>
                <hr/>
-               <div>{item.colors}</div>
+               <div id='description-div'>{item.description}</div>
+               <div><span className='description-span'>Colors</span>{item.colors}</div>
+               <div><span className='description-span'>Room Type</span>{item.theme}</div>
             </div>
             <div id='show-cart-container'>
                <div id='price-info'>

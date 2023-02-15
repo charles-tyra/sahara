@@ -5,6 +5,7 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+require 'open-uri'
 
 ApplicationRecord.transaction do 
    User.destroy_all
@@ -13,7 +14,7 @@ ApplicationRecord.transaction do
    User.create!(email: 'charles.tyra@gmail.com', password: 'tobiedog', first_name: 'Charles', last_name: 'Tyra')
    Item.create!(
       item_name: "Aluminum rug",
-      colors: "Gray Gray",
+      colors: "Gray",
       material: "unknown",
       dimensions: "3x2",
       theme: "Garden Outdoors",
@@ -40,31 +41,31 @@ ApplicationRecord.transaction do
    )
    Item.create!(
       item_name: "Wooden-deck rug",
-      colors: "Black Black",
+      colors: "Black",
       material: "tbd",
       dimensions: "3x2",
       theme: "Outdoors Garden",
       description: "tbd",
       bells: 1500
    )
-   # Item.create!(
-   #    item_name: "Blocks rug",
-   #    colors: "Blue Blue",
-   #    material: "tbd",
-   #    dimensions: "3 x 3",
-   #    theme: "Living room",
-   #    description: "tbd",
-   #    bells: 1500
-   # )
-   # Item.create!(
-   #    item_name: "Design kitchen mat",
-   #    colors: "Blue Black",
-   #    material: "",
-   #    dimensions: "2 x 1",
-   #    theme: "Kitchen",
-   #    description: "",
-   #    bells: 1000
-   # )
+   Item.create!(
+      item_name: "Blocks rug",
+      colors: "Blue",
+      material: "tbd",
+      dimensions: "3 x 3",
+      theme: "Living room",
+      description: "tbd",
+      bells: 1500
+   )
+   Item.create!(
+      item_name: "Design kitchen mat",
+      colors: "Blue Black",
+      material: "sdf",
+      dimensions: "2 x 1",
+      theme: "Kitchen",
+      description: "sdf",
+      bells: 1000
+   )
    Item.create!(
       item_name: "Dotted rug",
       colors: "Blue",
@@ -331,7 +332,7 @@ ApplicationRecord.transaction do
       colors: "Green",
       material: "tbd",
       dimensions: "2x1",
-      theme: "Livig room Child's room",
+      theme: "Living room Child's room",
       description: "tbd",
       bells: 1000
    )
@@ -390,3 +391,8 @@ ApplicationRecord.transaction do
       bells: 1500
    )
 end
+
+Item.first.photo.attach(
+   io: URI.open("https://sahara-seeds.s3.amazonaws.com/Aluminum_Rug.png"),
+   filename: "Aluminum_Rug.png"
+)

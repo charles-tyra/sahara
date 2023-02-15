@@ -8,12 +8,34 @@ import BackgroundCarousel from "./BackgroundCarousel";
 function SplashPage() {
    const dispatch = useDispatch();
    const items = useSelector(getItems);
-   console.log(items);
 
    useEffect(() => {
       dispatch(fetchItems());
    }, [dispatch]);
 
+   if(!items) {
+      return (
+         null
+      )
+   } else {
+   const colors = ['Blue', 'Black', 'Green', 'Beige', 'Colorful', 'White',
+      'Purple', 'Red', 'Brown', 'Aqua', 'Yellow', 'Orange', 'Gray'];
+   const themes = ['Garden', 'Outdoors', 'Living room', 'Kitchen',
+      'Fancy', "Child's room", 'Expensive', 'Horror', 'Ocean Resort',
+      'Party', 'School', 'Harmonious'];
+   const selector = [colors, themes];
+
+   const divThemes = [];
+
+   while (divThemes.length < 3) {
+      const randSelector = Math.floor(Math.random() * selector.length);
+      const randType = Math.floor(Math.random() * selector[randSelector].length);
+      const selected = selector[randSelector][randType];
+
+      if (!divThemes.includes(selected)) divThemes.push([randSelector === 0 ? 'colors' : 'themes', selected]);
+   };
+
+   console.log(divThemes)
    return (
       <>
          <div id='background-color'/>
@@ -73,6 +95,7 @@ function SplashPage() {
          </div>
       </>
    )
+   }
 }
 
 export default SplashPage;

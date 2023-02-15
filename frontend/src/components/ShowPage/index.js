@@ -25,7 +25,7 @@ function ShowPage() {
       <> 
          <div id='show-page-container'> 
             <div id='show-image-container'>
-               <img src={placeholder} alt=''/>
+               <img src={item.photoUrls[1]} alt=''/>
             </div>
             <div id='show-info-container'>
                <h2>{item.itemName}</h2>

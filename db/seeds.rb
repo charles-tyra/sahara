@@ -12,7 +12,9 @@ ApplicationRecord.transaction do
    Item.destroy_all
 
    User.create!(email: 'charles.tyra@gmail.com', password: 'tobiedog', first_name: 'Charles', last_name: 'Tyra')
-   Item.create!(
+
+
+   aluminum = Item.create!(
       item_name: "Aluminum rug",
       colors: "Gray",
       material: "unknown",
@@ -21,7 +23,7 @@ ApplicationRecord.transaction do
       description: "With its sleek and modern design, the Aluminum Rug will instantly elevate the look of your outdoor space. The aluminum material provides a smooth and flat surface that's easy to clean and maintain, making it the perfect choice for high-traffic areas. Plus, the lightweight construction makes it easy to move and rearrange as needed.",
       bells: 1500
    )
-   Item.create!(
+   blackblock = Item.create!(
       item_name: "Blocks rug",
       colors: "Black Gray",
       material: "tbd",
@@ -30,7 +32,7 @@ ApplicationRecord.transaction do
       description: "The rug features a bold blue block pattern that is sure to make a statement in any space. The unique design is sure to be a conversation starter and will add a touch of character to any room. Whether you're looking to create a cozy reading nook or simply add some interest to a neutral-toned room, this rug is the perfect choice.",
       bells: 1500
    )
-   Item.create!(
+   blackdesign = Item.create!(
       item_name: "Design kitchen mat",
       colors: "Black Orange",
       material: "tbd",
@@ -39,7 +41,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   blackwooden = Item.create!(
       item_name: "Wooden-deck rug",
       colors: "Black",
       material: "tbd",
@@ -48,7 +50,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   blueblock = Item.create!(
       item_name: "Blocks rug",
       colors: "Blue",
       material: "tbd",
@@ -57,7 +59,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   bluedesign = Item.create!(
       item_name: "Design kitchen mat",
       colors: "Blue Black",
       material: "sdf",
@@ -66,7 +68,7 @@ ApplicationRecord.transaction do
       description: "sdf",
       bells: 1000
    )
-   Item.create!(
+   bluedotted = Item.create!(
       item_name: "Dotted rug",
       colors: "Blue",
       material: "tbd",
@@ -75,7 +77,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   blueargyle = Item.create!(
       item_name: "Argyle rug",
       colors: "Blue Green",
       material: "tbd",
@@ -84,7 +86,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   bluekilim = Item.create!(
       item_name: "Kilim-style carpet",
       colors: "Blue Black",
       material: "tbd",
@@ -93,7 +95,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   bluekitchen = Item.create!(
       item_name: "Kitchen mat",
       colors: "Blue",
       material: "tbd",
@@ -102,7 +104,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   bluemedium = Item.create!(
       item_name: "Medium round mat",
       colors: "Blue",
       material: "tbd",
@@ -111,7 +113,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   bluemessage = Item.create!(
       item_name: "Message mat",
       colors: "Blue",
       material: "tbd",
@@ -120,7 +122,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   bluepersian = Item.create!(
       item_name: "Persian rug",
       colors: "Blue Beige",
       material: "tbd",
@@ -129,7 +131,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   blueshaggy = Item.create!(
       item_name: "Shaggy rug",
       colors: "Blue",
       material: "tbd",
@@ -138,7 +140,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   bluesmall = Item.create!(
       item_name: "Small round mat",
       colors: "Blue",
       material: "tbd",
@@ -147,7 +149,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   bluestripes = Item.create!(
       item_name: "Stripes rug",
       colors: "Blue White",
       material: "tbd",
@@ -156,7 +158,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   bluevinyl = Item.create!(
       item_name: "Vinyl sheet",
       colors: "Blue Colorful",
       material: "tbd",
@@ -165,7 +167,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   bluewavy = Item.create!(
       item_name: "Wavy rug",
       colors: "Blue",
       material: "tbd",
@@ -174,7 +176,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   botanical = Item.create!(
       item_name: "Botanical rug",
       colors: "Green",
       material: "tbd",
@@ -183,7 +185,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   earth = Item.create!(
       item_name: "Earth rug",
       colors: "Blue White",
       material: "tbd",
@@ -192,7 +194,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   fluffy = Item.create!(
       item_name: "Fluffy rug",
       colors: "White",
       material: "tbd",
@@ -201,7 +203,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   fossil = Item.create!(
       item_name: "Fossil rug",
       colors: "Purple White",
       material: "tbd",
@@ -210,7 +212,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   ironentrance = Item.create!(
       item_name: "Iron entrance mat",
       colors: "Black",
       material: "tbd",
@@ -219,7 +221,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   lacy = Item.create!(
       item_name: "Lacy rug",
       colors: "Beige White",
       material: "tbd",
@@ -228,7 +230,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   magiccircle = Item.create!(
       item_name: "Magic-circle rug",
       colors: "Purple",
       material: "tbd",
@@ -237,7 +239,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   mush = Item.create!(
       item_name: "Mush rug",
       colors: "Red",
       material: "tbd",
@@ -246,7 +248,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   ovalentrance = Item.create!(
       item_name: "Oval entrance mat",
       colors: "Blue",
       material: "tbd",
@@ -255,7 +257,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   red = Item.create!(
       item_name: "Red carpet",
       colors: "Red",
       material: "tbd",
@@ -264,7 +266,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   rough = Item.create!(
       item_name: "Rough rug",
       colors: "Brown",
       material: "tbd",
@@ -273,7 +275,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   rubber = Item.create!(
       item_name: "Rubber mud mat",
       colors: "Green",
       material: "tbd",
@@ -282,7 +284,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   shanty = Item.create!(
       item_name: "Shanty mat",
       colors: "Brown Beige",
       material: "tbd",
@@ -291,7 +293,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   sloppy = Item.create!(
       item_name: "Sloppy rug",
       colors: "Aqua",
       material: "tbd",
@@ -300,7 +302,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 2000
    )
-   Item.create!(
+   snowflake = Item.create!(
       item_name: "Snowflake rug",
       colors: "Aqua White",
       material: "tbd",
@@ -309,7 +311,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   tatami = Item.create!(
       item_name: "Tatami mat",
       colors: "Green Yellow",
       material: "tbd",
@@ -318,7 +320,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   tropical = Item.create!(
       item_name: "Tropical rug",
       colors: "Green Beige",
       material: "tbd",
@@ -327,7 +329,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   boneentrance = Item.create!(
       item_name: "Bone entrance mat",
       colors: "Green",
       material: "tbd",
@@ -336,7 +338,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   coconut = Item.create!(
       item_name: "Coconut mat",
       colors: "Brown",
       material: "tbd",
@@ -345,7 +347,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1000
    )
-   Item.create!(
+   cookie = Item.create!(
       item_name: "Cookie rug",
       colors: "Orange Yellow",
       material: "tbd",
@@ -354,7 +356,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   imperial = Item.create!(
       item_name: "Imperial rug",
       colors: "Red",
       material: "tbd",
@@ -363,7 +365,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   record = Item.create!(
       item_name: "Record rug",
       colors: "Black Red",
       material: "tbd",
@@ -372,7 +374,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   skull = Item.create!(
       item_name: "Skull rug",
       colors: "Gray Black",
       material: "tbd",
@@ -381,7 +383,7 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-   Item.create!(
+   stage = Item.create!(
       item_name: "Stage rug",
       colors: "Colorful Yellow",
       material: "tbd",
@@ -390,9 +392,15 @@ ApplicationRecord.transaction do
       description: "tbd",
       bells: 1500
    )
-end
+   
+   aluminum.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/Aluminum_Rug.png"),
+      filename: "Aluminum_Rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/aluminum_rug_show.png"),
+      filename: "aluminum_rug_show.png"
+   }])
 
-Item.first.photo.attach(
-   io: URI.open("https://sahara-seeds.s3.amazonaws.com/Aluminum_Rug.png"),
-   filename: "Aluminum_Rug.png"
-)
+
+end

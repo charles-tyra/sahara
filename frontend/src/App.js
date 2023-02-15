@@ -1,6 +1,7 @@
 import React from "react";
 import { Route, Switch } from 'react-router-dom';
 import LoginForm from './components/LoginForm/index';
+import ShowPage from "./components/ShowPage";
 import SignUpForm from './components/SignUpForm/index';
 import SplashPage from "./components/SplashPage";
 import NavBar from "./components/SplashPage/NavBar";
@@ -20,9 +21,11 @@ function App() {
             <SignUpForm />
           </div>
         </Route>
-        <Route path='/items'>
-          <NavBar />
-          
+        <Route path='/items/:itemId'>
+          <div className='page-container'>
+            <NavBar />
+            <ShowPage />
+          </div>
         </Route>
         <Route path='/'>
           <div className='page-container'>

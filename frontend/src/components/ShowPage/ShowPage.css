@@ -1,0 +1,50 @@
+div#show-page-container {
+   width: 1500px;
+   margin-top: 40px;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+div#show-image-container {
+   position: sticky;
+   display:block;
+   align-items: center;
+   justify-content: center;
+   top: 0;
+   width: 30%;
+}
+
+#show-image-container > img {
+   height: 100%;
+   width: auto;
+   max-height: 417px;
+   max-width: 542px;
+}
+
+div#show-info-container {
+   width: 605px;
+}
+
+div#show-cart-container {
+   border: 1px solid #e6e6e6;
+   border-radius: 8px;
+   width: 273px;
+   height: 6000px;
+   padding: 14px 18px;
+}
+
+div#price-info {
+   font-family: amber;
+   font-size: 28px;
+   margin-bottom: 10px;
+}
+
+img#bells {
+   width:25px;
+}
+
+button#cart-button {
+   border-radius: 15px;
+   background-color: rgb(249, 217, 76);
+   border-color: transparent;
+}

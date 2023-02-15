@@ -1,5 +1,4 @@
 import React from "react";
-import NavBar from "./NavBar";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getItems, fetchItems } from "../../store/items";

@@ -110,7 +110,7 @@ ApplicationRecord.transaction do
       material: "Faux Fur",
       dimensions: "3x3",
       theme: "Living room Child's room",
-      description: "tbd",
+      description: "Crafted from high-quality materials, this mat is soft to the touch and perfect for use in a variety of settings. Whether you're looking to add a cozy touch to your living room, create a soft surface for yoga or meditation, or simply add a pop of color to your bedroom, this mat is the perfect choice. Its medium size makes it easy to move and place wherever you need it, and the round shape adds a touch of whimsy and fun to your decor. Plus, its durable construction means it will last for years to come, making it a smart investment for any home.",
       bells: 1500
    )
    bluemessage = Item.create!(
@@ -119,7 +119,7 @@ ApplicationRecord.transaction do
       material: "Plush",
       dimensions: "2x1",
       theme: "Child's room",
-      description: "tbd",
+      description: "Perfect for use in a variety of settings, this mat is ideal for adding a touch of personality to your entryway, reception area, or anywhere else you want to make a statement. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home or office.",
       bells: 1000
    )
    bluepersian = Item.create!(
@@ -128,121 +128,121 @@ ApplicationRecord.transaction do
       material: "Wool",
       dimensions: "5x5",
       theme: "Expensive Living room",
-      description: "tbd",
+      description: "Transform your space into a sophisticated and elegant oasis with our blue Persian rug! Whether you're looking to add a touch of luxury to your living room, create a warm and inviting feel in your bedroom, or add a touch of refinement to your office, this rug is the perfect choice. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home or office.",
       bells: 2000
    )
    blueshaggy = Item.create!(
       item_name: "Shaggy rug",
       colors: "Blue",
-      material: "tbd",
+      material: "Shag",
       dimensions: "5x5",
       theme: "Living room Child's room",
-      description: "tbd",
+      description: "Looking for a comfortable and stylish way to add texture and warmth to your floors? Look no further than our blue shaggy rug! Whether you're looking to add a cozy touch to your living room, create a soft and inviting play area for kids, or simply add a pop of color to your bedroom, this rug is the perfect choice. And with its versatile design, it can be easily paired with a variety of decor styles, from modern to bohemian.",
       bells: 2000
    )
    bluesmall = Item.create!(
       item_name: "Small round mat",
       colors: "Blue",
-      material: "tbd",
+      material: "Polyester",
       dimensions: "2x2",
       theme: "Living room Child's room",
-      description: "tbd",
+      description: "Looking for a small, versatile, and stylish accessory to add to your home decor? Look no further than our blue small round mat! Perfect for use as a place to rest a cup of tea or coffee, as a decoration for a shelf or tabletop, or even as a soft surface for a small plant, this mat is a versatile and functional addition to your home.",
       bells: 1000
    )
    bluestripes = Item.create!(
       item_name: "Stripes rug",
       colors: "Blue White",
-      material: "tbd",
+      material: "Polyester",
       dimensions: "4x3",
       theme: "Fancy Child's room",
-      description: "tbd",
+      description: "Crafted from high-quality materials, this rug features a striking blue color and modern stripe pattern that is sure to catch the eye. The durable construction means it can stand up to heavy foot traffic, making it perfect for use in high-traffic areas such as entryways, living rooms, or home offices. Whether you're looking to add a modern touch to your space, or simply want to update your decor with a fresh new look, this rug is the perfect choice. And with its versatile design, it can be easily paired with a variety of decor styles, from minimalist to eclectic.",
       bells: 2000
    )
    bluevinyl = Item.create!(
       item_name: "Vinyl sheet",
       colors: "Blue Colorful",
-      material: "tbd",
+      material: "Nylon",
       dimensions: "3x2",
       theme: "Ocean Garden",
-      description: "tbd",
+      description: "Whether you're looking to protect your floors from spills and stains, add a touch of color and style to your outdoor patio, or even use it as a protective mat for your pet's food and water bowls, this vinyl rug is the perfect choice. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home.",
       bells: 1500
    )
    bluewavy = Item.create!(
       item_name: "Wavy rug",
       colors: "Blue",
-      material: "tbd",
+      material: "Plush",
       dimensions: "3x3",
       theme: "Living room Child's room",
-      description: "tbd",
+      description: "Looking for a rug that is not only beautiful but also unique and eye-catching? Look no further than our blue wavy rug! Whether you're looking to add a touch of luxury to your living room, create a calming and soothing atmosphere in your bedroom, or add a touch of refinement to your office, this rug is the perfect choice. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home or office.",
       bells: 2000
    )
    botanical = Item.create!(
       item_name: "Botanical rug",
       colors: "Green",
-      material: "tbd",
+      material: "Polyester",
       dimensions: "4x3",
       theme: "Living room",
-      description: "tbd",
+      description: "Looking for a rug that can transform your space into a lush and inviting garden oasis? Look no further than our botanical rug! Whether you're looking to create a calming and soothing atmosphere in your bedroom, or add a touch of nature to your living room, this rug is the perfect choice. The botanical design brings the beauty of nature into your home, creating a welcoming and tranquil space that you and your guests will love.",
       bells: 2000
    )
    earth = Item.create!(
       item_name: "Earth rug",
       colors: "Blue White",
-      material: "tbd",
+      material: "Plush",
       dimensions: "3x3",
       theme: "Space Sci Fi",
-      description: "tbd",
+      description: "Crafted from natural and sustainable materials, this rug is the perfect choice for anyone who is passionate about protecting the environment. The rug features earthy tones and a unique texture that is inspired by the natural beauty of the planet. Our Earth rug is also a great conversation starter, allowing you to share your passion for sustainability and environmental responsibility with your friends and family.",
       bells: 1500
    )
    fluffy = Item.create!(
       item_name: "Fluffy rug",
       colors: "White",
-      material: "tbd",
+      material: "Fluff",
       dimensions: "3x3",
       theme: "Fancy Child's room",
-      description: "tbd",
+      description: "Looking for a rug that is not only soft and cozy but also stylish and versatile? Look no further than our fluffy rug! Whether you're looking to create a cozy and inviting atmosphere in your living room, add a touch of comfort to your bedroom, or even use it as a comfy and stylish pet bed, this rug is the perfect choice.",
       bells: 1500
    )
    fossil = Item.create!(
       item_name: "Fossil rug",
       colors: "Purple White",
-      material: "tbd",
+      material: "Plush",
       dimensions: "4x4",
       theme: "Fancy Child's room",
-      description: "tbd",
+      description: "Looking for a rug that is not only beautiful but also unique and distinctive? Look no further than our fossil rug! So why settle for a plain and boring rug when you can add a touch of character and style with our fossil rug? Order yours today and transform your space into a beautiful and distinctive oasis!",
       bells: 1500
    )
    ironentrance = Item.create!(
       item_name: "Iron entrance mat",
       colors: "Black",
-      material: "tbd",
+      material: "High-grade Iron",
       dimensions: "2x1",
       theme: "Shop Cafe",
-      description: "tbd",
+      description: "An iron entrance mat is a highly durable and stylish option for your entryway. Crafted from durable iron, this type of mat is designed to withstand heavy foot traffic and the elements, making it a great choice for both indoor and outdoor use. One of the key benefits of an iron entrance mat is its ability to effectively scrape dirt, debris, and moisture from shoes. This helps to keep your floors clean and dry, while also reducing the risk of slips and falls.",
       bells: 1000
    )
    lacy = Item.create!(
       item_name: "Lacy rug",
       colors: "Beige White",
-      material: "tbd",
+      material: "Frizzle",
       dimensions: "3x3",
       theme: "Fancy Expensive",
-      description: "tbd",
+      description: "A lacy rug is a beautiful and intricate piece that adds elegance and sophistication to any room. This type of rug features a delicate and intricate pattern that creates a lacy effect, often resembling the intricate designs found in lace fabric. Overall, a lacy rug is a beautiful and sophisticated addition to any room. Its delicate and intricate design creates a unique and elegant atmosphere, while its durability and easy maintenance make it a practical choice for busy households.",
       bells: 1500
    )
    magiccircle = Item.create!(
       item_name: "Magic-circle rug",
       colors: "Purple",
-      material: "tbd",
+      material: "Rails",
       dimensions: "4x3",
       theme: "Horror Child's room",
-      description: "tbd",
+      description: "The magic circle rug is a unique and stylish rug that features a circular pattern with concentric rings, often in different colors. This design creates a visually stunning effect that can add a touch of whimsy and fun to any room.",
       bells: 1500
    )
    mush = Item.create!(
       item_name: "Mush rug",
       colors: "Red",
-      material: "tbd",
+      material: "Shiitake",
       dimensions: "3x3",
       theme: "Fancy Child's room",
       description: "tbd",
@@ -251,7 +251,7 @@ ApplicationRecord.transaction do
    ovalentrance = Item.create!(
       item_name: "Oval entrance mat",
       colors: "Blue",
-      material: "tbd",
+      material: "Circles",
       dimensions: "2x1",
       theme: "Living room",
       description: "tbd",
@@ -260,7 +260,7 @@ ApplicationRecord.transaction do
    red = Item.create!(
       item_name: "Red carpet",
       colors: "Red",
-      material: "tbd",
+      material: "Pure Red",
       dimensions: "3x2",
       theme: "Expensive Party",
       description: "tbd",
@@ -269,7 +269,7 @@ ApplicationRecord.transaction do
    rough = Item.create!(
       item_name: "Rough rug",
       colors: "Brown",
-      material: "tbd",
+      material: "Wire Frames",
       dimensions: "2x1",
       theme: "School",
       description: "tbd",
@@ -278,7 +278,7 @@ ApplicationRecord.transaction do
    rubber = Item.create!(
       item_name: "Rubber mud mat",
       colors: "Green",
-      material: "tbd",
+      material: "Rubber",
       dimensions: "2x1",
       theme: "School",
       description: "tbd",
@@ -287,7 +287,7 @@ ApplicationRecord.transaction do
    shanty = Item.create!(
       item_name: "Shanty mat",
       colors: "Brown Beige",
-      material: "tbd",
+      material: "Bamboo",
       dimensions: "4x4",
       theme: "Harmonious Horror",
       description: "tbd",
@@ -296,7 +296,7 @@ ApplicationRecord.transaction do
    sloppy = Item.create!(
       item_name: "Sloppy rug",
       colors: "Aqua",
-      material: "tbd",
+      material: "Whatever we've got",
       dimensions: "4x4",
       theme: "Living room",
       description: "tbd",
@@ -305,7 +305,7 @@ ApplicationRecord.transaction do
    snowflake = Item.create!(
       item_name: "Snowflake rug",
       colors: "Aqua White",
-      material: "tbd",
+      material: "Ice",
       dimensions: "3x3",
       theme: "Freezing cold Fancy",
       description: "tbd",
@@ -314,7 +314,7 @@ ApplicationRecord.transaction do
    tatami = Item.create!(
       item_name: "Tatami mat",
       colors: "Green Yellow",
-      material: "tbd",
+      material: "Bamboo",
       dimensions: "3x2",
       theme: "Harmonious",
       description: "tbd",
@@ -323,7 +323,7 @@ ApplicationRecord.transaction do
    tropical = Item.create!(
       item_name: "Tropical rug",
       colors: "Green Beige",
-      material: "tbd",
+      material: "Tiny Islands",
       dimensions: "3x3",
       theme: "Ocean",
       description: "tbd",
@@ -332,7 +332,7 @@ ApplicationRecord.transaction do
    boneentrance = Item.create!(
       item_name: "Bone entrance mat",
       colors: "Green",
-      material: "tbd",
+      material: "Plastic recycled bones",
       dimensions: "2x1",
       theme: "Living room Child's room",
       description: "tbd",
@@ -341,7 +341,7 @@ ApplicationRecord.transaction do
    coconut = Item.create!(
       item_name: "Coconut mat",
       colors: "Brown",
-      material: "tbd",
+      material: "Coconuts",
       dimensions: "2x1",
       theme: "Cafe",
       description: "tbd",
@@ -350,7 +350,7 @@ ApplicationRecord.transaction do
    cookie = Item.create!(
       item_name: "Cookie rug",
       colors: "Orange Yellow",
-      material: "tbd",
+      material: "Flour, water, eggs",
       dimensions: "3x3",
       theme: "Child's Room",
       description: "tbd",
@@ -359,7 +359,7 @@ ApplicationRecord.transaction do
    imperial = Item.create!(
       item_name: "Imperial rug",
       colors: "Red",
-      material: "tbd",
+      material: "Silk",
       dimensions: "4x4",
       theme: "Harmonious",
       description: "tbd",
@@ -368,7 +368,7 @@ ApplicationRecord.transaction do
    record = Item.create!(
       item_name: "Record rug",
       colors: "Black Red",
-      material: "tbd",
+      material: "Polyvinyl Chloride",
       dimensions: "3x3",
       theme: "Living room",
       description: "tbd",
@@ -377,7 +377,7 @@ ApplicationRecord.transaction do
    skull = Item.create!(
       item_name: "Skull rug",
       colors: "Gray Black",
-      material: "tbd",
+      material: "Calcium",
       dimensions: "3x3",
       theme: "Horror Child's room",
       description: "tbd",
@@ -386,7 +386,7 @@ ApplicationRecord.transaction do
    stage = Item.create!(
       item_name: "Stage rug",
       colors: "Colorful Yellow",
-      material: "tbd",
+      material: "Splintered wood",
       dimensions: "3x3",
       theme: "Concert Party",
       description: "tbd",
@@ -396,7 +396,7 @@ ApplicationRecord.transaction do
    blueexercise = Item.create!(
       item_name: "Exercise mat",
       colors: "Blue",
-      material: "tbd",
+      material: "PVC",
       dimensions: "3x2",
       theme: "School",
       description: "tbd",
@@ -405,7 +405,7 @@ ApplicationRecord.transaction do
    redexercise = Item.create!(
       item_name: "Exercise mat",
       colors: "Red",
-      material: "tbd",
+      material: "PVC",
       dimensions: "3x2",
       theme: "School",
       description: "tbd",
@@ -414,7 +414,7 @@ ApplicationRecord.transaction do
    greenexquisite = Item.create!(
       item_name: "Exquisite rug",
       colors: "Green Yellow",
-      material: "tbd",
+      material: "Rare fibers",
       dimensions: "2x1",
       theme: "Harmonious",
       description: "tbd",
@@ -423,7 +423,7 @@ ApplicationRecord.transaction do
    spooky = Item.create!(
       item_name: "Spooky rug",
       colors: "Orange Purple",
-      material: "tbd",
+      material: "Nightmares",
       dimensions: "4x4",
       theme: "Horror Party",
       description: "tbd",
@@ -432,7 +432,7 @@ ApplicationRecord.transaction do
    festive = Item.create!(
       item_name: "Festive rug",
       colors: "Brown Colorful",
-      material: "tbd",
+      material: "Turkey feathers",
       dimensions: "4x4",
       theme: "Party Fancy",
       description: "tbd",
@@ -441,7 +441,7 @@ ApplicationRecord.transaction do
    maple = Item.create!(
       item_name: "Maple-leaf rug",
       colors: "Red Orange",
-      material: "tbd",
+      material: "Maple syrup",
       dimensions: "3x3",
       theme: "Harmonious Garden",
       description: "tbd",
@@ -450,7 +450,7 @@ ApplicationRecord.transaction do
    bunnyday = Item.create!(
       item_name: "Bunny Day rug",
       colors: "Colorful",
-      material: "tbd",
+      material: "Recycled eggshells",
       dimensions: "3x3",
       theme: "Fancy Child's room",
       description: "tbd",
@@ -459,7 +459,7 @@ ApplicationRecord.transaction do
    fish = Item.create!(
       item_name: "Fish rug",
       colors: "Aqua",
-      material: "tbd",
+      material: "Dried fish scales",
       dimensions: "3x3",
       theme: "Ocean Child's room",
       description: "tbd",
@@ -468,7 +468,7 @@ ApplicationRecord.transaction do
    pirate = Item.create!(
       item_name: "Pirate rug",
       colors: "Blue Brown",
-      material: "tbd",
+      material: "Gold",
       dimensions: "3x2",
       theme: "Ocean Horror",
       description: "tbd",
@@ -477,7 +477,7 @@ ApplicationRecord.transaction do
    cinnamoroll = Item.create!(
       item_name: "Cinnamoroll rug",
       colors: "Aqua White",
-      material: "tbd",
+      material: "Cinnabuns",
       dimensions: "3x3",
       theme: "Fancy Child's Room",
       description: "tbd",
@@ -486,7 +486,7 @@ ApplicationRecord.transaction do
    greenchecked = Item.create!(
       item_name: "Checked rug",
       colors: "Green Purple",
-      material: "tbd",
+      material: "Wool",
       dimensions: "4x4",
       theme: "Living room Child's Room",
       description: "tbd",
@@ -496,7 +496,7 @@ ApplicationRecord.transaction do
    naturalwooden = Item.create!(
       item_name: "Wooden-deck rug",
       colors: "Brown",
-      material: "tbd",
+      material: "Wood",
       dimensions: "3x2",
       theme: "Outdoors Garden",
       description: "tbd",
@@ -505,7 +505,7 @@ ApplicationRecord.transaction do
    whitewooden = Item.create!(
       item_name: "Wooden-deck rug",
       colors: "White",
-      material: "tbd",
+      material: "Wood",
       dimensions: "3x2",
       theme: "Outdoors Garden",
       description: "tbd",
@@ -514,7 +514,7 @@ ApplicationRecord.transaction do
    brownkitchen = Item.create!(
       item_name: "Kitchen mat",
       colors: "Brown",
-      material: "tbd",
+      material: "PVC",
       dimensions: "2x1",
       theme: "Kitchen",
       description: "tbd",
@@ -523,7 +523,7 @@ ApplicationRecord.transaction do
    graybrick = Item.create!(
       item_name: "Brick rug",
       colors: "Gray",
-      material: "tbd",
+      material: "Brick",
       dimensions: "2x2",
       theme: "Garden Outdoors European",
       description: "tbd",

@@ -871,4 +871,103 @@ ApplicationRecord.transaction do
       io: URI.open("https://sahara-seeds.s3.amazonaws.com/show_stage_rug.jpeg"),
       filename: "show_stage_rug.jpeg"
    }])
+
+   blueexercise.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/blue_exercise_mat.png"),
+      filename: "blue_exercise_mat.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_blue_exercise_mat.png"),
+      filename: "show_blue_exercise_mat.png"
+   }])
+
+   redexercise.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/red_exercise_mat.png"),
+      filename: "red_exercise_mat.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_red_exercise_mat.jpeg"),
+      filename: "show_red_exercise_mat.png"
+   }])
+
+   greenexquisite.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/green_exquisite_rug.png"),
+      filename: "green_exquisite_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_green_exquisite_rug.jpeg"),
+      filename: "show_green_exquisite_rug.png"
+   }])
+
+   spooky.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/spooky_rug.png"),
+      filename: "spooky_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_spooky_rug.jpeg"),
+      filename: "show_spooky_rug.png"
+   }])
+
+   festive.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/festive_rug.png"),
+      filename: "festive_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_festive_rug.jpeg"),
+      filename: "show_festive_rug.jpeg"
+   }])
+
+   maple.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/maple_leaf_rug.png"),
+      filename: "maple_leaf_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_maple_leaf_rug.jpeg"),
+      filename: "show_maple_leaf_rug.jpeg"
+   }])
+
+   bunnyday.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/bunny_day_rug.png"),
+      filename: "bunny_day_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_bunny_day_rug.png"),
+      filename: "show_bunny_day_rug.png"
+   }])
+
+   fish.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/fish_rug.png"),
+      filename: "fish_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_fish_rug.jpeg"),
+      filename: "show_fish_rug.jpeg"
+   }])
+
+   pirate.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/pirate_rug.png"),
+      filename: "pirate_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_pirate_rug.jpeg"),
+      filename: "show_pirate_rug.jpeg"
+   }])
+
+   cinnamoroll.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/cinnamoroll_rug.png"),
+      filename: "cinnamoroll_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_cinnamoroll_rug.jpeg"),
+      filename: "show_cinnamoroll_rug.jpeg"
+   }])
+
+   greenchecked.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/green_checked_rug.png"),
+      filename: "green_checked_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_green_checked_rug.jpeg"),
+      filename: "show_green_checked_rug.jpeg"
+   }])
 end

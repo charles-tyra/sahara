@@ -18,7 +18,8 @@ div#show-image-container {
    height: 100%;
    width: auto;
    max-height: 417px;
-   max-width: 542px;
+   max-width: 487px;
+   object-fit: contain;
 }
 
 div#show-info-container {

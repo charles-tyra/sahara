@@ -17,8 +17,8 @@ function NavBar() {
                   </a>
                </div>
                <div id='welcome-address-container'>
-                  <h2 className='nav-bar-h2'>take your shoes off,</h2>
-                  <div className="nav-bar-text">grab a seat on my rug</div>
+                  <h2 className='nav-bar-h2'>take off your shoes,</h2>
+                  <div className="nav-bar-text">grab a seat on the rug</div>
                </div>
             </div>
             <div id='nav-search-container'>

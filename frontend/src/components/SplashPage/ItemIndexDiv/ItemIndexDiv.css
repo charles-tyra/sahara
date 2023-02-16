@@ -1,3 +1,7 @@
+div.index-theme-container {
+   width: 304px;
+}
+
 div.item-div {
    display: block;
    width: 100px;
@@ -5,4 +9,8 @@ div.item-div {
 
 a.item-image {
    width: 50px;
+}
+
+h2.index-theme-h2 {
+   overflow: auto;
 }

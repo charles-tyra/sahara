@@ -17,7 +17,7 @@ ApplicationRecord.transaction do
    aluminum = Item.create!(
       item_name: "Aluminum rug",
       colors: "Gray",
-      material: "unknown",
+      material: "High-grade aluminum",
       dimensions: "3x2",
       theme: "Garden Outdoors",
       description: "With its sleek and modern design, the Aluminum Rug will instantly elevate the look of your outdoor space. The aluminum material provides a smooth and flat surface that's easy to clean and maintain, making it the perfect choice for high-traffic areas. Plus, the lightweight construction makes it easy to move and rearrange as needed.",
@@ -26,7 +26,7 @@ ApplicationRecord.transaction do
    blackblock = Item.create!(
       item_name: "Blocks rug",
       colors: "Black Gray",
-      material: "tbd",
+      material: "Plush",
       dimensions: "3x3",
       theme: "Living room",
       description: "The rug features a bold blue block pattern that is sure to make a statement in any space. The unique design is sure to be a conversation starter and will add a touch of character to any room. Whether you're looking to create a cozy reading nook or simply add some interest to a neutral-toned room, this rug is the perfect choice.",
@@ -35,79 +35,79 @@ ApplicationRecord.transaction do
    blackdesign = Item.create!(
       item_name: "Design kitchen mat",
       colors: "Black Orange",
-      material: "tbd",
+      material: "Polyvinyl Chloride, Polyester",
       dimensions: "2x1",
       theme: "Kitchen",
-      description: "tbd",
+      description: "The black design is sleek and modern, making it a great fit for any kitchen style. Whether you have a classic or contemporary kitchen, this mat will add a touch of elegance and sophistication to your space. Plus, the mat's non-slip backing ensures that it stays securely in place, even in high traffic areas.",
       bells: 1000
    )
    blackwooden = Item.create!(
       item_name: "Wooden-deck rug",
       colors: "Black",
-      material: "tbd",
+      material: "Black Ash planks",
       dimensions: "3x2",
       theme: "Outdoors Garden",
-      description: "tbd",
+      description: "Elevate your outdoor living space with our stylish and practical black wooden deck rug! This rug is designed to add a touch of sophistication to your deck, while also providing a comfortable and durable surface to walk on.",
       bells: 1500
    )
    blueblock = Item.create!(
       item_name: "Blocks rug",
       colors: "Blue",
-      material: "tbd",
+      material: "Plush",
       dimensions: "3 x 3",
       theme: "Living room",
-      description: "tbd",
+      description: "Introducing our stunning blue blocks rug - the perfect addition to any modern home. This rug features a striking design of blue blocks on a neutral background, adding a pop of color and visual interest to any room.",
       bells: 1500
    )
    bluedesign = Item.create!(
       item_name: "Design kitchen mat",
       colors: "Blue Black",
-      material: "sdf",
+      material: "Polyvinyl Chloride, Polyester",
       dimensions: "2 x 1",
       theme: "Kitchen",
-      description: "sdf",
+      description: "Featuring a unique blue design that adds a touch of sophistication and elegance to your kitchen decor, this mat is also incredibly practical. Its non-slip backing ensures a safe and secure grip on any surface, while its stain-resistant surface is easy to clean and maintain.",
       bells: 1000
    )
    bluedotted = Item.create!(
       item_name: "Dotted rug",
       colors: "Blue",
-      material: "tbd",
+      material: "Plush",
       dimensions: "4x3",
       theme: "Fancy Child's room",
-      description: "tbd",
+      description: "Crafted from high-quality materials, this rug is designed to last for years to come. It's soft, plush texture is a treat for the feet, making it perfect for cozying up on during those chilly nights. The durable construction also means it can withstand heavy foot traffic and everyday wear and tear.",
       bells: 2000
    )
    blueargyle = Item.create!(
       item_name: "Argyle rug",
       colors: "Blue Green",
-      material: "tbd",
+      material: "Wool",
       dimensions: "4x3",
       theme: "Living room Expensive",
-      description: "tbd",
+      description: "The stunning blue argyle pattern is eye-catching and sophisticated, making it perfect for living rooms, bedrooms, and even offices. This rug is sure to impress and make a bold statement wherever you choose to place it.",
       bells: 2000
    )
    bluekilim = Item.create!(
       item_name: "Kilim-style carpet",
       colors: "Blue Black",
-      material: "tbd",
+      material: "Wool",
       dimensions: "5x5",
       theme: "Living room",
-      description: "tbd",
+      description: "The stunning blue tones and intricate patterns are inspired by the traditional kilim style, creating a one-of-a-kind rug that will add a touch of elegance to your home. This rug is perfect for adding character and personality to your living space and will make a bold statement wherever you choose to place it.",
       bells: 2000
    )
    bluekitchen = Item.create!(
       item_name: "Kitchen mat",
       colors: "Blue",
-      material: "tbd",
+      material: "PVC",
       dimensions: "2x1",
       theme: "Kitchen",
-      description: "tbd",
+      description: "Don't settle for discomfort while cooking and standing in the kitchen. Our blue kitchen mat is the perfect solution to make your time in the kitchen more enjoyable and comfortable. Order now and experience the difference it makes in your daily routine.",
       bells: 1000
    )
    bluemedium = Item.create!(
       item_name: "Medium round mat",
       colors: "Blue",
-      material: "tbd",
+      material: "Faux Fur",
       dimensions: "3x3",
       theme: "Living room Child's room",
       description: "tbd",
@@ -116,7 +116,7 @@ ApplicationRecord.transaction do
    bluemessage = Item.create!(
       item_name: "Message mat",
       colors: "Blue",
-      material: "tbd",
+      material: "Plush",
       dimensions: "2x1",
       theme: "Child's room",
       description: "tbd",
@@ -125,7 +125,7 @@ ApplicationRecord.transaction do
    bluepersian = Item.create!(
       item_name: "Persian rug",
       colors: "Blue Beige",
-      material: "tbd",
+      material: "Wool",
       dimensions: "5x5",
       theme: "Expensive Living room",
       description: "tbd",
@@ -235,7 +235,7 @@ ApplicationRecord.transaction do
       colors: "Purple",
       material: "tbd",
       dimensions: "4x3",
-      theme: "Living room",
+      theme: "Horror Child's room",
       description: "tbd",
       bells: 1500
    )

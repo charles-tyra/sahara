@@ -55,11 +55,13 @@ function SplashPage() {
    if(items !== []) {
    return (
       <>
-         <div id='background-color'/>
+         <div id='background-color' />
+         <div id='spacer-div' >
+
+         </div>
          <div id='carousel-container'>
             <BackgroundCarousel />
          </div>
-         <div id='spacer-div' />
          <div id='themes-container'>
             {indexDivs.map((div, i) => {
                return (

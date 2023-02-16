@@ -17,9 +17,9 @@ const ItemIndexDiv = ( {divItems, theme} ) => {
          <h2 className='index-theme-h2'>Check out these {theme} rugs</h2>
          {newItems.map(item => {
             return (
-                  <a key={item.id} href={`/items/${item.id}`}>
-                     <img className='index-div-img' src={item.photoUrls[0]}/>
-                  </a>
+               <a key={item.id} href={`/items/${item.id}`}>
+                  <img className='index-div-img' src={item.photoUrls[0]}/>
+               </a>
             )
          })}
       </div >

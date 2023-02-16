@@ -493,6 +493,43 @@ ApplicationRecord.transaction do
       bells: 2000
    )
 
+   naturalwooden = Item.create!(
+      item_name: "Wooden-deck rug",
+      colors: "Brown",
+      material: "tbd",
+      dimensions: "3x2",
+      theme: "Outdoors Garden",
+      description: "tbd",
+      bells: 1500
+   )
+   whitewooden = Item.create!(
+      item_name: "Wooden-deck rug",
+      colors: "White",
+      material: "tbd",
+      dimensions: "3x2",
+      theme: "Outdoors Garden",
+      description: "tbd",
+      bells: 1500
+   )
+   brownkitchen = Item.create!(
+      item_name: "Kitchen mat",
+      colors: "Brown",
+      material: "tbd",
+      dimensions: "2x1",
+      theme: "Kitchen",
+      description: "tbd",
+      bells: 1000
+   )
+   graybrick = Item.create!(
+      item_name: "Brick rug",
+      colors: "Gray",
+      material: "tbd",
+      dimensions: "2x2",
+      theme: "Garden Outdoors European",
+      description: "tbd",
+      bells: 1000
+   )
+
 
    aluminum.photos.attach([{
       io: URI.open("https://sahara-seeds.s3.amazonaws.com/Aluminum_Rug.png"),
@@ -969,5 +1006,41 @@ ApplicationRecord.transaction do
    {
       io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs/show_green_checked_rug.jpeg"),
       filename: "show_green_checked_rug.jpeg"
+   }])
+
+   naturalwooden.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/natural_wooden_deck_rug.png"),
+      filename: "natural_wooden_deck_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/show_natural_wooden_deck_rug.jpeg"),
+      filename: "show_natural_wooden_deck_rug.jpeg"
+   }])
+
+   whitewooden.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/white_wooden_deck_rug.png"),
+      filename: "white_wooden_deck_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/show_white_wooden_deck_rug.jpeg"),
+      filename: "show_white_wooden_deck_rug.jpeg"
+   }])
+
+   brownkitchen.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/brown_kitchen_mat.png"),
+      filename: "brown_kitchen_mat.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/show_brown_kitchen_mat.jpeg"),
+      filename: "show_brown_kitchen_mat.png"
+   }])
+
+   graybrick.photos.attach([{
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/gray_brick_rug.png"),
+      filename: "gray_brick_rug.png"
+   },
+   {
+      io: URI.open("https://sahara-seeds.s3.amazonaws.com/newrugs2/show_gray_brick+_rug.jpeg"),
+      filename: "show_gray_brick_rug.jpeg"
    }])
 end

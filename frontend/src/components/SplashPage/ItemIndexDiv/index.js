@@ -7,14 +7,14 @@ const ItemIndexDiv = ( {divItems, theme} ) => {
    if (divItems === []) return (<div>loading...</div>)
 
    const newItems = [];
-   for(let i = 0; (i < 4 && i < divItems.length); i++) {
+   while(newItems.length < 4 && newItems.length < divItems.length) {
       let rand = Math.floor(Math.random() * divItems.length);
       if(!newItems.includes(divItems[rand])) newItems.push(divItems[rand]);
    }
 
    return (
       <div className="index-theme-container">
-         <h2 className='index-theme-h2'>Check out these {theme} rugs!</h2>
+         <h2 className='index-theme-h2'>Check out these {theme} rugs</h2>
          {newItems.map(item => {
             return (
                   <a key={item.id} href={`/items/${item.id}`}>

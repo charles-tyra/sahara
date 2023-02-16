@@ -37,7 +37,11 @@ function SplashPage() {
       const randType = Math.floor(Math.random() * selector[randSelector].length);
       const selected = selector[randSelector][randType];
 
-      if (!divThemes.includes(selected)) divThemes.push([randSelector === 0 ? 'colors' : 'theme', selected]);
+      let alreadySelected = false;
+      for(let i = 0; i < divThemes.length; i++) {
+         if (divThemes[i][1] === selected) alreadySelected = true;
+      }
+      if (!alreadySelected) divThemes.push([randSelector === 0 ? 'colors' : 'theme', selected]);
    };
 
    const indexDivs = [];

@@ -26,7 +26,7 @@ function SplashPage() {
    const colors = ['Blue', 'Black', 'Green', 'Beige', 'Colorful', 'White',
       'Purple', 'Red', 'Brown', 'Aqua', 'Yellow', 'Orange', 'Gray'];
    const themes = ['Garden', 'Outdoors', 'Living room', 'Kitchen',
-      'Fancy', "Child's room", 'Expensive', 'Horror', 'Ocean Resort',
+      'Fancy', "Child's room", 'Expensive', 'Horror', 'Ocean',
       'Party', 'School', 'Harmonious'];
    
    const selector = [colors, themes];

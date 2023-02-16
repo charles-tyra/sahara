@@ -163,7 +163,7 @@ ApplicationRecord.transaction do
       colors: "Blue Colorful",
       material: "tbd",
       dimensions: "3x2",
-      theme: "Ocean Resort Garden",
+      theme: "Ocean Garden",
       description: "tbd",
       bells: 1500
    )
@@ -271,7 +271,7 @@ ApplicationRecord.transaction do
       colors: "Brown",
       material: "tbd",
       dimensions: "2x1",
-      theme: "Living room",
+      theme: "School",
       description: "tbd",
       bells: 1000
    )
@@ -325,7 +325,7 @@ ApplicationRecord.transaction do
       colors: "Green Beige",
       material: "tbd",
       dimensions: "3x3",
-      theme: "Ocean Resort",
+      theme: "Ocean",
       description: "tbd",
       bells: 1500
    )
@@ -352,7 +352,7 @@ ApplicationRecord.transaction do
       colors: "Orange Yellow",
       material: "tbd",
       dimensions: "3x3",
-      theme: "Ocean Resort",
+      theme: "Child's Room",
       description: "tbd",
       bells: 1500
    )
@@ -361,7 +361,7 @@ ApplicationRecord.transaction do
       colors: "Red",
       material: "tbd",
       dimensions: "4x4",
-      theme: "Ocean Resort",
+      theme: "Harmonious",
       description: "tbd",
       bells: 1500
    )
@@ -391,6 +391,106 @@ ApplicationRecord.transaction do
       theme: "Concert Party",
       description: "tbd",
       bells: 1500
+   )
+
+   blueexercise = Item.create!(
+      item_name: "Exercise mat",
+      colors: "Blue",
+      material: "tbd",
+      dimensions: "3x2",
+      theme: "School",
+      description: "tbd",
+      bells: 1500
+   )
+   redexercise = Item.create!(
+      item_name: "Exercise mat",
+      colors: "Red",
+      material: "tbd",
+      dimensions: "3x2",
+      theme: "School",
+      description: "tbd",
+      bells: 1500
+   )
+   greenexquisite = Item.create!(
+      item_name: "Exquisite rug",
+      colors: "Green Yellow",
+      material: "tbd",
+      dimensions: "2x1",
+      theme: "Harmonious",
+      description: "tbd",
+      bells: 1000
+   )
+   spooky = Item.create!(
+      item_name: "Spooky rug",
+      colors: "Orange Purple",
+      material: "tbd",
+      dimensions: "4x4",
+      theme: "Horror Party",
+      description: "tbd",
+      bells: 2000
+   )
+   festive = Item.create!(
+      item_name: "Festive rug",
+      colors: "Brown Colorful",
+      material: "tbd",
+      dimensions: "4x4",
+      theme: "Party Fancy",
+      description: "tbd",
+      bells: 1500
+   )
+   maple = Item.create!(
+      item_name: "Maple-leaf rug",
+      colors: "Red Orange",
+      material: "tbd",
+      dimensions: "3x3",
+      theme: "Harmonious Garden",
+      description: "tbd",
+      bells: 2400
+   )
+   bunnyday = Item.create!(
+      item_name: "Bunny Day rug",
+      colors: "Colorful",
+      material: "tbd",
+      dimensions: "3x3",
+      theme: "Fancy Child's room",
+      description: "tbd",
+      bells: 2400
+   )
+   fish = Item.create!(
+      item_name: "Fish rug",
+      colors: "Aqua",
+      material: "tbd",
+      dimensions: "3x3",
+      theme: "Ocean Child's room",
+      description: "tbd",
+      bells: 2400
+   )
+   pirate = Item.create!(
+      item_name: "Pirate rug",
+      colors: "Blue Brown",
+      material: "tbd",
+      dimensions: "3x2",
+      theme: "Ocean Horror",
+      description: "tbd",
+      bells: 375
+   )
+   cinnamoroll = Item.create!(
+      item_name: "Cinnamoroll rug",
+      colors: "Aqua White",
+      material: "tbd",
+      dimensions: "3x3",
+      theme: "Fancy Child's Room",
+      description: "tbd",
+      bells: 1500
+   )
+   greenchecked = Item.create!(
+      item_name: "Checked rug",
+      colors: "Green Purple",
+      material: "tbd",
+      dimensions: "4x4",
+      theme: "Living room Child's Room",
+      description: "tbd",
+      bells: 2000
    )
 
 

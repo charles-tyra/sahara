@@ -3,7 +3,7 @@ import * as sessionActions from '../../store/session';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './LoginForm.css'
-import logo from '../../assets/images/amazon_logo.png'
+import sahara from '../../assets/images/sahara_black_text.png'
 import ErrorDiv from './errorDiv';
 import LoginErrorDiv from './loginErrorDiv';
 
@@ -63,7 +63,7 @@ function LoginForm() {
       <div id='login-page'>
          <div id='amazon-logo-container'>
             <a href='/'>
-               <img src={logo} id='amazon-logo' alt='' />
+               <img src={sahara} id='amazon-logo' alt='' />
             </a>
          </div>
          <ErrorDiv errors={errors} />

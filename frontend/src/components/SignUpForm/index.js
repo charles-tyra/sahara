@@ -3,7 +3,7 @@ import * as sessionActions from '../../store/session';
 import { useDispatch, useSelector } from 'react-redux';
 import { Redirect } from 'react-router-dom';
 import './SignUpForm.css'
-import logo from '../../assets/images/amazon_logo.png'
+import logo from '../../assets/images/sahara_black_text.png'
 import SignupErrorDiv from './signupErrorDiv';
 
 function LoginForm() {

@@ -245,7 +245,7 @@ ApplicationRecord.transaction do
       material: "Shiitake",
       dimensions: "3x3",
       theme: "Fancy Child's room",
-      description: "tbd",
+      description: "Mush rugs are typically made from high-quality materials such as wool, cotton, or synthetic fibers, and are available in a range of sizes and shapes to fit a variety of spaces. They are a popular choice for nature-themed decor, children's rooms, or any space where a touch of whimsy and playfulness is desired. One of the key benefits of a mush rug is its ability to add a playful and fun element to any room. The mushroom designs can evoke feelings of magic and enchantment, creating a sense of wonder and imagination.",
       bells: 1500
    )
    ovalentrance = Item.create!(
@@ -254,7 +254,7 @@ ApplicationRecord.transaction do
       material: "Circles",
       dimensions: "2x1",
       theme: "Living room",
-      description: "tbd",
+      description: "An oval entrance mat is a functional and practical piece that is designed to be placed at the entrance of a home or business. As the name suggests, these mats are oval in shape and are typically made from durable materials such as rubber, coir, or synthetic fibers. In addition to their practical benefits, oval entrance mats can also add a decorative touch to the entrance of a home or business. They are available in a variety of styles and designs, from simple and understated to bold and colorful.",
       bells: 1000
    )
    red = Item.create!(
@@ -263,7 +263,7 @@ ApplicationRecord.transaction do
       material: "Pure Red",
       dimensions: "3x2",
       theme: "Expensive Party",
-      description: "tbd",
+      description: "A red carpet is a long, plush, and often luxurious carpet typically used for formal events such as movie premieres, awards ceremonies, and other special occasions. The carpet is traditionally red in color, although other colors such as blue or green may also be used. The origin of the red carpet can be traced back to ancient Greece, where it was used to welcome victorious warriors and leaders home from battle. The tradition was later adopted by European monarchs and eventually spread to other cultures and events, including Hollywood movie premieres and other high-profile events. In addition to its historical significance, the red carpet has become a symbol of glamour, elegance, and prestige. Walking the red carpet has become a rite of passage for many celebrities, and the media often pays close attention to the fashion and style choices of those in attendance.",
       bells: 1500
    )
    rough = Item.create!(
@@ -272,7 +272,7 @@ ApplicationRecord.transaction do
       material: "Wire Frames",
       dimensions: "2x1",
       theme: "School",
-      description: "tbd",
+      description: "A rough rug is a type of rug that is designed to have a rough or coarse texture, often featuring a raised or looped pile. These rugs are typically made from natural materials such as wool, jute, or sisal, which gives them their distinct texture and appearance. Rough rugs are also a popular choice for adding a natural, rustic, or bohemian touch to a space. The natural materials used in their construction give them a warm and organic feel that can help to create a cozy and inviting atmosphere.",
       bells: 1000
    )
    rubber = Item.create!(
@@ -281,7 +281,7 @@ ApplicationRecord.transaction do
       material: "Rubber",
       dimensions: "2x1",
       theme: "School",
-      description: "tbd",
+      description: "A rubber mud mat is a type of mat that is designed to remove dirt, debris, and moisture from shoes before they enter a building or home. These mats are typically made from rubber or other synthetic materials and are designed to be durable, slip-resistant, and easy to clean. One of the key benefits of a rubber mud mat is its ability to effectively remove dirt and moisture from shoes. The raised pattern or textured surface of the mat helps to scrape off dirt and debris, while the rubber material helps to absorb moisture and prevent slips and falls.",
       bells: 1000
    )
    shanty = Item.create!(
@@ -290,7 +290,7 @@ ApplicationRecord.transaction do
       material: "Bamboo",
       dimensions: "4x4",
       theme: "Harmonious Horror",
-      description: "tbd",
+      description: "A shanty mat is a type of woven mat traditionally made by sailors on board ships during long voyages. It was used as a protective covering for the deck or as a mat to sit or sleep on. Shanty mats are typically made from strips of old rope, which are woven together in a square or rectangular pattern. The rope is often made from natural fibers like hemp or sisal, and the mats are usually woven in a loose, open pattern to allow water to pass through. The mats can be made in a variety of sizes and colors, depending on the availability of materials and the preferences of the sailors making them.",
       bells: 2000
    )
    sloppy = Item.create!(
@@ -299,7 +299,7 @@ ApplicationRecord.transaction do
       material: "Whatever we've got",
       dimensions: "4x4",
       theme: "Living room",
-      description: "tbd",
+      description: "An unkempt rug is a rug that has not been properly cared for and maintained. Over time, rugs can accumulate dust, dirt, and debris, and if not cleaned regularly, this can cause the rug to appear messy and unattractive. Additionally, if a rug is not regularly vacuumed, the fibers can become matted and tangled, causing the rug to look uneven and sloppy. To avoid an unkempt rug, it is important to regularly clean and maintain your rug. This may involve vacuuming the rug regularly, using a spot cleaner to treat any spills or stains, and periodically taking the rug outside to shake off any loose dirt and debris. In addition, it is a good idea to have the rug professionally cleaned on a regular basis to keep it looking its best and to extend its lifespan.",
       bells: 2000
    )
    snowflake = Item.create!(
@@ -308,7 +308,7 @@ ApplicationRecord.transaction do
       material: "Ice",
       dimensions: "3x3",
       theme: "Freezing cold Fancy",
-      description: "tbd",
+      description: "A snowflake rug is a type of decorative rug or mat that features a snowflake pattern. Snowflake rugs are often used during the winter season to add a festive touch to a room or to provide a cozy and warm feeling during colder months. Snowflake rugs can be made from a variety of materials, including wool, cotton, and synthetic fibers. They come in a range of sizes, from small accent mats to large area rugs, and can be found in a variety of colors, though they are most commonly white or blue to represent the icy and snowy winter landscape.",
       bells: 1500
    )
    tatami = Item.create!(
@@ -317,7 +317,7 @@ ApplicationRecord.transaction do
       material: "Bamboo",
       dimensions: "3x2",
       theme: "Harmonious",
-      description: "tbd",
+      description: "The tatami mat is a traditional type of flooring used in Japan. It is a rectangular mat made of woven rush straw that is compressed and covered in a tightly woven rush cover. The mat is typically around 1.5 to 2 inches thick, and can range in size from about 3 feet by 6 feet to 3 feet by 9 feet, although there are also other sizes available. Tatami mats are commonly used in traditional Japanese architecture, and are often found in rooms where people sit and sleep. They are used as a base for futons or as a floor covering in living rooms, tea rooms, and other spaces where people gather. The softness and resilience of the tatami mat make it comfortable for sitting or sleeping on, and its natural materials allow it to be breathable, keeping the room cool in the summer and warm in the winter.",
       bells: 1500
    )
    tropical = Item.create!(

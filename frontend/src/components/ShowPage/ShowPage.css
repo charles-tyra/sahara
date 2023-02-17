@@ -23,7 +23,7 @@ div#show-image-container {
 }
 
 div#show-info-container {
-   width: 605px;
+   width: 405px;
 }
 
 div#description-div {
@@ -40,25 +40,25 @@ div#show-cart-container {
    border: 1px solid #e6e6e6;
    border-radius: 8px;
    width: 273px;
-   height: 1000px;
+   height: 400px;
    padding: 14px 18px;
 }
 
 div#price-info > h3 {
    font-family: amber;
    font-size: 28px;
-   margin-bottom: 10px;
+   margin-bottom: 4px;
 }
 
 div#price-info {
    font-family: amber;
-   font-size: 16px;
-
-   margin-bottom: 10px;
+   font-size: 12px;
+   padding-left: 4px;
 }
 
 img.bells {
-   width:25px;
+   width:20px;
+   padding-bottom: 10px;
 }
 
 img.ratings {

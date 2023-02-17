@@ -18,7 +18,7 @@ ApplicationRecord.transaction do
       item_name: "Aluminum rug",
       colors: "Gray",
       material: "High-grade aluminum",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Garden Outdoors",
       description: "With its sleek and modern design, the Aluminum Rug will instantly elevate the look of your outdoor space. The aluminum material provides a smooth and flat surface that's easy to clean and maintain, making it the perfect choice for high-traffic areas. Plus, the lightweight construction makes it easy to move and rearrange as needed.",
       bells: 1500
@@ -27,7 +27,7 @@ ApplicationRecord.transaction do
       item_name: "Blocks rug",
       colors: "Black Gray",
       material: "Plush",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Living room",
       description: "The rug features a bold blue block pattern that is sure to make a statement in any space. The unique design is sure to be a conversation starter and will add a touch of character to any room. Whether you're looking to create a cozy reading nook or simply add some interest to a neutral-toned room, this rug is the perfect choice.",
       bells: 1500
@@ -36,7 +36,7 @@ ApplicationRecord.transaction do
       item_name: "Design kitchen mat",
       colors: "Black Orange",
       material: "Polyvinyl Chloride, Polyester",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Kitchen",
       description: "The black design is sleek and modern, making it a great fit for any kitchen style. Whether you have a classic or contemporary kitchen, this mat will add a touch of elegance and sophistication to your space. Plus, the mat's non-slip backing ensures that it stays securely in place, even in high traffic areas.",
       bells: 1000
@@ -45,7 +45,7 @@ ApplicationRecord.transaction do
       item_name: "Wooden-deck rug",
       colors: "Black",
       material: "Black Ash planks",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Outdoors Garden",
       description: "Elevate your outdoor living space with our stylish and practical black wooden deck rug! This rug is designed to add a touch of sophistication to your deck, while also providing a comfortable and durable surface to walk on.",
       bells: 1500
@@ -54,7 +54,7 @@ ApplicationRecord.transaction do
       item_name: "Blocks rug",
       colors: "Blue",
       material: "Plush",
-      dimensions: "3 x 3",
+      dimensions: "threexthree",
       theme: "Living room",
       description: "Introducing our stunning blue blocks rug - the perfect addition to any modern home. This rug features a striking design of blue blocks on a neutral background, adding a pop of color and visual interest to any room.",
       bells: 1500
@@ -72,7 +72,7 @@ ApplicationRecord.transaction do
       item_name: "Dotted rug",
       colors: "Blue",
       material: "Plush",
-      dimensions: "4x3",
+      dimensions: "fourxthree",
       theme: "Fancy Child's room",
       description: "Crafted from high-quality materials, this rug is designed to last for years to come. It's soft, plush texture is a treat for the feet, making it perfect for cozying up on during those chilly nights. The durable construction also means it can withstand heavy foot traffic and everyday wear and tear.",
       bells: 2000
@@ -81,7 +81,7 @@ ApplicationRecord.transaction do
       item_name: "Argyle rug",
       colors: "Blue Green",
       material: "Wool",
-      dimensions: "4x3",
+      dimensions: "fourxthree",
       theme: "Living room Expensive",
       description: "The stunning blue argyle pattern is eye-catching and sophisticated, making it perfect for living rooms, bedrooms, and even offices. This rug is sure to impress and make a bold statement wherever you choose to place it.",
       bells: 2000
@@ -90,7 +90,7 @@ ApplicationRecord.transaction do
       item_name: "Kilim-style carpet",
       colors: "Blue Black",
       material: "Wool",
-      dimensions: "5x5",
+      dimensions: "fivexfive",
       theme: "Living room",
       description: "The stunning blue tones and intricate patterns are inspired by the traditional kilim style, creating a one-of-a-kind rug that will add a touch of elegance to your home. This rug is perfect for adding character and personality to your living space and will make a bold statement wherever you choose to place it.",
       bells: 2000
@@ -99,7 +99,7 @@ ApplicationRecord.transaction do
       item_name: "Kitchen mat",
       colors: "Blue",
       material: "PVC",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Kitchen",
       description: "Don't settle for discomfort while cooking and standing in the kitchen. Our blue kitchen mat is the perfect solution to make your time in the kitchen more enjoyable and comfortable. Order now and experience the difference it makes in your daily routine.",
       bells: 1000
@@ -108,7 +108,7 @@ ApplicationRecord.transaction do
       item_name: "Medium round mat",
       colors: "Blue",
       material: "Faux Fur",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Living room Child's room",
       description: "Crafted from high-quality materials, this mat is soft to the touch and perfect for use in a variety of settings. Whether you're looking to add a cozy touch to your living room, create a soft surface for yoga or meditation, or simply add a pop of color to your bedroom, this mat is the perfect choice. Its medium size makes it easy to move and place wherever you need it, and the round shape adds a touch of whimsy and fun to your decor. Plus, its durable construction means it will last for years to come, making it a smart investment for any home.",
       bells: 1500
@@ -117,7 +117,7 @@ ApplicationRecord.transaction do
       item_name: "Message mat",
       colors: "Blue",
       material: "Plush",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Child's room",
       description: "Perfect for use in a variety of settings, this mat is ideal for adding a touch of personality to your entryway, reception area, or anywhere else you want to make a statement. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home or office.",
       bells: 1000
@@ -126,7 +126,7 @@ ApplicationRecord.transaction do
       item_name: "Persian rug",
       colors: "Blue Beige",
       material: "Wool",
-      dimensions: "5x5",
+      dimensions: "fivexfive",
       theme: "Expensive Living room",
       description: "Transform your space into a sophisticated and elegant oasis with our blue Persian rug! Whether you're looking to add a touch of luxury to your living room, create a warm and inviting feel in your bedroom, or add a touch of refinement to your office, this rug is the perfect choice. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home or office.",
       bells: 2000
@@ -135,7 +135,7 @@ ApplicationRecord.transaction do
       item_name: "Shaggy rug",
       colors: "Blue",
       material: "Shag",
-      dimensions: "5x5",
+      dimensions: "fivexfive",
       theme: "Living room Child's room",
       description: "Looking for a comfortable and stylish way to add texture and warmth to your floors? Look no further than our blue shaggy rug! Whether you're looking to add a cozy touch to your living room, create a soft and inviting play area for kids, or simply add a pop of color to your bedroom, this rug is the perfect choice. And with its versatile design, it can be easily paired with a variety of decor styles, from modern to bohemian.",
       bells: 2000
@@ -144,7 +144,7 @@ ApplicationRecord.transaction do
       item_name: "Small round mat",
       colors: "Blue",
       material: "Polyester",
-      dimensions: "2x2",
+      dimensions: "twoxtwo",
       theme: "Living room Child's room",
       description: "Looking for a small, versatile, and stylish accessory to add to your home decor? Look no further than our blue small round mat! Perfect for use as a place to rest a cup of tea or coffee, as a decoration for a shelf or tabletop, or even as a soft surface for a small plant, this mat is a versatile and functional addition to your home.",
       bells: 1000
@@ -153,7 +153,7 @@ ApplicationRecord.transaction do
       item_name: "Stripes rug",
       colors: "Blue White",
       material: "Polyester",
-      dimensions: "4x3",
+      dimensions: "fourxthree",
       theme: "Fancy Child's room",
       description: "Crafted from high-quality materials, this rug features a striking blue color and modern stripe pattern that is sure to catch the eye. The durable construction means it can stand up to heavy foot traffic, making it perfect for use in high-traffic areas such as entryways, living rooms, or home offices. Whether you're looking to add a modern touch to your space, or simply want to update your decor with a fresh new look, this rug is the perfect choice. And with its versatile design, it can be easily paired with a variety of decor styles, from minimalist to eclectic.",
       bells: 2000
@@ -162,7 +162,7 @@ ApplicationRecord.transaction do
       item_name: "Vinyl sheet",
       colors: "Blue Colorful",
       material: "Nylon",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Ocean Garden",
       description: "Whether you're looking to protect your floors from spills and stains, add a touch of color and style to your outdoor patio, or even use it as a protective mat for your pet's food and water bowls, this vinyl rug is the perfect choice. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home.",
       bells: 1500
@@ -171,7 +171,7 @@ ApplicationRecord.transaction do
       item_name: "Wavy rug",
       colors: "Blue",
       material: "Plush",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Living room Child's room",
       description: "Looking for a rug that is not only beautiful but also unique and eye-catching? Look no further than our blue wavy rug! Whether you're looking to add a touch of luxury to your living room, create a calming and soothing atmosphere in your bedroom, or add a touch of refinement to your office, this rug is the perfect choice. And with its durable construction, you can be sure it will last for years to come, making it a smart investment for any home or office.",
       bells: 2000
@@ -180,7 +180,7 @@ ApplicationRecord.transaction do
       item_name: "Botanical rug",
       colors: "Green",
       material: "Polyester",
-      dimensions: "4x3",
+      dimensions: "fourxthree",
       theme: "Living room",
       description: "Looking for a rug that can transform your space into a lush and inviting garden oasis? Look no further than our botanical rug! Whether you're looking to create a calming and soothing atmosphere in your bedroom, or add a touch of nature to your living room, this rug is the perfect choice. The botanical design brings the beauty of nature into your home, creating a welcoming and tranquil space that you and your guests will love.",
       bells: 2000
@@ -189,7 +189,7 @@ ApplicationRecord.transaction do
       item_name: "Earth rug",
       colors: "Blue White",
       material: "Plush",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Space Sci Fi",
       description: "Crafted from natural and sustainable materials, this rug is the perfect choice for anyone who is passionate about protecting the environment. The rug features earthy tones and a unique texture that is inspired by the natural beauty of the planet. Our Earth rug is also a great conversation starter, allowing you to share your passion for sustainability and environmental responsibility with your friends and family.",
       bells: 1500
@@ -198,7 +198,7 @@ ApplicationRecord.transaction do
       item_name: "Fluffy rug",
       colors: "White",
       material: "Fluff",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Fancy Child's room",
       description: "Looking for a rug that is not only soft and cozy but also stylish and versatile? Look no further than our fluffy rug! Whether you're looking to create a cozy and inviting atmosphere in your living room, add a touch of comfort to your bedroom, or even use it as a comfy and stylish pet bed, this rug is the perfect choice.",
       bells: 1500
@@ -207,7 +207,7 @@ ApplicationRecord.transaction do
       item_name: "Fossil rug",
       colors: "Purple White",
       material: "Plush",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Fancy Child's room",
       description: "Looking for a rug that is not only beautiful but also unique and distinctive? Look no further than our fossil rug! So why settle for a plain and boring rug when you can add a touch of character and style with our fossil rug? Order yours today and transform your space into a beautiful and distinctive oasis!",
       bells: 1500
@@ -216,7 +216,7 @@ ApplicationRecord.transaction do
       item_name: "Iron entrance mat",
       colors: "Black",
       material: "High-grade Iron",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Shop Cafe",
       description: "An iron entrance mat is a highly durable and stylish option for your entryway. Crafted from durable iron, this type of mat is designed to withstand heavy foot traffic and the elements, making it a great choice for both indoor and outdoor use. One of the key benefits of an iron entrance mat is its ability to effectively scrape dirt, debris, and moisture from shoes. This helps to keep your floors clean and dry, while also reducing the risk of slips and falls.",
       bells: 1000
@@ -225,7 +225,7 @@ ApplicationRecord.transaction do
       item_name: "Lacy rug",
       colors: "Beige White",
       material: "Frizzle",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Fancy Expensive",
       description: "A lacy rug is a beautiful and intricate piece that adds elegance and sophistication to any room. This type of rug features a delicate and intricate pattern that creates a lacy effect, often resembling the intricate designs found in lace fabric. Overall, a lacy rug is a beautiful and sophisticated addition to any room. Its delicate and intricate design creates a unique and elegant atmosphere, while its durability and easy maintenance make it a practical choice for busy households.",
       bells: 1500
@@ -234,7 +234,7 @@ ApplicationRecord.transaction do
       item_name: "Magic-circle rug",
       colors: "Purple",
       material: "Rails",
-      dimensions: "4x3",
+      dimensions: "fourxthree",
       theme: "Horror Child's room",
       description: "The magic circle rug is a unique and stylish rug that features a circular pattern with concentric rings, often in different colors. This design creates a visually stunning effect that can add a touch of whimsy and fun to any room.",
       bells: 1500
@@ -243,7 +243,7 @@ ApplicationRecord.transaction do
       item_name: "Mush rug",
       colors: "Red",
       material: "Shiitake",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Fancy Child's room",
       description: "Mush rugs are typically made from high-quality materials such as wool, cotton, or synthetic fibers, and are available in a range of sizes and shapes to fit a variety of spaces. They are a popular choice for nature-themed decor, children's rooms, or any space where a touch of whimsy and playfulness is desired. One of the key benefits of a mush rug is its ability to add a playful and fun element to any room. The mushroom designs can evoke feelings of magic and enchantment, creating a sense of wonder and imagination.",
       bells: 1500
@@ -252,7 +252,7 @@ ApplicationRecord.transaction do
       item_name: "Oval entrance mat",
       colors: "Blue",
       material: "Circles",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Living room",
       description: "An oval entrance mat is a functional and practical piece that is designed to be placed at the entrance of a home or business. As the name suggests, these mats are oval in shape and are typically made from durable materials such as rubber, coir, or synthetic fibers. In addition to their practical benefits, oval entrance mats can also add a decorative touch to the entrance of a home or business. They are available in a variety of styles and designs, from simple and understated to bold and colorful.",
       bells: 1000
@@ -261,7 +261,7 @@ ApplicationRecord.transaction do
       item_name: "Red carpet",
       colors: "Red",
       material: "Pure Red",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Expensive Party",
       description: "A red carpet is a long, plush, and often luxurious carpet typically used for formal events such as movie premieres, awards ceremonies, and other special occasions. The carpet is traditionally red in color, although other colors such as blue or green may also be used. The origin of the red carpet can be traced back to ancient Greece, where it was used to welcome victorious warriors and leaders home from battle. The tradition was later adopted by European monarchs and eventually spread to other cultures and events, including Hollywood movie premieres and other high-profile events. In addition to its historical significance, the red carpet has become a symbol of glamour, elegance, and prestige. Walking the red carpet has become a rite of passage for many celebrities, and the media often pays close attention to the fashion and style choices of those in attendance.",
       bells: 1500
@@ -270,7 +270,7 @@ ApplicationRecord.transaction do
       item_name: "Rough rug",
       colors: "Brown",
       material: "Wire Frames",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "School",
       description: "A rough rug is a type of rug that is designed to have a rough or coarse texture, often featuring a raised or looped pile. These rugs are typically made from natural materials such as wool, jute, or sisal, which gives them their distinct texture and appearance. Rough rugs are also a popular choice for adding a natural, rustic, or bohemian touch to a space. The natural materials used in their construction give them a warm and organic feel that can help to create a cozy and inviting atmosphere.",
       bells: 1000
@@ -279,7 +279,7 @@ ApplicationRecord.transaction do
       item_name: "Rubber mud mat",
       colors: "Green",
       material: "Rubber",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "School",
       description: "A rubber mud mat is a type of mat that is designed to remove dirt, debris, and moisture from shoes before they enter a building or home. These mats are typically made from rubber or other synthetic materials and are designed to be durable, slip-resistant, and easy to clean. One of the key benefits of a rubber mud mat is its ability to effectively remove dirt and moisture from shoes. The raised pattern or textured surface of the mat helps to scrape off dirt and debris, while the rubber material helps to absorb moisture and prevent slips and falls.",
       bells: 1000
@@ -288,7 +288,7 @@ ApplicationRecord.transaction do
       item_name: "Shanty mat",
       colors: "Brown Beige",
       material: "Bamboo",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Harmonious Horror",
       description: "A shanty mat is a type of woven mat traditionally made by sailors on board ships during long voyages. It was used as a protective covering for the deck or as a mat to sit or sleep on. Shanty mats are typically made from strips of old rope, which are woven together in a square or rectangular pattern. The rope is often made from natural fibers like hemp or sisal, and the mats are usually woven in a loose, open pattern to allow water to pass through. The mats can be made in a variety of sizes and colors, depending on the availability of materials and the preferences of the sailors making them.",
       bells: 2000
@@ -297,7 +297,7 @@ ApplicationRecord.transaction do
       item_name: "Sloppy rug",
       colors: "Aqua",
       material: "Whatever we've got",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Living room",
       description: "An unkempt rug is a rug that has not been properly cared for and maintained. Over time, rugs can accumulate dust, dirt, and debris, and if not cleaned regularly, this can cause the rug to appear messy and unattractive. Additionally, if a rug is not regularly vacuumed, the fibers can become matted and tangled, causing the rug to look uneven and sloppy. To avoid an unkempt rug, it is important to regularly clean and maintain your rug. This may involve vacuuming the rug regularly, using a spot cleaner to treat any spills or stains, and periodically taking the rug outside to shake off any loose dirt and debris. In addition, it is a good idea to have the rug professionally cleaned on a regular basis to keep it looking its best and to extend its lifespan.",
       bells: 2000
@@ -306,7 +306,7 @@ ApplicationRecord.transaction do
       item_name: "Snowflake rug",
       colors: "Aqua White",
       material: "Ice",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Freezing cold Fancy",
       description: "A snowflake rug is a type of decorative rug or mat that features a snowflake pattern. Snowflake rugs are often used during the winter season to add a festive touch to a room or to provide a cozy and warm feeling during colder months. Snowflake rugs can be made from a variety of materials, including wool, cotton, and synthetic fibers. They come in a range of sizes, from small accent mats to large area rugs, and can be found in a variety of colors, though they are most commonly white or blue to represent the icy and snowy winter landscape.",
       bells: 1500
@@ -315,7 +315,7 @@ ApplicationRecord.transaction do
       item_name: "Tatami mat",
       colors: "Green Yellow",
       material: "Bamboo",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Harmonious",
       description: "The tatami mat is a traditional type of flooring used in Japan. It is a rectangular mat made of woven rush straw that is compressed and covered in a tightly woven rush cover. The mat is typically around 1.5 to 2 inches thick, and can range in size from about 3 feet by 6 feet to 3 feet by 9 feet, although there are also other sizes available. Tatami mats are commonly used in traditional Japanese architecture, and are often found in rooms where people sit and sleep. They are used as a base for futons or as a floor covering in living rooms, tea rooms, and other spaces where people gather. The softness and resilience of the tatami mat make it comfortable for sitting or sleeping on, and its natural materials allow it to be breathable, keeping the room cool in the summer and warm in the winter.",
       bells: 1500
@@ -324,7 +324,7 @@ ApplicationRecord.transaction do
       item_name: "Tropical rug",
       colors: "Green Beige",
       material: "Tiny Islands",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Ocean",
       description: "tbd",
       bells: 1500
@@ -333,7 +333,7 @@ ApplicationRecord.transaction do
       item_name: "Bone entrance mat",
       colors: "Green",
       material: "Plastic recycled bones",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Living room Child's room",
       description: "tbd",
       bells: 1000
@@ -342,7 +342,7 @@ ApplicationRecord.transaction do
       item_name: "Coconut mat",
       colors: "Brown",
       material: "Coconuts",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Cafe",
       description: "tbd",
       bells: 1000
@@ -351,7 +351,7 @@ ApplicationRecord.transaction do
       item_name: "Cookie rug",
       colors: "Orange Yellow",
       material: "Flour, water, eggs",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Child's Room",
       description: "tbd",
       bells: 1500
@@ -360,7 +360,7 @@ ApplicationRecord.transaction do
       item_name: "Imperial rug",
       colors: "Red",
       material: "Silk",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Harmonious",
       description: "tbd",
       bells: 1500
@@ -369,7 +369,7 @@ ApplicationRecord.transaction do
       item_name: "Record rug",
       colors: "Black Red",
       material: "Polyvinyl Chloride",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Living room",
       description: "tbd",
       bells: 1500
@@ -378,7 +378,7 @@ ApplicationRecord.transaction do
       item_name: "Skull rug",
       colors: "Gray Black",
       material: "Calcium",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Horror Child's room",
       description: "tbd",
       bells: 1500
@@ -387,7 +387,7 @@ ApplicationRecord.transaction do
       item_name: "Stage rug",
       colors: "Colorful Yellow",
       material: "Splintered wood",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Concert Party",
       description: "tbd",
       bells: 1500
@@ -397,7 +397,7 @@ ApplicationRecord.transaction do
       item_name: "Exercise mat",
       colors: "Blue",
       material: "PVC",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "School",
       description: "tbd",
       bells: 1500
@@ -406,7 +406,7 @@ ApplicationRecord.transaction do
       item_name: "Exercise mat",
       colors: "Red",
       material: "PVC",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "School",
       description: "tbd",
       bells: 1500
@@ -415,7 +415,7 @@ ApplicationRecord.transaction do
       item_name: "Exquisite rug",
       colors: "Green Yellow",
       material: "Rare fibers",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Harmonious",
       description: "tbd",
       bells: 1000
@@ -424,7 +424,7 @@ ApplicationRecord.transaction do
       item_name: "Spooky rug",
       colors: "Orange Purple",
       material: "Nightmares",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Horror Party",
       description: "tbd",
       bells: 2000
@@ -433,7 +433,7 @@ ApplicationRecord.transaction do
       item_name: "Festive rug",
       colors: "Brown Colorful",
       material: "Turkey feathers",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Party Fancy",
       description: "tbd",
       bells: 1500
@@ -442,7 +442,7 @@ ApplicationRecord.transaction do
       item_name: "Maple-leaf rug",
       colors: "Red Orange",
       material: "Maple syrup",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Harmonious Garden",
       description: "tbd",
       bells: 2400
@@ -451,7 +451,7 @@ ApplicationRecord.transaction do
       item_name: "Bunny Day rug",
       colors: "Colorful",
       material: "Recycled eggshells",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Fancy Child's room",
       description: "tbd",
       bells: 2400
@@ -460,7 +460,7 @@ ApplicationRecord.transaction do
       item_name: "Fish rug",
       colors: "Aqua",
       material: "Dried fish scales",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Ocean Child's room",
       description: "tbd",
       bells: 2400
@@ -469,7 +469,7 @@ ApplicationRecord.transaction do
       item_name: "Pirate rug",
       colors: "Blue Brown",
       material: "Gold",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Ocean Horror",
       description: "tbd",
       bells: 375
@@ -478,7 +478,7 @@ ApplicationRecord.transaction do
       item_name: "Cinnamoroll rug",
       colors: "Aqua White",
       material: "Cinnabuns",
-      dimensions: "3x3",
+      dimensions: "threexthree",
       theme: "Fancy Child's Room",
       description: "tbd",
       bells: 1500
@@ -487,7 +487,7 @@ ApplicationRecord.transaction do
       item_name: "Checked rug",
       colors: "Green Purple",
       material: "Wool",
-      dimensions: "4x4",
+      dimensions: "fourxfour",
       theme: "Living room Child's Room",
       description: "tbd",
       bells: 2000
@@ -497,7 +497,7 @@ ApplicationRecord.transaction do
       item_name: "Wooden-deck rug",
       colors: "Brown",
       material: "Wood",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Outdoors Garden",
       description: "tbd",
       bells: 1500
@@ -506,7 +506,7 @@ ApplicationRecord.transaction do
       item_name: "Wooden-deck rug",
       colors: "White",
       material: "Wood",
-      dimensions: "3x2",
+      dimensions: "threextwo",
       theme: "Outdoors Garden",
       description: "tbd",
       bells: 1500
@@ -515,7 +515,7 @@ ApplicationRecord.transaction do
       item_name: "Kitchen mat",
       colors: "Brown",
       material: "PVC",
-      dimensions: "2x1",
+      dimensions: "twoxone",
       theme: "Kitchen",
       description: "tbd",
       bells: 1000
@@ -524,7 +524,7 @@ ApplicationRecord.transaction do
       item_name: "Brick rug",
       colors: "Gray",
       material: "Brick",
-      dimensions: "2x2",
+      dimensions: "twoxtwo",
       theme: "Garden Outdoors European",
       description: "tbd",
       bells: 1000

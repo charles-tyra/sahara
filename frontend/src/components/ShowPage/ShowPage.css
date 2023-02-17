@@ -61,6 +61,10 @@ img.bells {
    width:25px;
 }
 
+img.ratings {
+   width: 120px;
+}
+
 button#cart-button {
    border-radius: 15px;
    background-color: rgb(249, 217, 76);

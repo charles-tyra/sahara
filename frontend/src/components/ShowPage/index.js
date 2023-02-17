@@ -2,10 +2,13 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getItem, fetchItem } from '../../store/items';
-import './ShowPage.css';
 import { useParams } from 'react-router-dom';
-import bells from '../../assets/images/bells.png';
+import './ShowPage.css';
 import Footer from '../Footer';
+import bells from '../../assets/images/bells.png';
+import ratings from '../../assets/images/rating_placeholder.png'
+
+import twoxtwo from '../../assets/'
 
 function ShowPage() {
    const { itemId } = useParams();
@@ -29,7 +32,7 @@ function ShowPage() {
             </div>
             <div id='show-info-container'>
                <h2>{item.itemName}</h2>
-               <div id='show-review-info'></div>
+               <img className='ratings' src={ratings} />
                <div></div>
                <hr/>
                <div id='description-div'>{item.description}</div>

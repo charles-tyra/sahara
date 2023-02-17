@@ -40,22 +40,36 @@ div#show-cart-container {
    border: 1px solid #e6e6e6;
    border-radius: 8px;
    width: 273px;
-   height: 6000px;
+   height: 1000px;
    padding: 14px 18px;
 }
 
-div#price-info {
+div#price-info > h3 {
    font-family: amber;
    font-size: 28px;
    margin-bottom: 10px;
 }
 
-img#bells {
+div#price-info {
+   font-family: amber;
+   font-size: 16px;
+
+   margin-bottom: 10px;
+}
+
+img.bells {
    width:25px;
 }
 
 button#cart-button {
    border-radius: 15px;
    background-color: rgb(249, 217, 76);
+   border-color: transparent;
+   margin-bottom: 10px;
+}
+
+button#buy-button {
+   border-radius: 15px;
+   background-color: rgb(242,168, 66);
    border-color: transparent;
 }

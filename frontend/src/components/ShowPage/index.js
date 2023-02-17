@@ -4,8 +4,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getItem, fetchItem } from '../../store/items';
 import './ShowPage.css';
 import { useParams } from 'react-router-dom';
-import placeholder from '../../assets/images/sahara_placeholder.png'
-import bells from '../../assets/images/bells.png'
+import bells from '../../assets/images/bells.png';
+import Footer from '../Footer';
 
 function ShowPage() {
    const { itemId } = useParams();
@@ -35,15 +35,19 @@ function ShowPage() {
                <div id='description-div'>{item.description}</div>
                <div><span className='description-span'>Colors</span>{item.colors}</div>
                <div><span className='description-span'>Room Type</span>{item.theme}</div>
+               <div><span className='description-span'>Material</span>{item.material}</div>
             </div>
             <div id='show-cart-container'>
                <div id='price-info'>
-                  {item.bells} <img id='bells' src={bells}/>
+                  <h3>{item.bells} <img className='bells' src={bells} /></h3>
+                  Sell back for {(item.bells) / 4} <img className='bells' src={bells} />
                </div>
 
                <button id='cart-button'>Add to Cart</button>
+               <button id='buy-button'>Buy now</button>
             </div>
          </div>
+         <Footer />
       </>
    )
    }

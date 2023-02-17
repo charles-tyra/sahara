@@ -5,6 +5,7 @@ import { getItems, fetchItems } from "../../store/items";
 import './SplashPage.css';
 import BackgroundCarousel from "./BackgroundCarousel";
 import ItemIndexDiv from "./ItemIndexDiv";
+import Footer from "../Footer";
 
 function SplashPage() {
    const dispatch = useDispatch();
@@ -71,24 +72,7 @@ function SplashPage() {
                )
             })}
          </div>
-         <div id='to-the-top'>Back to top</div>
-         <div id='footer-container'>
-            <div className="footer">
-               <h2>Languages</h2>
-               React <br/> Javascript <br/> Ruby <br/> Rails <br/> CSS
-            </div>
-            <div className="footer">
-               <h2></h2>
-            </div>
-            <div className="footer">
-               <h2>Previous town names</h2>
-               Hershey <br/> Caliban
-            </div>
-            <div className="footer">
-
-            </div>
-         </div>
-         <div id='footer-divider'/>
+         <Footer />
       </>
    )} 
    }

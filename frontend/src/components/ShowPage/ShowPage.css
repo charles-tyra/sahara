@@ -77,3 +77,8 @@ button#buy-button {
    background-color: rgb(242,168, 66);
    border-color: transparent;
 }
+
+.footer > a {
+   text-decoration: none;
+   color: #fff;
+}

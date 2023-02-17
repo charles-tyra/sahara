@@ -326,7 +326,7 @@ ApplicationRecord.transaction do
       material: "Tiny Islands",
       dimensions: "threexthree",
       theme: "Ocean",
-      description: "tbd",
+      description: "Tropical rugs are often designed to bring a touch of the outdoors into a space and create a relaxed, casual feel. They can be made from a variety of materials, including natural fibers like jute or sisal, as well as synthetic materials like nylon or polyester. One popular type of tropical rug is the bamboo rug, which is made from woven bamboo fibers and features a natural, textured look that complements a tropical decor style. Another common material for tropical rugs is seagrass, which is a durable and sustainable natural fiber that can add warmth and texture to a room.",
       bells: 1500
    )
    boneentrance = Item.create!(
@@ -335,7 +335,7 @@ ApplicationRecord.transaction do
       material: "Plastic recycled bones",
       dimensions: "twoxone",
       theme: "Living room Child's room",
-      description: "tbd",
+      description: "A dog bone entrance mat is a type of mat that is shaped like a dog bone and is designed to be placed at the entrance of a home or other building to help keep floors clean and dry. These mats are typically made from durable materials like rubber or synthetic fibers, and they may feature a textured surface to provide added traction for people and pets as they enter and exit the building. One of the main benefits of a dog bone entrance mat is that it can help to trap dirt, mud, and moisture from shoes and paws, which can help to keep floors clean and prevent slips and falls. The dog bone shape is also a fun and whimsical design that can add a touch of personality to a space.",
       bells: 1000
    )
    coconut = Item.create!(
@@ -344,7 +344,7 @@ ApplicationRecord.transaction do
       material: "Coconuts",
       dimensions: "twoxone",
       theme: "Cafe",
-      description: "tbd",
+      description: "Coconut mats are often used as entrance mats because they are highly durable and can withstand heavy foot traffic and exposure to the elements. They are also naturally resistant to mold, mildew, and rot, making them a great choice for outdoor areas. In addition to their practical benefits, coconut mats can also be quite attractive. The natural color and texture of the coconut fibers give these mats a unique, earthy look that can complement a wide range of decor styles. Some coconut mats may also feature colorful designs or patterns to add a touch of personality to a space.",
       bells: 1000
    )
    cookie = Item.create!(
@@ -353,7 +353,7 @@ ApplicationRecord.transaction do
       material: "Flour, water, eggs",
       dimensions: "threexthree",
       theme: "Child's Room",
-      description: "tbd",
+      description: "A cookie-inspired rug typically refers to a rug that has a design or shape inspired by cookies or other baked goods. These rugs may feature patterns or colors that resemble chocolate chip cookies, gingerbread cookies, or other popular types of cookies. Some cookie-inspired rugs may be shaped like cookies or feature a circular shape with a design that resembles the texture or shape of a cookie. Others may feature patterns that are reminiscent of cookie dough, such as swirled or marbled designs.",
       bells: 1500
    )
    imperial = Item.create!(
@@ -362,7 +362,7 @@ ApplicationRecord.transaction do
       material: "Silk",
       dimensions: "fourxfour",
       theme: "Harmonious",
-      description: "tbd",
+      description: "Traditionally, the term imperial rug referred to rugs that were produced for royalty or other wealthy and influential people. These rugs were often made using the finest materials available, such as silk or wool, and were decorated with intricate designs and patterns that were meant to showcase the skill and creativity of the rug maker. Today, the term imperial rug is often used to describe high-end rugs that are made using traditional weaving techniques and premium materials. These rugs may be made in a variety of styles, from classic Persian or Oriental designs to more modern, abstract patterns.",
       bells: 1500
    )
    record = Item.create!(
@@ -371,7 +371,7 @@ ApplicationRecord.transaction do
       material: "Polyvinyl Chloride",
       dimensions: "threexthree",
       theme: "Living room",
-      description: "tbd",
+      description: "Record rugs are a popular choice for music lovers or anyone who wants to add a touch of retro style to their decor. They can be a fun and playful addition to a room, particularly in a music or entertainment-themed space. In addition to their decorative appeal, record rugs can also be practical, helping to protect floors from scratches and dirt. They can be easily cleaned with a vacuum or damp cloth, and many are machine washable for easy maintenance.",
       bells: 1500
    )
    skull = Item.create!(
@@ -380,7 +380,7 @@ ApplicationRecord.transaction do
       material: "Calcium",
       dimensions: "threexthree",
       theme: "Horror Child's room",
-      description: "tbd",
+      description: "A skull rug is a type of rug or floor mat that features a design of one or more skulls. These rugs may have a realistic or stylized design and can range in color from black and white to bright and colorful. Skull rugs are often used as decorative accents in homes, particularly in spaces with a gothic or alternative aesthetic. They can also be a popular choice for Halloween or other spooky events. In addition to their decorative appeal, skull rugs can also be a practical choice, helping to protect floors from dirt and scratches.",
       bells: 1500
    )
    stage = Item.create!(
@@ -389,7 +389,7 @@ ApplicationRecord.transaction do
       material: "Splintered wood",
       dimensions: "threexthree",
       theme: "Concert Party",
-      description: "tbd",
+      description: "A stage rug is a type of rug or flooring designed for use on a stage or other performance area. These rugs are typically made from durable materials that can withstand heavy foot traffic and other wear and tear. In addition to their practical functions, stage rugs can also be used to enhance the visual appeal of a performance. They may feature designs, colors, or patterns that complement the overall theme or aesthetic of the performance. Some stage rugs may even be customized with a company logo or other branding elements.",
       bells: 1500
    )
 
@@ -399,7 +399,7 @@ ApplicationRecord.transaction do
       material: "PVC",
       dimensions: "threextwo",
       theme: "School",
-      description: "tbd",
+      description: "Exercise mats are a type of cushioned flooring designed to provide a comfortable and supportive surface for various types of physical exercise. They are commonly used in gyms, fitness studios, and at home for activities such as yoga, Pilates, stretching, and bodyweight exercises. Exercise mats may be made from a variety of materials, including rubber, foam, or PVC. They may vary in thickness, from thin mats for stretching to thicker mats for high-impact exercises, such as jumping or weightlifting. Some exercise mats may also feature additional features, such as a non-slip surface, textured grip, or antimicrobial properties.",
       bells: 1500
    )
    redexercise = Item.create!(
@@ -408,7 +408,7 @@ ApplicationRecord.transaction do
       material: "PVC",
       dimensions: "threextwo",
       theme: "School",
-      description: "tbd",
+      description: "Exercise mats are a type of cushioned flooring designed to provide a comfortable and supportive surface for various types of physical exercise. They are commonly used in gyms, fitness studios, and at home for activities such as yoga, Pilates, stretching, and bodyweight exercises. Exercise mats may be made from a variety of materials, including rubber, foam, or PVC. They may vary in thickness, from thin mats for stretching to thicker mats for high-impact exercises, such as jumping or weightlifting. Some exercise mats may also feature additional features, such as a non-slip surface, textured grip, or antimicrobial properties.",
       bells: 1500
    )
    greenexquisite = Item.create!(
@@ -417,7 +417,7 @@ ApplicationRecord.transaction do
       material: "Rare fibers",
       dimensions: "twoxone",
       theme: "Harmonious",
-      description: "tbd",
+      description: "In general, an exquisite rug may be used to describe a high-quality, luxurious rug that is crafted with attention to detail and fine materials. It may feature intricate patterns, bold colors, and a plush, soft texture. Green is a popular color for rugs, as it can add a natural and calming element to a space, and can complement a range of decor styles.",
       bells: 1000
    )
    spooky = Item.create!(
@@ -426,7 +426,7 @@ ApplicationRecord.transaction do
       material: "Nightmares",
       dimensions: "fourxfour",
       theme: "Horror Party",
-      description: "tbd",
+      description: "A spooky rug is a type of rug or floor mat that features a design or pattern inspired by spooky or eerie themes. These rugs may feature Halloween motifs such as ghosts, witches, pumpkins, bats, spiders, or other creepy creatures, as well as more general macabre or horror themes. Spooky rugs can be a fun and festive addition to Halloween decorations or year-round in homes with a gothic or horror-inspired aesthetic. They can also be a popular choice for haunted houses, escape rooms, and other spooky events. In addition to their decorative appeal, spooky rugs can also be a practical choice, helping to protect floors from dirt and scratches.",
       bells: 2000
    )
    festive = Item.create!(
@@ -435,7 +435,7 @@ ApplicationRecord.transaction do
       material: "Turkey feathers",
       dimensions: "fourxfour",
       theme: "Party Fancy",
-      description: "tbd",
+      description: "Festive rugs can be used for a wide range of occasions, from Christmas and Hanukkah to Easter and Fourth of July. They can also be used for non-religious celebrations such as birthdays, weddings, and anniversaries. Some festive rugs may be designed for use during specific cultural or regional holidays, such as Diwali, Chinese New Year, or Oktoberfest. Festive rugs may be made from a variety of materials, including wool, cotton, or synthetic fibers. They may be handcrafted or machine-made, depending on the desired level of quality and detail. Some festive rugs may feature additional design elements such as fringe or tassels, adding to their decorative appeal.",
       bells: 1500
    )
    maple = Item.create!(
@@ -444,7 +444,7 @@ ApplicationRecord.transaction do
       material: "Maple syrup",
       dimensions: "threexthree",
       theme: "Harmonious Garden",
-      description: "tbd",
+      description: "A maple leaf rug is a type of rug that features a design or pattern inspired by the shape and colors of a maple leaf. Maple leaves are a popular design element in home decor, particularly in regions where maple trees are abundant, such as Canada and parts of the northeastern United States. Maple leaf rugs may feature a realistic depiction of a maple leaf, with detailed veins and shading, or a more abstract design that incorporates the leaf shape and colors in a creative way. The colors of a maple leaf can range from green to yellow to red, depending on the season and the type of maple tree, so maple leaf rugs may feature a range of autumnal colors to capture the feeling of fall.",
       bells: 2400
    )
    bunnyday = Item.create!(
@@ -453,7 +453,7 @@ ApplicationRecord.transaction do
       material: "Recycled eggshells",
       dimensions: "threexthree",
       theme: "Fancy Child's room",
-      description: "tbd",
+      description: "Bunny Day rug is a type of rug that is associated with the Bunny Day event in the popular video game series Animal Crossing. Bunny Day is an annual event in the game that takes place on Easter Sunday, where players can collect Easter eggs and other seasonal items. The Bunny Day rug features a colorful and playful design that is inspired by Easter and bunny rabbits. It typically has a light pastel-colored background with colorful Easter eggs and bunny designs. The rug may feature a textured surface, adding to its decorative appeal.",
       bells: 2400
    )
    fish = Item.create!(
@@ -462,7 +462,7 @@ ApplicationRecord.transaction do
       material: "Dried fish scales",
       dimensions: "threexthree",
       theme: "Ocean Child's room",
-      description: "tbd",
+      description: "A fish rug is a type of rug that features a design or pattern inspired by fish or the ocean. Fish rugs are often used in coastal or nautical-themed home decor and can add a playful and whimsical touch to a space. Fish rugs may feature a realistic depiction of fish or other ocean creatures, with intricate details and shading. They may also incorporate more abstract designs, such as fish scales, waves, or seaweed. Fish rugs may come in a variety of colors, from muted blues and greens to bold, bright hues.",
       bells: 2400
    )
    pirate = Item.create!(
@@ -471,7 +471,7 @@ ApplicationRecord.transaction do
       material: "Gold",
       dimensions: "threextwo",
       theme: "Ocean Horror",
-      description: "tbd",
+      description: "A pirate rug is a type of rug that features a design or pattern inspired by pirates, treasure, and the high seas. Pirate rugs often feature playful and whimsical designs that can add a fun and adventurous touch to a space. Pirate rugs may include motifs such as pirate ships, treasure chests, compasses, maps, or pirate hats and swords. The designs may be brightly colored or more subdued, depending on the desired aesthetic. Pirate rugs may also feature textures or patterns that give the rug a more tactile feel, such as a shaggy or plush pile.",
       bells: 375
    )
    cinnamoroll = Item.create!(
@@ -480,7 +480,7 @@ ApplicationRecord.transaction do
       material: "Cinnabuns",
       dimensions: "threexthree",
       theme: "Fancy Child's Room",
-      description: "tbd",
+      description: "Cinnamoroll rug is a type of rug that is inspired by the popular Japanese character Cinnamoroll. Cinnamoroll is a white, fluffy dog character created by the Sanrio company, known for producing popular characters such as Hello Kitty. Cinnamoroll rugs feature a design that is inspired by the character, usually with a pastel color palette and a cute and playful look. The rug may have a Cinnamoroll character design in the center, or it may have a repeated pattern of the character's face or other motifs associated with Cinnamoroll, such as clouds, stars, or hearts.",
       bells: 1500
    )
    greenchecked = Item.create!(
@@ -489,7 +489,7 @@ ApplicationRecord.transaction do
       material: "Wool",
       dimensions: "fourxfour",
       theme: "Living room Child's Room",
-      description: "tbd",
+      description: "Green-checked rugs are popular in country-style decor and can add a cozy and inviting touch to a space. They can be made from a variety of materials, including wool, cotton, or synthetic fibers, and may come in a variety of sizes to fit different spaces. Green-checked rugs can be used in a variety of settings, including living rooms, bedrooms, or even outdoor spaces such as porches or patios. They pair well with natural materials such as wood and wicker, and can be used to add a pop of color and pattern to a neutral or understated room.",
       bells: 2000
    )
 
@@ -499,7 +499,7 @@ ApplicationRecord.transaction do
       material: "Wood",
       dimensions: "threextwo",
       theme: "Outdoors Garden",
-      description: "tbd",
+      description: "Elevate your outdoor living space with our stylish and practical natural wooden deck rug! This rug is designed to add a touch of sophistication to your deck, while also providing a comfortable and durable surface to walk on.",
       bells: 1500
    )
    whitewooden = Item.create!(
@@ -508,7 +508,7 @@ ApplicationRecord.transaction do
       material: "Wood",
       dimensions: "threextwo",
       theme: "Outdoors Garden",
-      description: "tbd",
+      description: "Elevate your outdoor living space with our stylish and practical white wooden deck rug! This rug is designed to add a touch of sophistication to your deck, while also providing a comfortable and durable surface to walk on.",
       bells: 1500
    )
    brownkitchen = Item.create!(
@@ -517,7 +517,7 @@ ApplicationRecord.transaction do
       material: "PVC",
       dimensions: "twoxone",
       theme: "Kitchen",
-      description: "tbd",
+      description: "Featuring a unique brown design that adds a touch of sophistication and elegance to your kitchen decor, this mat is also incredibly practical. Its non-slip backing ensures a safe and secure grip on any surface, while its stain-resistant surface is easy to clean and maintain.",
       bells: 1000
    )
    graybrick = Item.create!(
@@ -526,7 +526,7 @@ ApplicationRecord.transaction do
       material: "Brick",
       dimensions: "twoxtwo",
       theme: "Garden Outdoors European",
-      description: "tbd",
+      description: "A gray brick rug is a type of rug that features a pattern that is designed to look like a brick wall in shades of gray. The pattern consists of repeating rectangular shapes that resemble bricks, with different shades of gray used to create depth and texture. Gray brick rugs are popular in contemporary and industrial-style decor and can add a touch of edginess and urban flair to a space. They can be made from a variety of materials, including wool, cotton, or synthetic fibers, and may come in a variety of sizes to fit different spaces.",
       bells: 1000
    )
 

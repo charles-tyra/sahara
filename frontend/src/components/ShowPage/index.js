@@ -23,7 +23,7 @@ function ShowPage() {
 
    useEffect(() => {
       dispatch(fetchItem(itemId));
-   }, [dispatch])
+   }, [dispatch, itemId])
 
    if(!item) {
       return (
@@ -47,12 +47,12 @@ function ShowPage() {
             </div>
             <div id='show-info-container'>
                <h2>{item.itemName}</h2>
-               <img className='ratings' src={ratings} /> 40 ratings
+               <img className='ratings' src={ratings} alt=''/> 40 ratings
                <hr/>
                <div><span className='description-span'>Colors</span>{item.colors}</div>
                <div><span className='description-span'>Room Type</span>{item.theme}</div>
                <div><span className='description-span'>Material</span>{item.material}</div>
-               <div><span className='description-span'>Dimensions</span><img src={dimensions}/></div>
+               <div><span className='description-span'>Dimensions</span><img src={dimensions} alt=''/></div>
                <hr/>
                <div id='description-div'>
                   <h4>About this item</h4><br/>
@@ -62,8 +62,8 @@ function ShowPage() {
             </div>
             <div id='show-cart-container'>
                <div id='price-info'>
-                  <h3>{item.bells} <img className='bells' src={bells} /></h3>
-                  Sell back for {(item.bells) / 4} <img className='bells' src={bells} />
+                  <h3>{item.bells} <img className='bells' src={bells} alt=''/></h3>
+                  Sell back for {(item.bells) / 4} <img className='bells' src={bells} alt=''/>
                </div>
 
                <button id='cart-button'>Add to Cart</button>

@@ -41,79 +41,76 @@ function NavBar() {
 
          <div id='under-nav-bar'>
             <div className="under-nav-filler">
-               Provider
+               <a href="https://react-redux.js.org/api/provider">Provider</a>
             </div>
             <div className="under-nav-filler">
-               BrowserRouter
+               <a href="https://reactrouter.com/en/main/router-components/browser-router">BrowserRouter</a>
             </div>
             <div className="under-nav-filler">
-               Route
+               <a href="https://www.w3schools.com/react/react_router.asp">Route</a>
             </div>
             <div className="under-nav-filler">
-               Switch
+               <a href="https://v5.reactrouter.com/web/api/Switch">Switch</a>
             </div>
             <div className="under-nav-filler">
-               createStore
+               <a href="https://redux.js.org/api/createstore">createStore</a>
             </div>
             <div className="under-nav-filler">
-               combineReducers
+               <a href="https://redux.js.org/api/combinereducers">combineReducers</a>
             </div>
             <div className="under-nav-filler">
-               applyMiddleware
+               <a href="https://redux.js.org/api/applymiddleware">applyMiddleware</a>
             </div>
             <div className="under-nav-filler">
-               compose
+               <a href="https://redux.js.org/api/compose">compose</a>
             </div>
             <div className="under-nav-filler">
-               thunk
+               <a href="https://redux.js.org/usage/writing-logic-thunks">thunk</a>
             </div>
             <div className="under-nav-filler">
-               logger
+               <a href="https://www.npmjs.com/package/redux-logger">logger</a>
             </div>
             <div className="under-nav-filler">
-               useEffect
+               <a href="https://www.w3schools.com/react/react_useeffect.asp">useEffect</a>
             </div>
             <div className="under-nav-filler">
-               useDispatch
+               <a href="https://react-redux.js.org/api/hooks">useDispatch</a>
             </div>
             <div className="under-nav-filler">
-               useSelector
+               <a href="https://react-redux.js.org/api/hooks">useSelector</a>
             </div>
             <div className="under-nav-filler">
-               react
+               <a href="https://react.dev">react</a>
             </div>
             <div className="under-nav-filler">
-               redux
+               <a href="https://react-redux.js.org">redux</a>
             </div>
             <div className="under-nav-filler">
-               .js
+               <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">.js</a>
             </div>
             <div className="under-nav-filler">
-               .css
+               <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">.css</a>
             </div>
             <div className="under-nav-filler">
-               .rb
+               <a href="https://www.ruby-lang.org/en/">.rb</a>
             </div>
             <div className="under-nav-filler">
-               .jsx
+               <a href="https://www.w3schools.com/react/react_jsx.asp">.jsx</a>
             </div>
             <div className="under-nav-filler">
-               .erb
+               <a href="https://www.puppet.com/docs/puppet/5.5/lang_template_erb.html">.erb</a>
             </div>
             <div className="under-nav-filler">
-               .jbuilder
+               <a href="https://www.rubydoc.info/gems/jbuilder/Jbuilder">.jbuilder</a>
             </div>
             <div className="under-nav-filler">
-               .ru
+               <a href="https://www.json.org/json-en.html">.json</a>
             </div>
             <div className="under-nav-filler">
-               .json
+               <a href="https://blog.saeloun.com/2022/08/16/understanding_gemfile_and_gemfile_lock">.lock</a>
             </div>
             <div className="under-nav-filler">
-               .lock
-            </div>
-            <div className="under-nav-filler">
-               .md
+               <a href="https://www.markdownguide.org/basic-syntax/">.md</a>
             </div>
          </div>
       </>

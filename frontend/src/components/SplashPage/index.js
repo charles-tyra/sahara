@@ -57,9 +57,6 @@ function SplashPage() {
    return (
       <>
          <div id='background-color' />
-         <div id='spacer-div' >
-
-         </div>
          <div id='carousel-container'>
             <BackgroundCarousel />
          </div>

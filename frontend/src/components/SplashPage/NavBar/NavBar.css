@@ -8,6 +8,8 @@ div#nav-bar {
    background-color: #131921;
    height: 60px;
    padding: 5px;
+
+   z-index: 1;
 }
 
 div#nav-bar > div > div {
@@ -125,18 +127,21 @@ div#under-nav-bar {
    width: 100%;
    height: 39px;
    background-color: #232f3e;
+   z-index: 1;
 
    display: flex;
    flex-direction: row;
    align-items: center;
    justify-content: center;
+   overflow:hidden;
 }
 
-div#under-nav-bar>div {
+div#under-nav-bar > div > a {
    border: 1px solid transparent;
    border-radius: 2px;
    padding: 8px 12px;
    height: 37px;
+   text-decoration: none;
 
    font-size: 14px;
    color: #fff;
@@ -144,7 +149,7 @@ div#under-nav-bar>div {
    line-height: 1.2;
 }
 
-div#under-nav-bar>div:hover {
+div#under-nav-bar>div > a:hover {
    border: 1px solid #fff;
    cursor: pointer;
 }

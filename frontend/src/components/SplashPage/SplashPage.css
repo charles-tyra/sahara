@@ -16,8 +16,12 @@ div#background-color {
 div#carousel-container {
    position: absolute;
    display: block;
+   margin-top: 99px;
    height: 600px;
    width: 1300px;
+
+   overflow: hidden;
+   align-content: start;
 }
 
 div#themes-container {
@@ -48,4 +52,5 @@ div.index-theme-container {
 h2.index-theme-h2 {
    font-size: 21px;
    font-family: amber-thick;
+   height: 52px;
 }

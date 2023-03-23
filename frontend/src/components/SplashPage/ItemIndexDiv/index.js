@@ -15,13 +15,13 @@ const ItemIndexDiv = ( {divItems, theme} ) => {
    return (
       <div className="index-theme-container">
          <h2 className='index-theme-h2'>Check out these {theme} rugs</h2>
-         {newItems.map(item => {
+         {newItems.length === 4 ? newItems.map(item => {
             return (
                <a key={item.id} href={`/items/${item.id}`}>
                   <img className='index-div-img' src={item.photoUrls[0]}/>
                </a>
-            )
-         })}
+            )}) : null
+         }
       </div >
    )
 }

@@ -19,6 +19,10 @@ input#nav-search-input {
    margin: 0px 10px;
 }
 
+#search-icon {
+   width: 25px;
+}
+
 #nav-bar-submit {
    width: 45px;
    height: 38px;
@@ -28,4 +32,8 @@ input#nav-search-input {
    border-radius: 0;
    border-top-right-radius: 3px;
    border-bottom-right-radius: 3px;
+}
+
+#nav-bar-submit:hover {
+   background-color: rgb(232, 171, 89);
 }

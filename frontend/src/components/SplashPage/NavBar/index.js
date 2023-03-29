@@ -1,7 +1,7 @@
 import React from "react";
 import SessionActionButton from "./SessionActionButton";
 import './NavBar.css'
-import logo from '../../../assets/images/sahara_white_text.png'
+import logo from '../../../assets/images/sahara_white_text_2.png'
 import cart from '../../../assets/images/shopping_cart.png'
 import NavSearchBar from "./NavSearchBar";
 

@@ -1,0 +1,26 @@
+.item-index-div {
+   width: 295px;
+   border: 1px solid rgb(250, 250, 250);
+   margin: 0px 8px;
+}
+
+.item-index-image-container {
+   width: 270px;
+   height: 270px;
+   background-color: rgb(247, 247, 247);
+}
+
+.item-index-image {
+   width: 270px;
+   height: 270px;
+   object-fit: contain;
+}
+
+.item-index-name {
+   text-decoration: none;
+   color: black;
+}
+
+.item-index-name:hover {
+   color: #c7511f;
+}

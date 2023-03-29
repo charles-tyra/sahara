@@ -9,8 +9,10 @@ function ItemIndexDiv( {item} ) {
 
    return (
       <div className="item-index-div">
-         <img className="item-index-image" src={item.photoUrls[1]}/>
-         <a href={`/items/${item.id}`}>{item.itemName}</a>
+         <a className="item-index-image-container" href={`/items/${item.id}`}>
+            <img className="item-index-image" src={item.photoUrls[1]}/>
+         </a>
+         <a className='item-index-name' href={`/items/${item.id}`}>{item.itemName}</a>
       </div>
    )
 }

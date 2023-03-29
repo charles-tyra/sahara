@@ -1,5 +1,5 @@
 import React from "react";
-import './ItemIndexDiv.css';
+import './SplashItemDiv.css';
 // import { Link } from "react-router-dom";
 
 const SplashItemDiv= ( {divItems, theme} ) => {

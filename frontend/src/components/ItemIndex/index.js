@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getItems, fetchItems } from "../../store/items";
 import './ItemIndex.css';
 import Footer from "../Footer";
+import ItemIndexDiv from "./ItemIndexDiv";
 
 function ItemIndex() {
    const dispatch = useDispatch();
@@ -27,7 +28,7 @@ function ItemIndex() {
             </div>
             <div id='item-index-container'>
                <div id='item-index-header'>
-                  
+                  {items.map((item, i) => (<ItemIndexDiv item={item} key={item.id} />))}
                </div>
             </div>
             <Footer/>

@@ -2,7 +2,7 @@ import React from "react";
 import './ItemIndexDiv.css';
 // import { Link } from "react-router-dom";
 
-const ItemIndexDiv = ( {divItems, theme} ) => {
+const SplashItemDiv= ( {divItems, theme} ) => {
 
    if (divItems === []) return (<div>loading...</div>)
 
@@ -26,4 +26,4 @@ const ItemIndexDiv = ( {divItems, theme} ) => {
    )
 }
 
-export default ItemIndexDiv;
+export default SplashItemDiv;

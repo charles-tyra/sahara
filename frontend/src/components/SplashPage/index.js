@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { getItems, fetchItems } from "../../store/items";
 import './SplashPage.css';
 import BackgroundCarousel from "./BackgroundCarousel";
-import ItemIndexDiv from "./ItemIndexDiv";
+import SplashItemDiv from "./SplashItemDiv";
 import Footer from "../Footer";
 
 function SplashPage() {
@@ -64,7 +64,7 @@ function SplashPage() {
             {indexDivs.map((div, i) => {
                return (
                   <div className="div-spacer">
-                     <ItemIndexDiv key={i} divItems={indexDivs[i]} theme={divThemes[i][1]} />
+                     <SplashItemDiv key={i} divItems={div} theme={divThemes[i][1]} />
                   </div>
                )
             })}

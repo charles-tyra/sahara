@@ -1,5 +1,6 @@
 import React from "react";
 import { Route, Switch } from 'react-router-dom';
+import ItemIndex from "./components/ItemIndex";
 import LoginForm from './components/LoginForm/index';
 import ShowPage from "./components/ShowPage";
 import SignUpForm from './components/SignUpForm/index';
@@ -27,7 +28,13 @@ function App() {
             <ShowPage />
           </div>
         </Route>
-        <Route path='/'>
+        <Route path='/items'>
+          <div className="page-container">
+            <NavBar />
+            <ItemIndex />
+          </div>
+        </Route>
+        <Route exact path='/'>
           <div className='page-container'>
             <NavBar />
             <SplashPage />

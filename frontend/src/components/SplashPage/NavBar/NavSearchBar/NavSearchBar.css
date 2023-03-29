@@ -8,8 +8,24 @@ input#nav-search-input {
    padding-right: 5px;
    padding-bottom: 10px;
    padding-left: 7px;
-
-   border: 1px solid #a6a6a6;
-   border-radius: 3px;
+   border: 1px solid transparent;
+   border-bottom-left-radius: 3px;
+   border-top-left-radius: 3px;
    outline: none;
+}
+
+#search-form {
+   display: flex;
+   margin: 0px 10px;
+}
+
+#nav-bar-submit {
+   width: 45px;
+   height: 38px;
+   border: 1px solid transparent;
+   background-color: rgb(244, 192, 118);
+
+   border-radius: 0;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
 }

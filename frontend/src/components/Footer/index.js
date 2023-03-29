@@ -5,7 +5,7 @@ function Footer() {
 
    return (
       <>
-         <div id='to-the-top'>Back to top</div>
+         <div id='to-the-top' onClick={() => window.scrollTo({top:0, behavior: 'instant'})}>Back to top</div>
          <div id='footer-container'>
             <div className="footer">
                <h2>Previous towns</h2>

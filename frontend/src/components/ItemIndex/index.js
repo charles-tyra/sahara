@@ -23,15 +23,16 @@ function ItemIndex() {
 
       return (
          <>
-            <div id='item'></div>
-            <div id='filter-sidebar'>
-               Testing
+            <div id='item-index-header'>
+               Results
             </div>
-            <div id='item-index-item-container'>
-               <div id='item-index-header'>
-                  Results
+            <div id='item-index-page'>
+               <div id='filter-sidebar'>
+                  Testing
                </div>
-               {items.map((item, i) => (<ItemIndexDiv item={item} key={item.id} />))}
+               <div id='item-index-item-container'>
+                  {items.map((item, i) => (<ItemIndexDiv item={item} key={item.id} />))}
+               </div>
             </div>
             <Footer/>
          </>

@@ -1,7 +1,13 @@
 .item-index-div {
    width: 295px;
    border: 1px solid rgb(250, 250, 250);
-   margin: 0px 8px;
+   border-radius: 2px;
+
+   margin: 5px 8px;
+}
+
+.item-index-div-info {
+   padding: 4px;
 }
 
 .item-index-image-container {
@@ -22,6 +28,11 @@
 .item-index-name {
    text-decoration: none;
    color: black;
+   font-size: 16px;
+}
+
+.item-index-color {
+   font-family: amber-thick;
 }
 
 .item-index-name:hover {

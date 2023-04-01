@@ -1,9 +1,12 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 import './ItemIndexDiv.css';
 import Footer from "../../Footer";
-import { Link } from "react-router-dom";
+
+import bells from '../../../assets/images/bells.png';
+import ratings from '../../../assets/images/rating_placeholder.png'
 
 function ItemIndexDiv( {item} ) {
    return (
@@ -16,6 +19,10 @@ function ItemIndexDiv( {item} ) {
          <div className="item-index-div-info">
             <a className='item-index-name' href={`/items/${item.id}`}>{item.itemName}</a>
             <div className='item-index-color'>{item.colors}</div>
+            5.0 <img className='ratings' src={ratings} alt='' /> (49) 
+            <div id='price-info'>
+               <h3><img className='bells' src={bells} alt='' /> {item.bells}</h3>
+            </div>
          </div>
       </div>
    )

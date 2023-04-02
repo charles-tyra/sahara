@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_02_15_173223) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_01_011836) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -42,6 +42,17 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_15_173223) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
+  create_table "carts", force: :cascade do |t|
+    t.bigint "item_id", null: false
+    t.bigint "owner_id", null: false
+    t.integer "quantity", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["item_id", "owner_id"], name: "index_carts_on_item_id_and_owner_id", unique: true
+    t.index ["item_id"], name: "index_carts_on_item_id"
+    t.index ["owner_id"], name: "index_carts_on_owner_id"
+  end
+
   create_table "items", force: :cascade do |t|
     t.string "item_name", null: false
     t.string "colors", null: false
@@ -69,4 +80,6 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_15_173223) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "carts", "items"
+  add_foreign_key "carts", "users", column: "owner_id"
 end

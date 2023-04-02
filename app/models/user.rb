@@ -6,6 +6,10 @@ class User < ApplicationRecord
    validates :password_digest, :session_token, :first_name, :last_name, presence: true
    validates :password, length: { minimum: 6 }, allow_nil: true
 
+   has_many :carts
+   has_many :items,
+      through: :carts
+
    def self.find_by_credentials(email, password)
       user = User.find_by(email: email)
 

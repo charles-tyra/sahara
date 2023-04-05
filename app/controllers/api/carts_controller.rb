@@ -25,11 +25,16 @@ class Api::CartsController < ApplicationController
    end
 
    def update
-
+      if @cart.update(cart_params)
+         render :index
+      else
+         render json: @cart.errors.full_messages, status: 422
+      end         
    end
 
    def destroy
-      
+      @cart.destroy
+      render :index
    end
 
    private

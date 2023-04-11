@@ -4,7 +4,7 @@ import logger from 'redux-logger';
 import sessionReducer from './session';
 import userReducer from './usersReducer'
 import itemReducer from './items';
-import cartsReducer from './carts';
+import cartReducer from './carts';
 
 let enhancer;
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -15,7 +15,7 @@ const rootReducer = combineReducers({
    session: sessionReducer,
    user: userReducer,
    items: itemReducer,
-   cart: cartsReducer
+   carts: cartReducer
 });
 
 const configureStore = (preloadedState = {}) => {

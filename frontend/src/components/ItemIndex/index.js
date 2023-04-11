@@ -9,7 +9,7 @@ import ItemIndexDiv from "./ItemIndexDiv";
 function ItemIndex() {
    const dispatch = useDispatch();
    const items = useSelector(getItems);
-   const [sortPriority,setSortPriority] = useState('test')
+   const [sortPriority, setSortPriority] = useState('test')
 
    useEffect(() => {
       dispatch(fetchItems());

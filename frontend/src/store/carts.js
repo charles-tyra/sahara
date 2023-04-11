@@ -38,21 +38,21 @@ export const getCarts = state => {
 
 
 export const fetchCart = cartId => async dispatch => {
-   const response = await csrfFetch(`api/carts/${cartId}`);
+   const response = await csrfFetch(`/api/carts/${cartId}`);
 
    const data = await response.json();
    dispatch(receiveCart(data.cart));
 }
 
 export const fetchCarts = () => async dispatch => {
-   const response = await csrfFetch('api/carts');
+   const response = await csrfFetch('/api/carts');
 
    const data = await response.json();
    dispatch(receiveCarts(data.carts));
 }
 
 export const createCart = cart => async dispatch => {
-   const response = await csrfFetch('api/carts', {
+   const response = await csrfFetch('/api/carts', {
       method: 'POST',
       body: cart
    });
@@ -62,7 +62,7 @@ export const createCart = cart => async dispatch => {
 }
 
 export const updateCart = cart => async dispatch => {
-   const response = await csrfFetch(`api/carts/${cart.id}`, {
+   const response = await csrfFetch(`/api/carts/${cart.id}`, {
       method: 'PATCH',
       body: cart
    });
@@ -72,7 +72,7 @@ export const updateCart = cart => async dispatch => {
 }
 
 export const deleteCart = cartId => async dispatch => {
-   await csrfFetch(`api/carts/${cartId}`, {
+   await csrfFetch(`/api/carts/${cartId}`, {
       method: "DELETE"
    });
 
@@ -80,7 +80,7 @@ export const deleteCart = cartId => async dispatch => {
 }
 
 
-const cartsReducer = ( state = {}, action ) => {
+const cartReducer = ( state = {}, action ) => {
    const nextState = {...state};
 
    switch(action.type) {
@@ -97,4 +97,4 @@ const cartsReducer = ( state = {}, action ) => {
    }
 }
 
-export default cartsReducer;
+export default cartReducer;

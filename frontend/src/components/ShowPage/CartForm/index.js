@@ -9,12 +9,16 @@ const CartForm = ({ itemId }) => {
    const [existingCart, setExistingCart] = useState(false);
    const currentUser = useSelector(state => state.session.user);
 
-   
    useEffect(() => {
       dispatch(fetchCarts());
    })
 
    return (
+      <form>
 
+
+         <button id='cart-button'>Add to Cart</button>
+         <button id='buy-button'>Buy now</button>
+      </form>
    )
 }

@@ -1,6 +1,6 @@
 class Api::CartsController < ApplicationController
    def index
-      @carts = Cart.includes(user.id: current_user.id)
+      @carts = Cart.all
       render 'api/carts/index'
    end
 

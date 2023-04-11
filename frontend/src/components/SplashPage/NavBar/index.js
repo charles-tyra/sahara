@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { fetchCarts, getCarts } from "../../../store/carts";
 import SessionActionButton from "./SessionActionButton";
-import './NavBar.css'
 import logo from '../../../assets/images/sahara_white_text_2.png'
 import cart from '../../../assets/images/shopping_cart.png'
+import './NavBar.css'
 import NavSearchBar from "./NavSearchBar";
 
+
 function NavBar() {
+   const dispatch = useDispatch();
+   const carts = useSelector(getCarts);
+   
+   useEffect(() => {
+      dispatch(fetchCarts());
+   }, []);
 
    return (
       <>
@@ -33,7 +42,7 @@ function NavBar() {
                   <div className='nav-bar-text'>& Orders</div>
                </div>
                <div id='cart-container'>
-                  <div id='cart-number'>0</div>
+                  <div id='cart-number'>{carts.length}</div>
                   <img src={cart} id='nav-bar-cart' alt="" />      
                </div>
             </div>

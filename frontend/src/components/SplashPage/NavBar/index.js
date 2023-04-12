@@ -16,6 +16,15 @@ function NavBar() {
       dispatch(fetchCarts());
    }, []);
 
+   const getCartQuantity = () => {
+      if(!carts) {
+         return '';
+      }
+      let cartCount = 0;
+      for(let i = 0; i < carts.length; i++) cartCount = cartCount + carts[i].quantity
+      return cartCount;
+   }
+
    return (
       <>
          <div id='nav-bar'>
@@ -42,7 +51,7 @@ function NavBar() {
                   <div className='nav-bar-text'>& Orders</div>
                </div>
                <div id='cart-container'>
-                  <div id='cart-number'>{carts.length}</div>
+                  <div id='cart-number'>{getCartQuantity()}</div>
                   <img src={cart} id='nav-bar-cart' alt="" />      
                </div>
             </div>

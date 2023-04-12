@@ -15,7 +15,7 @@ class Api::CartsController < ApplicationController
    end
 
    def create
-      @cart = current_user.carts.new(cart_params)
+      @cart = Cart.new(cart_params)
 
       if @cart.save
          render :show

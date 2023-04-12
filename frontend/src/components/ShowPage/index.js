@@ -16,6 +16,8 @@ import fourxthree from '../../assets/images/4x3.png'
 import fourxfour from '../../assets/images/4x4.png'
 import fivexfive from '../../assets/images/5x5.png'
 
+import CartForm from './CartForm';
+
 function ShowPage() {
    const { itemId } = useParams();
    const item = useSelector(getItem(itemId));
@@ -66,8 +68,7 @@ function ShowPage() {
                   Sell back for {(item.bells) / 4} <img className='bells' src={bells} alt=''/>
                </div>
 
-               <button id='cart-button'>Add to Cart</button>
-               <button id='buy-button'>Buy now</button>
+               <CartForm itemId={itemId}/>
             </div>
          </div>
          <Footer />

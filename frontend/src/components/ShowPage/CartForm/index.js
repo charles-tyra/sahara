@@ -10,8 +10,6 @@ const CartForm = ({ itemId }) => {
 
    const currentUser = useSelector(state => state.session.user);
 
-   // console.log({ ownerId: currentUser.id, itemId: parseInt(itemId), quantity });
-
    useEffect(() => {
       dispatch(fetchCarts());
    }, []);
@@ -26,7 +24,7 @@ const CartForm = ({ itemId }) => {
    const handleSubmit = (e) => {
       let updateQuantity = null;
       updateQuantity = getItemQuantity(carts);
-      
+
       if (currentUser && !updateQuantity) {
          return dispatch(createCart({owner_id: currentUser.id, item_id: parseInt(itemId), quantity}))
       } else return dispatch(updateCart({ id: updateQuantity.id, owner_id: currentUser.id, item_id: parseInt(itemId), quantity: (quantity + updateQuantity.quantity)}))

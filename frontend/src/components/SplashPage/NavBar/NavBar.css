@@ -114,12 +114,15 @@ img#nav-bar-cart {
 }
 
 div#cart-number {
+   display: flex;
    position: absolute;
+   width: 30px;
+   height: 40px;
    color: #f08804;
    font-family: amber-thick;
-   font-size: 18px;
-   padding-top: 1px;
-   padding-left: 29px;
+   font-size: 110%;
+   padding-top: 2px;
+   padding-left: 26px;
 }
 
 

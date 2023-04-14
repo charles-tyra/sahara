@@ -6,7 +6,7 @@ class User < ApplicationRecord
    validates :password_digest, :session_token, :first_name, :last_name, presence: true
    validates :password, length: { minimum: 6 }, allow_nil: true
 
-   has_many :carts
+   has_many :carts, foreign_key: :owner_id
    has_many :items,
       through: :carts
 

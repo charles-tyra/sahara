@@ -16,14 +16,20 @@ const CartForm = ({ itemId }) => {
       dispatch(fetchCarts());
    }, []);
 
-   // console.log(carts);
-   // console.log(quantity);
-
-
-   const handleSubmit = e => {
-      if (currentUser && carts) {
-         return dispatch(createCart({owner_id: currentUser.id, item_id: parseInt(itemId), quantity}))
+   function getItemQuantity(carts) {
+      for(let i = 0; i < carts.length; i++) {
+         if (carts[i].itemId === parseInt(itemId)) return carts[i];
       }
+      return null;
+   }
+
+   const handleSubmit = (e) => {
+      let updateQuantity = null;
+      updateQuantity = getItemQuantity(carts);
+      
+      if (currentUser && !updateQuantity) {
+         return dispatch(createCart({owner_id: currentUser.id, item_id: parseInt(itemId), quantity}))
+      } else return dispatch(updateCart({ id: updateQuantity.id, owner_id: currentUser.id, item_id: parseInt(itemId), quantity: (quantity + updateQuantity.quantity)}))
    }
 
    return (

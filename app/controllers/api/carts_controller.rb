@@ -26,6 +26,8 @@ class Api::CartsController < ApplicationController
    end
 
    def update
+      @cart = Cart.find(params[:id])
+      
       if @cart.update(cart_params)
          render :index
       else

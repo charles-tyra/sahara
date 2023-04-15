@@ -58,7 +58,7 @@ function SplashPage() {
       <>
          <div id='background-color' />
          <div id='carousel-container'>
-            <BackgroundCarousel />
+            <BackgroundCarousel key='Carousel' />
          </div>
          <div id='themes-container'>
             {indexDivs.map((div, i) => {

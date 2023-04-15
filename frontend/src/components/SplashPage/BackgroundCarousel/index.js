@@ -10,21 +10,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function BackgroundCarousel() {
    return (
       <Carousel>
-         <Carousel.Item>
+         <Carousel.Item key='1'>
             <img
                className="d-block w-100"
                src={first}
                alt=''
             />
          </Carousel.Item>
-         <Carousel.Item>
+         <Carousel.Item key='2'>
             <img
                className="d-block w-100"
                src={second}
                alt=''
             />
          </Carousel.Item>
-         <Carousel.Item>
+         <Carousel.Item key='3'>
             <img
                className="d-block w-100"
                src={third}

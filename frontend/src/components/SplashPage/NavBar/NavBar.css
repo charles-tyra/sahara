@@ -114,9 +114,10 @@ img#nav-bar-cart {
 }
 
 div#cart-number {
-   display: flex;
    position: absolute;
-   width: 30px;
+   display: flex;
+   justify-content: center;
+   width: 44px;
    height: 40px;
    color: #f08804;
    font-family: amber-thick;

@@ -14,7 +14,7 @@ function NavBar() {
    
    useEffect(() => {
       dispatch(fetchCarts());
-   }, []);
+   }, [dispatch]);
 
    const getCartQuantity = () => {
       if(!carts) {

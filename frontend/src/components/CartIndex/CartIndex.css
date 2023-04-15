@@ -30,7 +30,8 @@
    border: 1px solid rgb(250, 206, 95);
    background-color: rgb(249, 217, 76);
 
-   padding: 0px 8px;
+   padding: 0px 9px;
+   padding-bottom: 1px;
    font-size: 15px;
 }
 
@@ -40,7 +41,7 @@
 }
 
 #cart-login-container {
-   margin-right: 9px;
+   margin-right: 10px;
 }
 
 #cart-session {
@@ -73,4 +74,18 @@
    font-family: amber-thick;
    font-size: 24px;
    margin-bottom: 2px;
+}
+
+#cart-signup {
+   background-color: white;
+   border: 1px solid lightgray;
+   border-radius: 7px;
+
+   font-size: 15px;
+   padding: 0px 9px;
+   padding-bottom: 1px;
+}
+
+#cart-signup:hover {
+   background-color: rgb(248, 250, 250);
 }

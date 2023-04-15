@@ -19,18 +19,18 @@ function CartIndex() {
       return (
          <div id='cart-background'>
             <div id='cart-session'>
-               <div id='cart-image'>
+               <div>
                   <img id='cart-image' src={money} />
                </div>
                <div id='cart-session-info'>
                   <h2>Your Sahara Cart is empty</h2>
                   <Link id='cart-deals' to={'/items'}>Shop today's deals</Link>
                   <div id='cart-session-buttons-container'>
-                     <Link to={'/login'}>
-                        <button>Sign in to your account</button>
+                     <Link to={'/login'} id='cart-login-container'>
+                        <button id='cart-login'>Sign in to your account</button>
                      </Link>
                      <Link to={'/signup'}>
-                        <button>Sign up now</button>
+                        <button id='cart-signup'>Sign up now</button>
                      </Link>
                   </div>
                </div>

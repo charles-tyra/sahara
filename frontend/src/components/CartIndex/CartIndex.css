@@ -20,9 +20,27 @@
 
 #cart-image {
    width: 16vw;
-   min-width: 136px;
+   min-width: 156px;
    max-width: 225px;
-   margin: 10px 40px;
+   margin: 6px 30px;
+}
+
+#cart-login {
+   border-radius: 7px;
+   border: 1px solid rgb(250, 206, 95);
+   background-color: rgb(249, 217, 76);
+
+   padding: 0px 8px;
+   font-size: 15px;
+}
+
+#cart-login:hover {
+   border: 1px sold rgb(169, 140, 37);
+   background-color: rgb(240, 204, 68);
+}
+
+#cart-login-container {
+   margin-right: 9px;
 }
 
 #cart-session {
@@ -41,18 +59,18 @@
    display: flex;
    flex-direction: row;
 
-   margin: 18px 0px;
+   margin: 15px 0px;
 }
 
 #cart-session-info {
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   padding-top: 34px;
    margin: 0px 20px;
 }
 
 #cart-session-info > h2 {
    font-family: amber-thick;
    font-size: 24px;
-   margin-bottom: 3px;
+   margin-bottom: 2px;
 }

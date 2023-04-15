@@ -5,7 +5,6 @@ import { getItems, fetchItems } from "../../store/items";
 import './SplashPage.css';
 import BackgroundCarousel from "./BackgroundCarousel";
 import SplashItemDiv from "./SplashItemDiv";
-import Footer from "../Footer";
 
 function SplashPage() {
    const dispatch = useDispatch();
@@ -69,7 +68,6 @@ function SplashPage() {
                )
             })}
          </div>
-         <Footer />
       </>
    )} 
    }

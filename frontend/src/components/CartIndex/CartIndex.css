@@ -1,0 +1,58 @@
+#cart-background {
+   background-color: rgb(235, 237, 237);
+   width: 100%;
+   min-width: 1000px;
+   height: 100%;
+
+   padding: 30px 20px;
+}
+
+#cart-deals {
+   text-decoration: none;
+   color: #007185;
+   font-size: 14px;
+}
+
+#cart-deals:hover {
+   text-decoration: underline;
+   color: #c7511f;
+}
+
+#cart-image {
+   width: 16vw;
+   min-width: 136px;
+   max-width: 225px;
+   margin: 10px 40px;
+}
+
+#cart-session {
+   display: flex;
+
+   background-color: white;
+   min-width: 642px;
+   width: 68vw;
+   height: auto;
+
+   padding: 20px 15px;
+   padding-bottom: 15px;
+}
+
+#cart-session-buttons-container {
+   display: flex;
+   flex-direction: row;
+
+   margin: 18px 0px;
+}
+
+#cart-session-info {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin: 0px 20px;
+}
+
+#cart-session-info > h2 {
+   font-family: amber-thick;
+   font-size: 24px;
+   margin-bottom: 3px;
+}

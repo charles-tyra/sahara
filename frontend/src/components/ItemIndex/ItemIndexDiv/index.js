@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import './ItemIndexDiv.css';
-import Footer from "../../Footer";
 
 import bells from '../../../assets/images/bells.png';
 import ratings from '../../../assets/images/rating_placeholder.png'

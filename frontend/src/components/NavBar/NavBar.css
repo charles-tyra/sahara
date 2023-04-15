@@ -4,6 +4,7 @@ div#nav-bar {
    flex-direction: row;
    justify-content: space-evenly;
    width: 100%;
+   min-width: 1000px;
 
    background-color: #131921;
    height: 60px;
@@ -129,6 +130,7 @@ div#cart-number {
 
 div#under-nav-bar {
    width: 100%;
+   min-width: 1000px;
    height: 39px;
    background-color: #232f3e;
    z-index: 1;

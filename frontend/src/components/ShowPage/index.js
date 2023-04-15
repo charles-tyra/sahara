@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { getItem, fetchItem } from '../../store/items';
 import { useParams } from 'react-router-dom';
 import './ShowPage.css';
-import Footer from '../Footer';
 import bells from '../../assets/images/bells.png';
 import ratings from '../../assets/images/rating_placeholder.png'
 
@@ -71,7 +70,6 @@ function ShowPage() {
                <CartForm itemId={itemId}/>
             </div>
          </div>
-         <Footer />
       </>
    )
    }

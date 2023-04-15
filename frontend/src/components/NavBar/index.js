@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCarts, getCarts } from "../../../store/carts";
+import { fetchCarts, getCarts } from "../../store/carts";
+import { Link } from "react-router-dom";
 import SessionActionButton from "./SessionActionButton";
-import logo from '../../../assets/images/sahara_white_text_2.png'
-import cart from '../../../assets/images/shopping_cart.png'
+import logo from '../../assets/images/sahara_white_text_2.png'
+import cart from '../../assets/images/shopping_cart.png'
 import './NavBar.css'
 import NavSearchBar from "./NavSearchBar";
 
@@ -51,8 +52,10 @@ function NavBar() {
                   <div className='nav-bar-text'>& Orders</div>
                </div>
                <div id='cart-container'>
-                  <div id='cart-number'>{getCartQuantity()}</div>
-                  <img src={cart} id='nav-bar-cart' alt="" />      
+                  <Link to={`/carts`}>
+                     <div id='cart-number'>{getCartQuantity()}</div>
+                     <img src={cart} id='nav-bar-cart' alt="" />      
+                  </Link>
                </div>
             </div>
          </div>

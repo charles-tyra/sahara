@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import * as sessionActions from '../../../../store/session';
+import * as sessionActions from '../../../store/session';
 import './SessionActionButton.css'
 
 function SessionActionButton() {
@@ -8,8 +8,6 @@ function SessionActionButton() {
    const sessionUser = useSelector(state => state.session.user);
 
    const handleLogout = (e) => {
-      e.preventDefault();
-
       dispatch(sessionActions.logout());
    }
 

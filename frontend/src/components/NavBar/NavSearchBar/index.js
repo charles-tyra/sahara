@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './NavSearchBar.css';
-import Search from '../../../../assets/images/search_icon.png'
+import Search from '../../../assets/images/search_icon.png'
 
 function NavSearchBar() {
 

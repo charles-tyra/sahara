@@ -1,11 +1,11 @@
 @font-face {
    font-family: amber-thick;
-   src: url(../../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Bd.ttf);
+   src: url(../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Bd.ttf);
 }
 
 @font-face {
    font-family: amber;
-   src: url(../../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Rg.ttf);
+   src: url(../../../assets/fonts/EmberDisplay/AmazonEmberDisplay_Rg.ttf);
 }
 
 #nav-login-link {

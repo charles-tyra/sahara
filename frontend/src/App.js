@@ -5,7 +5,7 @@ import LoginForm from './components/LoginForm/index';
 import ShowPage from "./components/ShowPage";
 import SignUpForm from './components/SignUpForm/index';
 import SplashPage from "./components/SplashPage";
-import NavBar from "./components/SplashPage/NavBar";
+import NavBar from "./components/NavBar";
 
 function App() {
 
@@ -32,6 +32,12 @@ function App() {
           <div className="page-container">
             <NavBar />
             <ItemIndex />
+          </div>
+        </Route>
+        <Route path='/carts'>
+          <div className="page-container">
+            <NavBar />
+            
           </div>
         </Route>
         <Route exact path='/'>

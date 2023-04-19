@@ -22,6 +22,7 @@ const CartIndexForm = ({ cartItem }) => {
 
    }
 
+   if (item === undefined) return null;
    
 
    return (

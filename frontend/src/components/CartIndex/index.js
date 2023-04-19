@@ -49,7 +49,7 @@ function CartIndex() {
             <div id='cart-index-container'> 
                <h2>Shopping Cart</h2>
                <div onClick=''></div>
-               {carts.map(cartItem => <CartIndexForm cartItem={cartItem} key={cartItem.id} />)}
+               {carts !== [] ? carts.map(cartItem => <CartIndexForm cartItem={cartItem} key={cartItem.id} />) : null}
             </div>
             <div id='cart-checkout'> 
                Subtotal

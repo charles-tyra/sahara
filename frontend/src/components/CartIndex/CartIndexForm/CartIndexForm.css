@@ -1,0 +1,37 @@
+.cart-form-spacer {
+   margin: 0;
+}
+
+.cart-form {
+   flex-direction: column;
+   flex-grow: 1;
+}
+
+.cart-index-form {
+   display: flex;
+   flex-direction: row;
+
+   padding: 20px;
+   padding-right: 0;
+}
+
+.cart-image {
+   width: 180px;
+   height: auto;
+}
+
+.cart-item-price {
+   width: 104px;
+   text-align: right;
+}
+
+.price {
+   width: 100%;
+   text-align: right;
+
+   opacity: 74%;
+}
+
+.price~.price {
+   display: none;
+}

@@ -10,10 +10,13 @@
 
 #cart-checkout {
    background-color: white;
-      height: 100px;
-         width: 100px;
-         float: right;
-         margin-left: 20px;
+   width: 300px;
+   float: right;
+   height: fit-content;
+
+   margin-left: 20px;
+   padding: 20px;
+   font-size: 18px;
 }
 
 #cart-deals {
@@ -27,6 +30,7 @@
    color: #c7511f;
 }
 
+
 #cart-image {
    width: 16vw;
    min-width: 156px;
@@ -34,9 +38,9 @@
 }
 
 #cart-index-container {
-      flex-grow: 1;
-         height: 100px;
-         overflow: hidden;
+   flex-grow: 1;
+   height: 100%;
+   overflow: hidden;
    background-color: white;
    padding: 18px 16px;
 }

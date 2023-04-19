@@ -11,12 +11,15 @@ function CartIndex() {
    const dispatch = useDispatch();
    const carts = useSelector(getCarts);
    const currUser = useSelector(state => state.session.user);
+   const isLoaded = useState(carts);
 
    useEffect(() => {
       dispatch(fetchCarts());
    }, [dispatch]);
 
-   if (!currUser || carts === []) {
+   console.log(carts);
+
+   if (!currUser || isLoaded === []) {
       return (
          <div id='cart-background'>
             <div id='cart-session'>
@@ -46,7 +49,7 @@ function CartIndex() {
             <div id='cart-index-container'> 
                <h2>Shopping Cart</h2>
                <div onClick=''></div>
-               {/* <CartIndexForm key={`${carts[1].itemId}`} cartItem={carts[1]}/> */}
+               {carts.map(cartItem => <CartIndexForm cartItem={cartItem} key={cartItem.id} />)}
             </div>
             <div id='cart-checkout'> 
                Subtotal

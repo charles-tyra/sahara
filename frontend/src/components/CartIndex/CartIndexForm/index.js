@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCart, deleteCart } from "../../../store/carts";
 import { getItem, fetchItem } from "../../../store/items";
+import './CartIndexForm.css'
+import { Link } from "react-router-dom";
 
 
 const CartIndexForm = ({ cartItem }) => {
@@ -23,11 +25,26 @@ const CartIndexForm = ({ cartItem }) => {
    
 
    return (
-      <div className="cart-index-form">
-         <form>
-
-         </form>
-      </div>
+      <>
+         <div className='price'>Price</div>
+         <hr className="cart-form-spacer"/>
+         <div className="cart-index-form">
+            <Link to={`/items/${item.id}`}>
+               <img className='cart-image' src={item.photoUrls[1]} alt='' />
+            </Link>
+            <div className='cart-form'>
+               <Link to={`/items/${item.id}`}>
+                  {item.itemName}
+               </Link>
+               <form className='cart-form'>
+                  test
+               </form>
+            </div>
+            <div className="cart-item-price">
+               {item.bells}
+            </div>
+         </div>
+      </>
    )
 }
 

@@ -5,17 +5,18 @@ import { getCarts, fetchCarts } from '../../store/carts';
 import money from '../../assets/images/money-clip-art-38.jpg';
 import './CartIndex.css';
 import { Link } from 'react-router-dom';
+import CartIndexForm from './CartIndexForm';
 
 function CartIndex() {
    const dispatch = useDispatch();
    const carts = useSelector(getCarts);
-   const currUser = useSelector(state => state.session.user)
+   const currUser = useSelector(state => state.session.user);
 
    useEffect(() => {
       dispatch(fetchCarts());
-   }, []);
+   }, [dispatch]);
 
-   if (!currUser) {
+   if (!currUser || carts === []) {
       return (
          <div id='cart-background'>
             <div id='cart-session'>
@@ -38,9 +39,18 @@ function CartIndex() {
          </div>
       )
    } else {
+
+
       return (
          <div id='cart-background'>
-
+            <div id='cart-index-container'> 
+               <h2>Shopping Cart</h2>
+               <div onClick=''></div>
+               {/* <CartIndexForm key={`${carts[1].itemId}`} cartItem={carts[1]}/> */}
+            </div>
+            <div id='cart-checkout'> 
+               Subtotal
+            </div>
          </div>
       )
    }

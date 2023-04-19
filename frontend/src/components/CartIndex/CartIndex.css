@@ -1,10 +1,19 @@
 #cart-background {
+   display: flex;
    background-color: rgb(235, 237, 237);
    width: 100%;
    min-width: 1000px;
    height: 100%;
 
    padding: 30px 20px;
+}
+
+#cart-checkout {
+   background-color: white;
+      height: 100px;
+         width: 100px;
+         float: right;
+         margin-left: 20px;
 }
 
 #cart-deals {
@@ -21,8 +30,19 @@
 #cart-image {
    width: 16vw;
    min-width: 156px;
-   max-width: 225px;
-   margin: 6px 30px;
+   margin: 6px 46px;
+}
+
+#cart-index-container {
+      flex-grow: 1;
+         height: 100px;
+         overflow: hidden;
+   background-color: white;
+   padding: 18px 16px;
+}
+
+#cart-index-container > h2 {
+   font-size: 28px;
 }
 
 #cart-login {

@@ -18,8 +18,8 @@ const CartIndexForm = ({ cartItem }) => {
       dispatch(fetchItem(cartItem.itemId))
    }, [])
 
-   const handleUpdate = (e) => {
-
+   const handleDelete = (e) => {
+      return dispatch(deleteCart(cartItem.id))
    }
 
    if (item === undefined) return null;
@@ -40,6 +40,9 @@ const CartIndexForm = ({ cartItem }) => {
                <form className='cart-form'>
                   test
                </form>
+               <div className='cart-delete' onClick={handleDelete}>
+                  Delete Me
+               </div>
             </div>
             <div className="cart-item-price">
                {item.bells}

@@ -1,3 +1,7 @@
+.cart-delete {
+   cursor: pointer;
+}
+
 .cart-form-spacer {
    margin: 0;
 }

@@ -21,7 +21,7 @@ const CartForm = ({ itemId }) => {
       return null;
    }
 
-   const handleSubmit = (e) => {
+   const handleSubmit = () => {
       let updateQuantity = null;
       updateQuantity = getItemQuantity(carts);
 

@@ -36,8 +36,8 @@ class Api::CartsController < ApplicationController
    end
 
    def destroy
+      @cart = Cart.find(params[:id])
       @cart.destroy
-      render :index
    end
 
    private

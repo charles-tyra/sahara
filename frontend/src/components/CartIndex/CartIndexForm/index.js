@@ -16,12 +16,10 @@ const CartIndexForm = ({ cartItem }) => {
       dispatch(fetchItem(cartItem.itemId))
    }, [])
 
-   console.log(cartItem);
-
    if (item === undefined) return null;
 
    const handleUpdate = (e) => {
-      dispatch(updateCart({id: cartItem.id, owner_id: currentUser.id, item_id: cartItem.itemId, quantity: e.currentTarget.value}))
+      dispatch(updateCart({id: cartItem.id, owner_id: currentUser.id, item_id: cartItem.itemId, quantity: parseInt(e.currentTarget.value)}))
    }
 
    return (

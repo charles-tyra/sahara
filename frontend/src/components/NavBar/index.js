@@ -22,8 +22,8 @@ function NavBar() {
          return '';
       }
       let cartCount = 0;
-      for(let i = 0; i < carts.length; i++) cartCount = cartCount + carts[i].quantity;
-      
+      for(let i = 0; i < carts.length; i++) cartCount = cartCount + parseInt(carts[i].quantity);
+
       return cartCount;
    }
 

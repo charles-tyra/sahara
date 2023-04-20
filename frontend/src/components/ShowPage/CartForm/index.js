@@ -27,7 +27,7 @@ const CartForm = ({ itemId }) => {
 
       if (currentUser && !updateQuantity) {
          return dispatch(createCart({owner_id: currentUser.id, item_id: parseInt(itemId), quantity}))
-      } else return dispatch(updateCart({ id: updateQuantity.id, owner_id: currentUser.id, item_id: parseInt(itemId), quantity: (quantity + updateQuantity.quantity)}))
+      } else return dispatch(updateCart({ id: updateQuantity.id, owner_id: currentUser.id, item_id: parseInt(itemId), quantity: (parseInt(quantity) + parseInt(updateQuantity.quantity))}))
    }
 
    return (

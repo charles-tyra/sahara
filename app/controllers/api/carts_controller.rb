@@ -28,11 +28,8 @@ class Api::CartsController < ApplicationController
    def update
       @cart = Cart.find(params[:id])
       
-      if @cart.update(cart_params)
-         render :index
-      else
-         render json: @cart.errors.full_messages, status: 422
-      end         
+      @cart.update(cart_params)
+      render :show
    end
 
    def destroy
@@ -42,6 +39,6 @@ class Api::CartsController < ApplicationController
 
    private
    def cart_params
-      params.require(:cart).permit(:quantity, :item_id, :owner_id)
+      params.require(:cart).permit(:id, :quantity, :item_id, :owner_id)
    end
 end

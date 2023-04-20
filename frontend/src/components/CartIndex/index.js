@@ -17,8 +17,6 @@ function CartIndex() {
       dispatch(fetchCarts());
    }, [dispatch]);
 
-   console.log(carts);
-
    if (!currUser || isLoaded === []) {
       return (
          <div id='cart-background'>

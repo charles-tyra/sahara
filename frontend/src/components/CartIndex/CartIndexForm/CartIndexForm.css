@@ -1,5 +1,6 @@
 .cart-delete {
    cursor: pointer;
+   width: fit-content;
 }
 
 .cart-form-spacer {

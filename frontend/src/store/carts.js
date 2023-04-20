@@ -52,7 +52,6 @@ export const fetchCarts = () => async dispatch => {
 }
 
 export const createCart = cart => async dispatch => {
-   console.log(cart);
    const response = await csrfFetch('/api/carts', {
       method: 'POST',
       body: JSON.stringify(cart)
@@ -63,7 +62,6 @@ export const createCart = cart => async dispatch => {
 }
 
 export const updateCart = cart => async dispatch => {
-   console.log(cart);
    const response = await csrfFetch(`/api/carts/${cart.id}`, {
       method: 'PATCH',
       body: JSON.stringify(cart)

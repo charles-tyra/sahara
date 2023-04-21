@@ -1,3 +1,8 @@
+.cart-bells {
+   width: 25px;
+   margin-bottom: 5px;
+}
+
 .cart-delete {
    cursor: pointer;
    width: fit-content;
@@ -10,6 +15,15 @@
 .cart-form {
    flex-direction: column;
    flex-grow: 1;
+
+   padding: 2px 12px;
+}
+
+.cart-form > :first-child {
+   text-decoration: none;
+   color: black;
+
+   font-size: 17px;
 }
 
 .cart-index-form {
@@ -27,7 +41,24 @@
 
 .cart-item-price {
    width: 104px;
+   padding-top: 2px;
    text-align: right;
+
+   font-family: amber-thick;
+   font-size: 17px;
+}
+
+.green-stock {
+   color: rgb(94, 150, 39);
+   font-size: 11px;
+}
+
+.cart-info {
+   font-size: 12px;
+}
+
+.cart-info > span {
+   font-family: amber-thick;
 }
 
 .price {

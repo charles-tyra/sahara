@@ -6,6 +6,13 @@
 .cart-delete {
    cursor: pointer;
    width: fit-content;
+
+   font-size: 12px;
+   color: #007185;
+}
+
+.cart-delete:hover {
+   text-decoration: underline;
 }
 
 .cart-form-spacer {
@@ -24,6 +31,28 @@
    color: black;
 
    font-size: 17px;
+}
+
+.cart-form-bottom {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+
+.cart-form-bottom-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: end;
+   
+   height: 98px;
+}
+
+.cart-form-vert {
+   height: 15px;
+   border-right: 1px solid black;
+   margin: 0px 13px;
+
+   opacity: 18%;
 }
 
 .cart-index-form {

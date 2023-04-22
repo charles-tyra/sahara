@@ -77,17 +77,26 @@
    font-size: 17px;
 }
 
-.green-stock {
-   color: rgb(94, 150, 39);
-   font-size: 11px;
-}
-
 .cart-info {
    font-size: 12px;
 }
 
 .cart-info > span {
    font-family: amber-thick;
+}
+
+.green-stock {
+   color: rgb(94, 150, 39);
+   font-size: 11px;
+}
+
+.empty-cart {
+   padding-bottom: 50px!important;
+}
+
+.left-subtotal {
+   justify-content:left!important;
+   margin: 0!important;
 }
 
 .price {
@@ -99,4 +108,18 @@
 
 .price~.price {
    display: none;
+}
+
+.subtotal-container {
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   margin-top: 2px;
+   margin-bottom: 15px;
+
+   font-size: 18px;
+}
+
+.subtotal-container > span {
+   font-family: amber-thick;
 }

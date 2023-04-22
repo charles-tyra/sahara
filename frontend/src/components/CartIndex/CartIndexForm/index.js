@@ -8,11 +8,11 @@ import './CartIndexForm.css'
 import bells from '../../../assets/images/bells.png';
 
 
-const CartIndexForm = ({ cartItem }) => {
+const CartIndexForm = ({cartItem}) => {
    const dispatch = useDispatch();
-   const [selected, setSelected] = useState(true);
    const item = useSelector(getItem(cartItem.itemId));
    const currentUser = useSelector(state => state.session.user);
+   
 
    useEffect(() => {
       dispatch(fetchItem(cartItem.itemId))
@@ -21,9 +21,10 @@ const CartIndexForm = ({ cartItem }) => {
    if (item === undefined) return null;
 
    const handleUpdate = (e) => {
-      console.log(e.currentTarget.value)
-      if (e.currentTarget)
-      dispatch(updateCart({id: cartItem.id, owner_id: currentUser.id, item_id: cartItem.itemId, quantity: parseInt(e.currentTarget.value)}))
+      dispatch(updateCart({id: cartItem.id,
+                           owner_id: currentUser.id, 
+                           item_id: cartItem.itemId, 
+                           quantity: parseInt(e.currentTarget.value)}))
    }
 
    return (

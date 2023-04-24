@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
-import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js'
+import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js';
+
+import { Link } from "react-router-dom";
 
 const CartForm = ({ itemId }) => {
    const dispatch = useDispatch();
@@ -67,7 +69,9 @@ const CartForm = ({ itemId }) => {
             <option value='29'>29</option>
             <option value='30'>30</option>
          </select>
-         <button type='submit' id='cart-button'>Add to Cart</button>
+         <Link to={`/carts/new/${itemId}`}>
+            <button type='submit' id='cart-button'>Add to Cart</button>
+         </Link>
          <button id='buy-button'>Buy now</button>
       </form>
    )

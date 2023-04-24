@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { updateCart, deleteCart } from "../../../store/carts";
 import { getItem, fetchItem } from "../../../store/items";
 import { Link } from "react-router-dom";
 
-import './CartIndexForm.css'
+import './CartIndexForm.css';
 import bells from '../../../assets/images/bells.png';
 
 

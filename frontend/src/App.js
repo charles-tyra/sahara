@@ -8,6 +8,7 @@ import SplashPage from "./components/SplashPage";
 import NavBar from "./components/NavBar";
 import CartIndex from "./components/CartIndex";
 import Footer from "./components/Footer";
+import CartShow from "./components/CartShow";
 
 function App() {
 
@@ -35,6 +36,13 @@ function App() {
           <div className="page-container">
             <NavBar />
             <ItemIndex />
+            <Footer />
+          </div>
+        </Route>
+        <Route path='/carts/new/:itemId'>
+          <div className="page-container">
+            <NavBar />
+            <CartShow />
             <Footer />
           </div>
         </Route>

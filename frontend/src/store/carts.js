@@ -59,6 +59,7 @@ export const createCart = cart => async dispatch => {
 
    const data = await response.json();
    dispatch(receiveCart(data.cart));
+   return data.cart.id
 }
 
 export const updateCart = cart => async dispatch => {

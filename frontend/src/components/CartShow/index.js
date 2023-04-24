@@ -5,7 +5,8 @@ import { getItem, fetchItem } from "../../store/items";
 import { Link, useParams, Redirect } from "react-router-dom";
 
 import './CartShow.css';
-import checkmark from '../../assets/images/green_checkmark.png'
+import checkmark from '../../assets/images/green_checkmark.png';
+import bells from '../../assets/images/bells.png';
 
 const CartShow = () => {
    const { itemId } = useParams();
@@ -51,6 +52,17 @@ const CartShow = () => {
                </div>
             </div>
             <div id='cart-checkout'>
+               <span>Cart Subtotal: </span> <img src={bells} className="cart-bells" />{subtotal}
+               <div id='cart-button-container'>
+                  <button id='checkout-button'>
+                     Proceed to checkout ({itemTotal} items)
+                  </button>
+                  <Link to={'/carts'}>
+                     <button id='to-cart-button'>
+                        Go to Cart
+                     </button>
+                  </Link>
+               </div>
             </div>
          </div>
       )

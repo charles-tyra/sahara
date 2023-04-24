@@ -1,3 +1,7 @@
+#cart-checkout > span {
+   font-family: amber-thick;
+}
+
 #cart-show-addedtocart {
    font-family: amber-thick;
    font-size: 19px;
@@ -15,7 +19,7 @@
       height: 100%;
       overflow: hidden;
       background-color: white;
-      padding: 18px 16px;
+      padding: 22px 16px;
 
       display: flex;
       flex-direction: row;
@@ -33,6 +37,20 @@
 
 #cart-show-info > span {
    font-family: amber-thick;
+}
+
+#checkout-button {
+   font-size: 13px;
+   border: 0;
+   border-radius: 8px;
+   margin-bottom: 12px;
+}
+
+#to-cart-button {
+   font-size: 13px;
+   background: white;
+   border: 1px solid lightgray;
+   border-radius: 8px;
 }
 
 #to-the-top {

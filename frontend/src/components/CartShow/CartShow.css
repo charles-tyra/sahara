@@ -1,5 +1,13 @@
+#cart-show-addedtocart {
+   font-family: amber-thick;
+   font-size: 19px;
+
+   margin-bottom: 6px;
+}
+
 #cart-show-checkmark {
    width: 20px;
+   margin-right: 8px;
 }
 
 #cart-show-container {
@@ -16,6 +24,15 @@
 
 #cart-show-image {
    width: 100px;
+}
+
+#cart-show-info {
+   padding: 16px 20px;
+   font-size: 12px;
+}
+
+#cart-show-info > span {
+   font-family: amber-thick;
 }
 
 #to-the-top {

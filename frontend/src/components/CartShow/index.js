@@ -45,6 +45,9 @@ const CartShow = () => {
                   <div id='cart-show-addedtocart'>
                      <img id='cart-show-checkmark' src={checkmark} /> Added To Cart
                   </div>
+                  <span>Size:</span> {item.dimensions}
+                  <br/>
+                  <span>Color:</span> {item.colors}
                </div>
             </div>
             <div id='cart-checkout'>

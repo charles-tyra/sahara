@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js';
 
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 
 const CartForm = ({ itemId }) => {
    const dispatch = useDispatch();
@@ -77,7 +77,10 @@ const CartForm = ({ itemId }) => {
             <option value='30'>30</option>
          </select>
          <button type='submit' id='cart-button'>Add to Cart</button>
-         <button id='buy-button'>Buy now</button>
+         <Link to={{pathname: '/carts/checkout', 
+            state: {carts: {item_id: itemId, quantity} }}}>
+            <button id='buy-button'>Buy now</button>
+         </Link>
       </form>
    )
 }

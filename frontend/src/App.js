@@ -9,6 +9,7 @@ import NavBar from "./components/NavBar";
 import CartIndex from "./components/CartIndex";
 import Footer from "./components/Footer";
 import CartShow from "./components/CartShow";
+import CartCheckout from "./components/CartCheckout";
 
 function App() {
 
@@ -45,6 +46,11 @@ function App() {
             <CartShow />
             <Footer />
           </div>
+        </Route>
+        <Route path='/carts/checkout'>
+          <NavBar />
+          <CartCheckout />
+          <Footer />
         </Route>
         <Route path='/carts'>
           <div className="page-container">

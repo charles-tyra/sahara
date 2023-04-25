@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js';
 
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 
 const CartForm = ({ itemId }) => {
    const dispatch = useDispatch();
@@ -39,7 +39,7 @@ const CartForm = ({ itemId }) => {
                                           item_id: parseInt(itemId), 
                                           quantity: (parseInt(quantity) + parseInt(updateQuantity.quantity))}))
          history.push(`/carts/new/${itemId}`);
-         }
+      }
    }
 
    return (

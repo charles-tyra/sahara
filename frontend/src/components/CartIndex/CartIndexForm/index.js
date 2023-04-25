@@ -32,7 +32,7 @@ const CartIndexForm = ({cartItem}) => {
          <div className='price'>Price</div>
          <hr className="cart-form-spacer"/>
          <div className="cart-index-form">
-            <Link to={`/items/${item.id}`}>
+            <Link className='cart-image-container' to={`/items/${item.id}`}>
                <img className='cart-image' src={item.photoUrls[1]} alt='' />
             </Link>
             <div className='cart-form'>

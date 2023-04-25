@@ -3,10 +3,11 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js';
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const CartForm = ({ itemId }) => {
    const dispatch = useDispatch();
+   const history = useHistory();
    const [quantity, setQuantity] = useState(1);
    const carts = useSelector(getCarts);
 
@@ -28,11 +29,17 @@ const CartForm = ({ itemId }) => {
       updateQuantity = getItemQuantity(carts);
 
       if (currentUser && !updateQuantity) {
-         return dispatch(createCart({owner_id: currentUser.id, item_id: parseInt(itemId), quantity}))
-      } else return dispatch(updateCart({ id: updateQuantity.id,
+         dispatch(createCart({owner_id: currentUser.id, item_id: parseInt(itemId), quantity}))
+         history.push(`/carts/new/${itemId}`);
+      } else if (!currentUser) {
+         history.push('/carts');
+      } else {
+         dispatch(updateCart({ id: updateQuantity.id,
                                           owner_id: currentUser.id, 
                                           item_id: parseInt(itemId), 
                                           quantity: (parseInt(quantity) + parseInt(updateQuantity.quantity))}))
+         history.push(`/carts/new/${itemId}`);
+         }
    }
 
    return (
@@ -69,9 +76,7 @@ const CartForm = ({ itemId }) => {
             <option value='29'>29</option>
             <option value='30'>30</option>
          </select>
-         <Link to={`/carts/new/${itemId}`}>
-            <button type='submit' id='cart-button'>Add to Cart</button>
-         </Link>
+         <button type='submit' id='cart-button'>Add to Cart</button>
          <button id='buy-button'>Buy now</button>
       </form>
    )

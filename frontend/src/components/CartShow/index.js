@@ -22,7 +22,13 @@ const CartShow = () => {
 
    if (!currentUser) return <Redirect to="/carts" />;
 
+   console.log(carts);
+   
    if (!item) {
+      return (
+         null
+      )
+   } else if(carts === []) {
       return (
          null
       )

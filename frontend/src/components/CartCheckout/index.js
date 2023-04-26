@@ -1,12 +1,19 @@
 import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
+import { Redirect, useLocation } from "react-router-dom";
 
 const CartCheckout = () => {
    const location = useLocation();
-   console.log(location);
+   const carts = location.state?.carts;
+   const currentUser = useSelector(state => state.session.user);
 
+   if (!currentUser || !carts) return <Redirect to='/carts' />
+   
+   return (
+      <div id='cart-background'>
 
+      </div>
+   )
 }
 
 export default CartCheckout;

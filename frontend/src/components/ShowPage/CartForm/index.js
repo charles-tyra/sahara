@@ -42,6 +42,12 @@ const CartForm = ({ itemId }) => {
       }
    }
 
+   const handleBuyNow = () => {
+      if (!currentUser) history.push('/carts');
+
+      history.push('/carts/checkout', {carts: {item_id: itemId, quantity, test: 'test'} })
+   }
+
    return (
       <form onSubmit={handleSubmit}>
          <select onChange={e => setQuantity(e.currentTarget.value)}>
@@ -77,10 +83,7 @@ const CartForm = ({ itemId }) => {
             <option value='30'>30</option>
          </select>
          <button type='submit' id='cart-button'>Add to Cart</button>
-         <Link to={{pathname: '/carts/checkout', 
-            state: {carts: {item_id: itemId, quantity} }}}>
-            <button id='buy-button'>Buy now</button>
-         </Link>
+         <button onClick={handleBuyNow} id='buy-button'>Buy now</button>
       </form>
    )
 }

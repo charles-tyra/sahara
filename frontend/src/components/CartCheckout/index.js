@@ -1,6 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Redirect, useLocation } from "react-router-dom";
+import CartCheckoutItem from "./CartCheckoutItem";
 
 import './CartCheckout.css'
 import checkmark from '../../assets/images/green_checkmark.png';
@@ -12,7 +13,7 @@ const CartCheckout = () => {
 
    if (!currentUser || !carts) return <Redirect to='/carts' />
    
-   console.log(currentUser)
+   console.log(carts)
    return (
       <div id='checkout-background'>
          <div id='order-placed-container'>
@@ -24,8 +25,9 @@ const CartCheckout = () => {
             </div>
             <div id='checkout-index-container'>
                <div id='shipping-div'>
-
+                  Shipping direct to {currentUser.firstName} {currentUser.lastName}
                </div>
+               {carts.map((cart) => (<CartCheckoutItem cart={cart} />))}
             </div>
          </div>
          <div id='checkout-ad'>

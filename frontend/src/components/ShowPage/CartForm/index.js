@@ -43,7 +43,7 @@ const CartForm = ({ itemId }) => {
    }
 
    const handleBuyNow = () => {
-      history.push('/carts/checkout', { carts: { item_id: parseInt(itemId), quantity } })
+      history.push('/carts/checkout', { carts: [{ item_id: parseInt(itemId), quantity }] })
    }
 
    return (

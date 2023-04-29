@@ -1,0 +1,56 @@
+#checkout-ad {
+   background-color: white;
+   width: 500px;
+   height: 400px;
+   margin-left: 18px;
+
+   float: right;
+   height: fit-content;
+}
+
+#checkout-background {
+   display: flex;
+   background-color: rgb(240, 242, 242);
+   padding: 20px 154px;
+
+   font-size: 12px;
+}
+
+#checkout-index-container {
+   flex-grow: 1;
+   height: 100%;
+   overflow: hidden;
+   background-color: white;
+   padding: 18px 16px;
+}
+
+#green-checkmark {
+   width: 20px;
+   margin-bottom: 8px;
+   margin-right: 4px;
+}
+
+#order-placed {
+   background-color: white;
+   padding: 18px 16px;
+   padding-top: 10px;
+   margin-bottom: 18px;
+}
+
+#order-placed > div {
+   color: rgb(55, 123, 99);
+   font-family: amber-thick;
+   font-size: 18px;
+
+   padding-bottom: 10px;
+}
+
+#order-placed-container {
+   flex-grow: 1;
+   height: 100%;
+   overflow: hidden;
+}
+
+#to-the-top {
+   margin: 0 !important;
+}

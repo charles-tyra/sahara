@@ -12,8 +12,7 @@ const CartCheckout = () => {
    const currentUser = useSelector(state => state.session.user);
 
    if (!currentUser || !carts) return <Redirect to='/carts' />
-   
-   console.log(carts)
+
    return (
       <div id='checkout-background'>
          <div id='order-placed-container'>
@@ -27,7 +26,7 @@ const CartCheckout = () => {
                <div id='shipping-div'>
                   Shipping direct to {currentUser.firstName} {currentUser.lastName}
                </div>
-               {carts.map((cart) => (<CartCheckoutItem cart={cart} />))}
+               {carts.map((cartItem) => (<CartCheckoutItem cartItem={cartItem} />))}
             </div>
          </div>
          <div id='checkout-ad'>

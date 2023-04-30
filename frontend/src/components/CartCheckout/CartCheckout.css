@@ -22,6 +22,7 @@
    overflow: hidden;
    background-color: white;
    padding: 18px 16px;
+   padding-top: 10px;
 }
 
 #green-checkmark {
@@ -53,6 +54,8 @@
 
 #shipping-div {
    font-family: amber-thick;
+   font-size: 13px;
+   margin-bottom: 10px;
 }
 
 #to-the-top {

@@ -2,7 +2,7 @@ import React, {useEffect} from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getCarts, fetchCarts } from "../../store/carts";
 import { getItem, fetchItem } from "../../store/items";
-import { Link, useParams, Redirect } from "react-router-dom";
+import { Link, useParams, Redirect, useHistory } from "react-router-dom";
 
 import './CartShow.css';
 import checkmark from '../../assets/images/green_checkmark.png';
@@ -13,6 +13,7 @@ const CartShow = () => {
    const carts = useSelector(getCarts);
    const item = useSelector(getItem(itemId));
    const dispatch = useDispatch();
+   const history = useHistory();
    const currentUser = useSelector(state => state.session.user);
 
    useEffect(() => {
@@ -60,7 +61,7 @@ const CartShow = () => {
             <div id='cart-checkout'>
                <span>Cart Subtotal: </span> <img src={bells} className="cart-bells" />{subtotal}
                <div id='cart-button-container'>
-                  <button id='checkout-button'>
+                  <button id='checkout-button' onClick={() => history.push('/carts/checkout', { carts })}>
                      Proceed to checkout ({itemTotal} items)
                   </button>
                   <Link to={'/carts'}>

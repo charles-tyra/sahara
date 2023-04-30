@@ -8,7 +8,7 @@ import './CartCheckoutItem.css';
 
 const CartCheckoutItem = ({cartItem}) => {
    const dispatch = useDispatch();
-   const item = useSelector(getItem(cartItem.item_id));
+   const item = useSelector(getItem(cartItem.itemId));
 
    // Estimated delivery
    const date = new Date();
@@ -17,8 +17,8 @@ const CartCheckoutItem = ({cartItem}) => {
    tomorrow = 'Tomorrow, ' + tomorrow.splice(1, 2).join(" ");
 
    useEffect(() => {
-      dispatch(fetchItem(cartItem.item_id))
-      if(cartItem.id !== undefined) deleteCart(cartItem.id);
+      dispatch(fetchItem(cartItem.itemId))
+      if(cartItem.id !== undefined) dispatch(deleteCart(cartItem.id));
    }, []);
 
    if (item === undefined) return null;

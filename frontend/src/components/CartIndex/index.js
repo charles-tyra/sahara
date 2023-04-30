@@ -5,11 +5,12 @@ import { getCarts, fetchCarts } from '../../store/carts';
 import money from '../../assets/images/money-clip-art-38.jpg';
 import bells from '../../assets/images/bells.png'
 import './CartIndex.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import CartIndexForm from './CartIndexForm';
 
 function CartIndex() {
    const dispatch = useDispatch();
+   const history = useHistory();
    const carts = useSelector(getCarts);
    const currUser = useSelector(state => state.session.user);
 
@@ -87,6 +88,9 @@ function CartIndex() {
             </div>
             <div id='cart-checkout'> 
                {carts.length !== 0 ? showSubtotal(false) : null }
+               <button onClick={() => history.push('/carts/checkout', { carts})}>
+
+               </button>
             </div>
          </div>
       )

@@ -1,5 +1,5 @@
 class Review < ApplicationRecord
-   validates :title, :body, presence: true
+   validates :title, :body, :rating, presence: true
    validates :item_id, uniqueness: { scope :author_id}
 
    belongs_to :item

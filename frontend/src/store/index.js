@@ -5,6 +5,7 @@ import sessionReducer from './session';
 import userReducer from './usersReducer'
 import itemReducer from './items';
 import cartReducer from './carts';
+import reviewReducer from './reviews';
 
 let enhancer;
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
@@ -15,7 +16,8 @@ const rootReducer = combineReducers({
    session: sessionReducer,
    user: userReducer,
    items: itemReducer,
-   carts: cartReducer
+   carts: cartReducer,
+   reviews: reviewReducer
 });
 
 const configureStore = (preloadedState = {}) => {

@@ -7,19 +7,15 @@
    width: 80px;
 }
 
-.cart-shipping {
+.cart-shipping-container {
    width: 214px;
    height: 85px;
 }
 
-.cart-shipping > div > div {
+.cart-shipping > div {
    font-family: amber-thick;
 }
 
-.cart-shipping > div {
+.cart-shipping~.cart-shipping {
    display: none;
-}
-
-.cart-shipping:first-child > div {
-   display: block;
 }

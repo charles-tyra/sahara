@@ -61,3 +61,7 @@
 #to-the-top {
    margin: 0 !important;
 }
+
+.cart-shipping~.cart-shipping {
+   display: none;
+}

@@ -27,7 +27,7 @@ const CartCheckoutItem = ({cartItem}) => {
    return (
       <div className="cart-checkout-item">
          <div className="cart-shipping-container">
-            <div className="cart-shipping" >
+            <div className="cart-shipping">
                <div>
                   {tomorrow}
                </div>

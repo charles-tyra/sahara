@@ -40,6 +40,20 @@ function ShowPage() {
       else if (item.dimensions === 'fourxfour') dimensions = fourxfour;
       else if (item.dimensions === 'fivexfive') dimensions = fivexfive;
 
+      // Estimated delivery
+      const date = new Date();
+      date.setDate(date.getDate() + 1);
+      let tomorrow = date.toDateString().split(" ");
+      tomorrow = 'Tomorrow, ' + tomorrow.splice(1, 2).join(" ");
+
+      // Order within
+      let minutes = 60 - date.getMinutes();
+      let hours = 24 - date.getHours();
+      minutes === 60 ? minutes = 0 : hours = hours - 1;
+
+      const timeString = `${hours} hrs ${minutes} mins`
+      
+
    return (
       <> 
          <div id='show-page-container'> 
@@ -63,9 +77,14 @@ function ShowPage() {
             </div>
             <div id='show-cart-container'>
                <div id='price-info'>
-                  <h3>{item.bells} <img className='bells' src={bells} alt=''/></h3>
-                  Sell back for {(item.bells) / 4} <img className='bells' src={bells} alt=''/>
+                  <h3><img className='bells' src={bells} alt=''/>{item.bells}</h3>
+                  Sell back for <img className='bells' src={bells} alt='' />{(item.bells) / 4}
                </div>
+
+               FREE delivery <span id='bold-span'>{tomorrow}.</span> Order within <span className='green-span'>{timeString}</span>
+               <br />
+               <br />
+               <h5 className='green-span'>In Stock</h5>
 
                <CartForm itemId={itemId}/>
             </div>

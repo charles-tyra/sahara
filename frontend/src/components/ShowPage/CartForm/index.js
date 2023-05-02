@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js';
 
 import { useHistory, Link } from "react-router-dom";
+import './CartForm.css'
 
 const CartForm = ({ itemId }) => {
    const dispatch = useDispatch();
@@ -49,7 +50,7 @@ const CartForm = ({ itemId }) => {
    return (
       <>
          <form onSubmit={handleSubmit}>
-            <select onChange={e => setQuantity(e.currentTarget.value)}>
+            Qty: &nbsp; <select id='quantity-select' onChange={e => setQuantity(e.currentTarget.value)}>
                <option value='1'>1</option>
                <option value='2'>2</option>
                <option value='3'>3</option>

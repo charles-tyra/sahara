@@ -56,37 +56,42 @@ function ShowPage() {
 
    return (
       <> 
-         <div id='show-page-container'> 
-            <div id='show-image-container'>
-               <img src={item.photoUrls[1]} alt=''/>
-            </div>
-            <div id='show-info-container'>
-               <h2>{item.itemName}</h2>
-               <img className='ratings' src={ratings} alt=''/> 40 ratings
-               <hr/>
-               <div><span className='description-span'>Colors</span>{item.colors}</div>
-               <div><span className='description-span'>Room Type</span>{item.theme}</div>
-               <div><span className='description-span'>Material</span>{item.material}</div>
-               <div><span className='description-span'>Dimensions</span><img src={dimensions} alt=''/></div>
-               <hr/>
-               <h6 id='about-this'>About this item</h6>
-               <div id='description-div'>
-                  &emsp;{item.description}
+         <div id='show-page-container'>
+            <div id='show-page-row'>
+               <div id='show-image-container'>
+                  <img src={item.photoUrls[1]} alt=''/>
                </div>
+               <div id='show-info-container'>
+                  <h2>{item.itemName}</h2>
+                  <img className='ratings' src={ratings} alt=''/> 40 ratings
+                  <hr/>
+                  <div><span className='description-span'>Colors</span>{item.colors}</div>
+                  <div><span className='description-span'>Room Type</span>{item.theme}</div>
+                  <div><span className='description-span'>Material</span>{item.material}</div>
+                  <div><span className='description-span'>Dimensions</span><img src={dimensions} alt=''/></div>
+                  <hr/>
+                  <h6 id='about-this'>About this item</h6>
+                  <div id='description-div'>
+                     &emsp;{item.description}
+                  </div>
 
-            </div>
-            <div id='show-cart-container'>
-               <div id='price-info'>
-                  <h3><img className='bells' src={bells} alt=''/>{item.bells}</h3>
-                  Sell back for <img className='bells' src={bells} alt='' />{(item.bells) / 4}
                </div>
+               <div id='show-cart-container'>
+                  <div id='price-info'>
+                     <h3><img className='bells' src={bells} alt=''/>{item.bells}</h3>
+                     Sell back for <img className='bells' src={bells} alt='' />{(item.bells) / 4}
+                  </div>
 
-               FREE delivery <span id='bold-span'>{tomorrow}.</span> Order within <span className='green-span'>{timeString}</span>
-               <br />
-               <br />
-               <h5 className='green-span'>In Stock</h5>
+                  FREE delivery <span id='bold-span'>{tomorrow}.</span> Order within <span className='green-span'>{timeString}</span>
+                  <br />
+                  <br />
+                  <h5 className='green-span'>In Stock</h5>
 
-               <CartForm itemId={itemId}/>
+                  <CartForm itemId={itemId}/>
+               </div>
+            </div>
+            <div id='show-page-reviews-container'>
+               testetsetes
             </div>
          </div>
       </>

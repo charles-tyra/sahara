@@ -49,7 +49,7 @@ const CartForm = ({ itemId }) => {
 
    return (
       <>
-         <form onSubmit={handleSubmit}>
+         <form id='show-page-cart' onSubmit={handleSubmit}>
             Qty: &nbsp; <select id='quantity-select' onChange={e => setQuantity(e.currentTarget.value)}>
                <option value='1'>1</option>
                <option value='2'>2</option>

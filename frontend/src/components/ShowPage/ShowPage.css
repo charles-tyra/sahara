@@ -3,6 +3,12 @@ div#show-page-container {
    margin-top: 40px;
    margin-bottom: 36px;
    display: flex;
+   flex-direction: column;
+}
+
+#show-page-row {
+   display: flex;
+   flex-direction: row;
    justify-content: space-evenly;
 }
 
@@ -85,6 +91,8 @@ button#buy-button {
    border-radius: 15px;
    background-color: rgb(242,168, 66);
    border-color: transparent;
+
+   margin-bottom: 14px;
 }
 
 .green-span {

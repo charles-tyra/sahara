@@ -1,6 +1,7 @@
 div#show-page-container {
    width: 1500px;
    margin-top: 40px;
+   margin-bottom: 36px;
    display: flex;
    justify-content: space-evenly;
 }
@@ -26,8 +27,13 @@ div#show-info-container {
    width: 405px;
 }
 
+#show-info-container > div {
+   margin-bottom: 3px;
+}
+
 div#description-div {
    margin-bottom: 10px;
+   padding-left: 4px;
 }
 
 span.description-span {
@@ -87,5 +93,9 @@ button#buy-button {
 }
 
 #bold-span {
+   font-family: amber-thick;
+}
+
+#about-this {
    font-family: amber-thick;
 }

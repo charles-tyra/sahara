@@ -69,9 +69,9 @@ function ShowPage() {
                <div><span className='description-span'>Material</span>{item.material}</div>
                <div><span className='description-span'>Dimensions</span><img src={dimensions} alt=''/></div>
                <hr/>
+               <h6 id='about-this'>About this item</h6>
                <div id='description-div'>
-                  <h4>About this item</h4><br/>
-                  {item.description}
+                  &emsp;{item.description}
                </div>
 
             </div>

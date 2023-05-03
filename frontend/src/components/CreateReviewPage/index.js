@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createReview } from "../../store/reviews";
-import { Redirect, useParams } from "react-router-dom";
+import { Redirect, useHistory, useParams } from "react-router-dom";
 import ReactStars from 'react-stars';
 import './CreateReviewPage.css';
 import { fetchItem, getItem } from "../../store/items";
 
 const CreateReviewPage = () => {
    const dispatch = useDispatch();
+   const history = useHistory();
    const {itemId} = useParams();
    const currentUser = useSelector(state => state.session.user);
    const item = useSelector(getItem(itemId));
@@ -22,14 +23,16 @@ const CreateReviewPage = () => {
    
    if(!currentUser) return <Redirect to='/' />
 
-   const handleSubmit = () => {
-      return dispatch(createReview({
+   const handleSubmit = async () => {
+      await dispatch(createReview({
          item_id: itemId,
          author_id: currentUser.id,
          title,
          body,
          rating
-      }))
+      }));
+
+      history.push(`/items/${itemId}`)
    }
    console.log(item);
 

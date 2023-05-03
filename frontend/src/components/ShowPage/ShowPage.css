@@ -10,6 +10,7 @@ div#show-page-container {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
+   padding-bottom: 8px;
 }
 
 div#show-image-container {
@@ -106,4 +107,23 @@ button#buy-button {
 
 #about-this {
    font-family: amber-thick;
+}
+
+#show-page-reviews-container {
+   margin-top: 10px;
+}
+
+#left-show-review-column {
+   width: 334px;
+}
+
+#review-stars {
+   display: flex;
+   flex-direction: row;
+
+   font-size: 18px;
+}
+
+.customer {
+   margin-bottom: 2px;
 }

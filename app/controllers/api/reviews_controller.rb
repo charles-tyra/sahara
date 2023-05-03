@@ -5,6 +5,7 @@ class Api::ReviewsController < ApplicationController
    end
 
    def show
+      current_user.reviews(itemId: itemId)
       @review = Review.find(params[:id])
 
       if @review
@@ -20,7 +21,7 @@ class Api::ReviewsController < ApplicationController
       if @review.save
          render :show
       else
-         render json: @cart.errors.full_messages, status: 422
+         render json: @review.errors.full_messages, status: 422
       end
    end
 

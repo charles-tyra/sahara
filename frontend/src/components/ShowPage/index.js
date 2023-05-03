@@ -2,6 +2,7 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { getItem, fetchItem } from '../../store/items';
+import { getReviews, fetchReviews } from '../../store/reviews';
 import { useParams } from 'react-router-dom';
 import './ShowPage.css';
 import bells from '../../assets/images/bells.png';
@@ -17,14 +18,17 @@ import fivexfive from '../../assets/images/5x5.png'
 
 import CartForm from './CartForm';
 import ShowPageReviews from './ShowPageReviews';
+import ReactStars from 'react-stars';
 
 function ShowPage() {
    const { itemId } = useParams();
    const item = useSelector(getItem(itemId));
+   const reviews = useSelector(getReviews)
    const dispatch = useDispatch();
 
    useEffect(() => {
       dispatch(fetchItem(itemId));
+      dispatch(fetchReviews(itemId));
    }, [dispatch, itemId])
 
    if(!item) {
@@ -32,6 +36,7 @@ function ShowPage() {
          null
       )
    } else {
+      // item.dimensions img src
       let dimensions = null;
       if (item.dimensions === 'twoxtwo') dimensions = twoxtwo;
       else if (item.dimensions === 'twoxone') dimensions = twoxone;
@@ -54,7 +59,13 @@ function ShowPage() {
 
       const timeString = `${hours} hrs ${minutes} mins`
       
-
+      console.log(reviews);
+      let avgReview = 0;
+      if(reviews !== []) {
+         reviews.forEach(review => avgReview = review.rating + avgReview);
+         avgReview = avgReview / reviews.length;
+      }
+      console.log(avgReview)
    return (
       <> 
          <div id='show-page-container'>
@@ -88,11 +99,23 @@ function ShowPage() {
                   <br />
                   <h5 className='green-span'>In Stock</h5>
 
-                  <CartForm itemId={itemId}/>
+                  <CartForm itemId={itemId} />
                </div>
             </div>
+            <hr />
             <div id='show-page-reviews-container'>
-               <ShowPageReviews />
+               <div id='left-show-review-column'>
+                  <div id='review-average-container'>
+                     <h4 id='bold-span' className='customer'>Customer reviews</h4>
+                     <div id='review-stars'>
+                        <ReactStars value={avgReview} size={'24px'} /> &nbsp; {avgReview} out of 5
+                     </div>
+                  </div>
+                  <ShowPageReviews />
+               </div>
+               <div id='right-show-review-column'>
+
+               </div>
             </div>
          </div>
       </>

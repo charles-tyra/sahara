@@ -10,6 +10,7 @@ import CartIndex from "./components/CartIndex";
 import Footer from "./components/Footer";
 import CartShow from "./components/CartShow";
 import CartCheckout from "./components/CartCheckout";
+import CreateReviewPage from "./components/CreateReviewPage";
 
 function App() {
 
@@ -24,6 +25,13 @@ function App() {
         <Route path='/signup'>
           <div className='page-container'>
             <SignUpForm />
+          </div>
+        </Route>
+        <Route path='/items/:itemId/reviews/create'>
+          <div className="page-container">
+            <NavBar />
+            <CreateReviewPage />
+            <Footer />
           </div>
         </Route>
         <Route path='/items/:itemId'>

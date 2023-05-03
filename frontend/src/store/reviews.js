@@ -1,8 +1,8 @@
 import { csrfFetch } from "./csrf";
 
-const RECIEVE_REVIEW = 'reviews/recieve_review';
-const RECIEVE_REVIEWS = 'reviews/recieve_reviews';
-const REMOVE_REVIEW = 'reviews/remove_review';
+const RECIEVE_REVIEW = 'REVIEWS/RECIEVE_REVIEW';
+const RECIEVE_REVIEWS = 'REVIEWS/RECIEVE_REVIEWS';
+const REMOVE_REVIEW = 'REVIEWS/REMOVE_REVIEW';
 
 
 const recieveReview = review => {
@@ -45,8 +45,8 @@ export const fetchReview = reviewId => async dispatch => {
    dispatch(recieveReview(data.review));
 }
 
-export const fetchReviews = () => async dispatch => {
-   const response = await csrfFetch('/api/reviews');
+export const fetchReviews = (itemId) => async dispatch => {
+   const response = await csrfFetch(`/api/items/${itemId}/reviews`);
 
    const data = await response.json();
    dispatch(recieveReviews(data.reviews));

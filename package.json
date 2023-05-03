@@ -13,5 +13,8 @@
   "license": "ISC",
   "engines": {
     "node": "16.x"
+  },
+  "dependencies": {
+    "react-stars": "^2.2.5"
   }
 }

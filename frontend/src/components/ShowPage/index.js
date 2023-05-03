@@ -16,6 +16,7 @@ import fourxfour from '../../assets/images/4x4.png'
 import fivexfive from '../../assets/images/5x5.png'
 
 import CartForm from './CartForm';
+import ShowPageReviews from './ShowPageReviews';
 
 function ShowPage() {
    const { itemId } = useParams();
@@ -91,7 +92,7 @@ function ShowPage() {
                </div>
             </div>
             <div id='show-page-reviews-container'>
-               testetsetes
+               <ShowPageReviews />
             </div>
          </div>
       </>

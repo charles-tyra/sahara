@@ -1,6 +1,9 @@
 class Api::ReviewsController < ApplicationController
    def index
-      @reviews = Item.find(params[:itemId]).reviews
+      puts('inside Reviews Controller')
+      puts(params[:item_id])
+      @reviews = []
+      @reviews ||= Item.find(params[:item_id]).reviews
       render 'api/reviews/index'
    end
 

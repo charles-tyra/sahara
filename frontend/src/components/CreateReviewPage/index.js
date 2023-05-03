@@ -49,14 +49,18 @@ const CreateReviewPage = () => {
          <hr className="create-review-space"/>
 
          <h5>Add a headline</h5>
-         <input placeholder="What's most important to know?" onChange={e => setTitle(e.target.value)} />
+         <input  
+            placeholder="What's most important to know?"
+            onChange={e => setTitle(e.target.value)} />
          <hr className="create-review-space"/>
 
          <h5>Add a written review</h5>
-         <input onChange={e => setBody(e.target.value)} />
+         <input
+            placeholder="What did you like or dislike? What did you use this product for?"
+            onChange={e => setBody(e.target.value)} />
          <hr className="create-review-space"/>
 
-         <button type="submit" onClick={handleSubmit}>Submit</button>
+         <button id='review-submit' onClick={handleSubmit}>Submit</button>
       </div>
    )
 }

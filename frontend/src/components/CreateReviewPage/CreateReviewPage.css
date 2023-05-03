@@ -1,0 +1,35 @@
+#create-review-header {
+   font-family: amber-thick;
+   margin-bottom: 0px;
+}
+
+#create-review-item-info > span {
+   margin-left: 10px;
+}
+
+#create-review-page-container {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 770px;
+   margin: 28px 0px;
+}
+
+#create-review-page-container > h5 {
+   font-family: amber-thick;
+   font-size: 17px;
+
+   margin-bottom: 12px;
+}
+
+.create-review-space {
+   margin: 18px 2px;
+}
+
+.image-space {
+   margin-top: 2px;
+}
+
+#review-image {
+   width: 84px;
+}

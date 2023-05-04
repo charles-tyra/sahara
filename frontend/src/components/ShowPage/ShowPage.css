@@ -127,3 +127,7 @@ button#buy-button {
 .customer {
    margin-bottom: 2px;
 }
+
+.stars {
+   size: 24px!important;
+}

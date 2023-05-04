@@ -17,8 +17,8 @@ import fourxfour from '../../assets/images/4x4.png'
 import fivexfive from '../../assets/images/5x5.png'
 
 import CartForm from './CartForm';
-import ShowPageReviews from './ShowPageReviews';
 import ReactStars from 'react-stars';
+import ReviewIndex from './ReviewIndex';
 
 function ShowPage() {
    const { itemId } = useParams();
@@ -59,13 +59,6 @@ function ShowPage() {
 
       const timeString = `${hours} hrs ${minutes} mins`
       
-      console.log(reviews);
-      let avgReview = 0;
-      if(reviews !== []) {
-         reviews.forEach(review => avgReview = review.rating + avgReview);
-         avgReview = avgReview / reviews.length;
-      }
-      console.log(avgReview)
    return (
       <> 
          <div id='show-page-container'>
@@ -102,21 +95,7 @@ function ShowPage() {
                   <CartForm itemId={itemId} />
                </div>
             </div>
-            <hr />
-            <div id='show-page-reviews-container'>
-               <div id='left-show-review-column'>
-                  <div id='review-average-container'>
-                     <h4 id='bold-span' className='customer'>Customer reviews</h4>
-                     <div id='review-stars'>
-                        <ReactStars value={avgReview} size={'24px'} /> &nbsp; {avgReview} out of 5
-                     </div>
-                  </div>
-                  <ShowPageReviews />
-               </div>
-               <div id='right-show-review-column'>
-
-               </div>
-            </div>
+            <ReviewIndex reviews={reviews}/>
          </div>
       </>
    )

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import { fetchCarts, createCart, updateCart, getCarts } from '../../../store/carts.js';
 
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import './CartForm.css'
 
 const CartForm = ({ itemId }) => {

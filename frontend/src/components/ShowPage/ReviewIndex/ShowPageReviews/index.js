@@ -11,7 +11,6 @@ const ShowPageReviews = () => {
          <button onClick={() => history.push(`/items/${itemId}/reviews/create`)}>
             Write a review
          </button>
-
       </>
    )
 }

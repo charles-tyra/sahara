@@ -6,11 +6,16 @@ div#show-page-container {
    flex-direction: column;
 }
 
-#show-page-row {
+.show-page-row {
    display: flex;
    flex-direction: row;
    justify-content: space-evenly;
    padding-bottom: 8px;
+}
+
+.ratings-row {
+   justify-content: left;
+   font-size: 15px;
 }
 
 div#show-image-container {
@@ -128,6 +133,11 @@ button#buy-button {
    margin-bottom: 2px;
 }
 
-.stars {
-   size: 24px!important;
+.stars > span {
+   font-size: 24px;
+   color: rgb(252, 155, 52)!important;
+}
+
+.show-stars {
+   margin-left: 6px;
 }

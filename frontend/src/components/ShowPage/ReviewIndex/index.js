@@ -3,6 +3,7 @@ import { useSelector } from "react-redux";
 import './ReviewIndex.css';
 
 import ReactStars from "react-stars";
+import ProgressBar from "react-bootstrap/esm/ProgressBar";
 import ShowPageReviews from "./ShowPageReviews";
 
 const ReviewIndex = ({reviews}) => {

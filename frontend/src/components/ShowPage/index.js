@@ -6,7 +6,6 @@ import { getReviews, fetchReviews } from '../../store/reviews';
 import { useParams } from 'react-router-dom';
 import './ShowPage.css';
 import bells from '../../assets/images/bells.png';
-import ratings from '../../assets/images/rating_placeholder.png'
 
 import twoxone from '../../assets/images/2x1.png'
 import twoxtwo from '../../assets/images/2x2.png'
@@ -23,7 +22,7 @@ import ReviewIndex from './ReviewIndex';
 function ShowPage() {
    const { itemId } = useParams();
    const item = useSelector(getItem(itemId));
-   const reviews = useSelector(getReviews)
+   const reviews = useSelector(getReviews);
    const dispatch = useDispatch();
 
    useEffect(() => {
@@ -58,17 +57,28 @@ function ShowPage() {
       minutes === 60 ? minutes = 0 : hours = hours - 1;
 
       const timeString = `${hours} hrs ${minutes} mins`
+
+      //Avg Review
+      let avgReview = 0;
+      if (reviews !== []) {
+         reviews.forEach(review => avgReview = review.rating + avgReview);
+         reviews.length ? avgReview = avgReview / reviews.length : avgReview = avgReview;
+      }
       
    return (
       <> 
          <div id='show-page-container'>
-            <div id='show-page-row'>
+            <div className='show-page-row'>
                <div id='show-image-container'>
                   <img src={item.photoUrls[1]} alt=''/>
                </div>
                <div id='show-info-container'>
-                  <h2>{item.itemName}</h2>
-                  <img className='ratings' src={ratings} alt=''/> 40 ratings
+                  <h3>{item.itemName}</h3>
+                  <div className='show-page-row ratings-row'>
+                     {avgReview !== 0 ? <span>{avgReview}</span> : null}
+                     <ReactStars className='stars show-stars' value={avgReview} /> &nbsp;&nbsp;
+                     <span>{reviews.length ? reviews.length : '0'} ratings</span>
+                  </div>
                   <hr/>
                   <div><span className='description-span'>Colors</span>{item.colors}</div>
                   <div><span className='description-span'>Room Type</span>{item.theme}</div>

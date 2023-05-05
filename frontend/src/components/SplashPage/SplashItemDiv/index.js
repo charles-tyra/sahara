@@ -18,7 +18,7 @@ const SplashItemDiv= ( {divItems, theme} ) => {
          {newItems.length === 4 ? newItems.map(item => {
             return (
                <a key={item.id} href={`/items/${item.id}`}>
-                  <img className='index-div-img' src={item.photoUrls[0]}/>
+                  <img className='index-div-img' src={item.photoUrls[0]} alt={item.itemName}/>
                </a>
             )}) : null
          }

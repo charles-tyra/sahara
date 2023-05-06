@@ -141,3 +141,8 @@ button#buy-button {
 .show-stars {
    margin-left: 6px;
 }
+
+#total-ratings {
+   margin: 6px 0px;
+   color: rgb(79, 77, 77);
+}

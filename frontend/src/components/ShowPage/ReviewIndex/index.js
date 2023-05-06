@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
 import './ReviewIndex.css';
 
@@ -6,12 +6,19 @@ import ReactStars from "react-stars";
 import ProgressBar from "react-bootstrap/esm/ProgressBar";
 import ShowPageReviews from "./ShowPageReviews";
 
-const ReviewIndex = ({reviews}) => {
+const ReviewIndex = ({ reviews }) => {
+   const currentUser = useSelector(state => state.session.user);
+   
+   // Check whether to update or create
+   let updateBoolean = false;
+   for(let j = 0; j < reviews?.length; j++) {
+      if (reviews[j]?.authorId === currentUser?.id) updateBoolean = true;
+   }
 
    let avgReview = 0;
    if (reviews !== []) {
       reviews.forEach(review => avgReview = review.rating + avgReview);
-      avgReview = avgReview / reviews.length;
+      reviews.length ? avgReview = avgReview / reviews.length : avgReview = avgReview;
    }
 
    return (
@@ -24,8 +31,11 @@ const ReviewIndex = ({reviews}) => {
                   <div id='review-stars'>
                      <ReactStars className='stars' value={avgReview} /> &nbsp; {avgReview} out of 5
                   </div>
+                  <div id='total-ratings'> 
+                     {reviews?.length ? reviews.length : '0'} global ratings
+                  </div>
                </div>
-               <ShowPageReviews />
+               {!updateBoolean ? <ShowPageReviews /> : null}
             </div>
             <div id='right-show-review-column'>
 

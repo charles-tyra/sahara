@@ -8,8 +8,13 @@ const ShowPageReviews = () => {
 
    return (
       <>
-         <button onClick={() => history.push(`/items/${itemId}/reviews/create`)}>
-            Write a review
+         <hr />
+         <h5 id='show-page-reviews-header'>Review this product</h5>
+         <div id='show-page-under-header'>
+            Share your thoughts with other customers
+         </div>
+         <button id='create-review-button' onClick={() => history.push(`/items/${itemId}/reviews/create`)}>
+            Write a customer review
          </button>
       </>
    )

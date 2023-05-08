@@ -79,6 +79,7 @@ function ShowPage() {
                      <div className="review-blocker top-blocker" />
                      <ReactStars className='stars show-stars' value={avgReview} /> &nbsp;&nbsp;
                      <span>{reviews.length ? reviews.length : '0'} ratings</span>
+                     <ReactStars className='top-backer' value={5} />
                   </div>
                   <hr/>
                   <div><span className='description-span'>Colors</span>{item.colors}</div>

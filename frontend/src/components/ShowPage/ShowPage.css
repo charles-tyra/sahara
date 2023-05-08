@@ -163,3 +163,31 @@ span[style*="color: gray"] {
 .top-blocker {
    width: 100px;
 }
+
+.stars > span {
+   margin-right: 1px;
+}
+
+.backer {
+   position: relative;
+   right: 170px;
+   z-index: -1;
+}
+
+.backer > span {
+   font-size: 16px!important;
+
+   color: rgb(147, 89, 28)!important;
+}
+
+.top-backer {
+   position: relative;
+   right: 148px;
+
+   z-index: -1;
+}
+
+.top-backer > span {
+   color: rgb(104, 63, 19)!important;
+   font-size: 16px!important;
+}

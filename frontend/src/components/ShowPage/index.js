@@ -76,6 +76,7 @@ function ShowPage() {
                   <h3>{item.itemName}</h3>
                   <div className='show-page-row ratings-row'>
                      {avgReview !== 0 ? <span>{avgReview}</span> : null}
+                     <div className="review-blocker top-blocker" />
                      <ReactStars className='stars show-stars' value={avgReview} /> &nbsp;&nbsp;
                      <span>{reviews.length ? reviews.length : '0'} ratings</span>
                   </div>

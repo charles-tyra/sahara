@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import './ReviewIndex.css';
 
@@ -29,10 +29,14 @@ const ReviewIndex = ({ reviews }) => {
                <div id='review-average-container'>
                   <h4 id='bold-span' className='customer'>Customer reviews</h4>
                   <div id='review-stars'>
-                     <ReactStars className='stars' value={avgReview} /> &nbsp; {avgReview} out of 5
+                     <div className="review-blocker" />
+                     <ReactStars className='stars' color={'#FC9B90'} value={avgReview} /> &nbsp; {avgReview} out of 5
                   </div>
                   <div id='total-ratings'> 
                      {reviews?.length ? reviews.length : '0'} global ratings
+                  </div>
+                  <div>
+                     <ProgressBar />
                   </div>
                </div>
                {!updateBoolean ? <ShowPageReviews /> : null}

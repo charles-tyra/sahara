@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 import './ReviewIndex.css';
 
 import ReactStars from "react-stars";
-import ProgressBar from "react-bootstrap/esm/ProgressBar";
 import ShowPageReviews from "./ShowPageReviews";
 
 const ReviewIndex = ({ reviews }) => {
@@ -15,11 +14,24 @@ const ReviewIndex = ({ reviews }) => {
       if (reviews[j]?.authorId === currentUser?.id) updateBoolean = true;
    }
 
+   // Ratings Conglomeration
    let avgReview = 0;
+   let progReviews = { 1:0, 2:0, 3:0, 4:0, 5:0};
    if (reviews !== []) {
-      reviews.forEach(review => avgReview = review.rating + avgReview);
+      reviews.forEach(review => {
+         avgReview = review.rating + avgReview
+         progReviews[review.rating] = progReviews[review.rating] + 1;
+      });
       reviews.length ? avgReview = avgReview / reviews.length : avgReview = avgReview;
+      progReviews[1] !== 0 ? progReviews[1] = Math.floor(progReviews[1] / reviews.length * 100) : progReviews[1] = 0;
+      progReviews[2] !== 0 ? progReviews[2] = Math.floor(progReviews[2] / reviews.length * 100) : progReviews[2] = 0;
+      progReviews[3] !== 0 ? progReviews[3] = Math.floor(progReviews[3] / reviews.length * 100) : progReviews[3] = 0;
+      progReviews[4] !== 0 ? progReviews[4] = Math.floor(progReviews[4] / reviews.length * 100) : progReviews[4] = 0;
+      progReviews[5] !== 0 ? progReviews[5] = Math.floor(progReviews[5] / reviews.length * 100) : progReviews[5] = 0;
    }
+   console.log(progReviews)
+
+
 
    return (
       <>
@@ -36,8 +48,20 @@ const ReviewIndex = ({ reviews }) => {
                   <div id='total-ratings'> 
                      {reviews?.length ? reviews.length : '0'} global ratings
                   </div>
-                  <div>
-                     <ProgressBar />
+                  <div className='percentage-container'>
+                     5 Star <progress classname='review-percentage' max={100} value={progReviews[5]}></progress> <span>{progReviews[5]}%</span>
+                  </div>
+                  <div className="percentage-container">
+                     4 Star <progress classname='review-percentage' max={100} value={progReviews[4]}></progress> <span>{progReviews[4]}%</span>
+                  </div>
+                  <div className="percentage-container">
+                     3 Star <progress classname='review-percentage' max={100} value={progReviews[3]}></progress> <span>{progReviews[3]}% </span>
+                  </div>
+                  <div className="percentage-container">
+                     2 Star <progress classname='review-percentage' max={100} value={progReviews[2]}></progress> <span>{progReviews[2]}%</span>
+                  </div>
+                  <div className="percentage-container">
+                     1 Star <progress classname='review-percentage' max={100} value={progReviews[1]}></progress> <span>{progReviews[1]}%</span>
                   </div>
                </div>
                {!updateBoolean ? <ShowPageReviews /> : null}

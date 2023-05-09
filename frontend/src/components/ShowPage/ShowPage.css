@@ -150,6 +150,8 @@ span[style*="color: gray"] {
 #total-ratings {
    margin: 6px 0px;
    color: rgb(79, 77, 77);
+
+   margin-bottom: 12px;
 }
 
 .review-blocker {
@@ -177,17 +179,17 @@ span[style*="color: gray"] {
 .backer > span {
    font-size: 16px!important;
 
-   color: rgb(147, 89, 28)!important;
+   color: rgb(212, 129, 58) !important;
 }
 
 .top-backer {
    position: relative;
-   right: 148px;
+   right: 148.2px;
 
    z-index: -1;
 }
 
 .top-backer > span {
-   color: rgb(104, 63, 19)!important;
+   color: rgb(212, 129, 58)!important;
    font-size: 16px!important;
 }

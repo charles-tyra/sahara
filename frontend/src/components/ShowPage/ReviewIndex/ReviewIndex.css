@@ -1,0 +1,19 @@
+progress {
+   accent-color: #ffa41c;
+   height: 40px;
+   width: 200px;
+}
+
+.percentage-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 300px;
+}
+
+.percentage-container > span {
+   display: inline-block;
+   width: 36px;
+   text-align: end;
+}

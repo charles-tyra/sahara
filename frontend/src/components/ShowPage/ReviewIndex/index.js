@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import './ReviewIndex.css';
 
 import ReactStars from "react-stars";
-import ShowPageReviews from "./ShowPageReviews";
+import ShowPageReviewButton from "./ShowPageReviewButton";
 
 const ReviewIndex = ({ reviews }) => {
    const currentUser = useSelector(state => state.session.user);
@@ -64,7 +64,7 @@ const ReviewIndex = ({ reviews }) => {
                      1 Star <progress classname='review-percentage' max={100} value={progReviews[1]}></progress> <span>{progReviews[1]}%</span>
                   </div>
                </div>
-               {!updateBoolean ? <ShowPageReviews /> : null}
+               {!updateBoolean ? <ShowPageReviewButton /> : null}
             </div>
             <div id='right-show-review-column'>
 

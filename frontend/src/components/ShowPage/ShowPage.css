@@ -15,8 +15,10 @@ div#show-page-container {
 
 .ratings-row {
    justify-content: left;
-   font-size: 15px;
+   font-size: 13px;
+   padding-bottom: 0;
 }
+
 
 div#show-image-container {
    position: sticky;
@@ -184,7 +186,7 @@ span[style*="color: gray"] {
 
 .top-backer {
    position: relative;
-   right: 148.2px;
+   right: 139px;
 
    z-index: -1;
 }
@@ -192,4 +194,14 @@ span[style*="color: gray"] {
 .top-backer > span {
    color: rgb(212, 129, 58)!important;
    font-size: 16px!important;
+}
+
+#show-item-name {
+   margin-bottom: 2px;
+   font-size: 25px;
+}
+
+.no-margin-hr {
+   margin-top: 2px;
+   margin-bottom: 14px;
 }

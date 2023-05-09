@@ -73,7 +73,7 @@ function ShowPage() {
                   <img src={item.photoUrls[1]} alt=''/>
                </div>
                <div id='show-info-container'>
-                  <h3>{item.itemName}</h3>
+                  <h3 id='show-item-name'>{item.itemName}</h3>
                   <div className='show-page-row ratings-row'>
                      {avgReview !== 0 ? <span>{avgReview}</span> : null}
                      <div className="review-blocker top-blocker" />
@@ -81,7 +81,7 @@ function ShowPage() {
                      <span>{reviews.length ? reviews.length : '0'} ratings</span>
                      <ReactStars className='top-backer' value={5} />
                   </div>
-                  <hr/>
+                  <hr className='no-margin-hr'/>
                   <div><span className='description-span'>Colors</span>{item.colors}</div>
                   <div><span className='description-span'>Room Type</span>{item.theme}</div>
                   <div><span className='description-span'>Material</span>{item.material}</div>

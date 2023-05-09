@@ -1,8 +1,8 @@
 import React from "react";
 import { useHistory, useParams } from "react-router-dom";
-import './ShowPageReviews.css';
+import './ShowPageReviewButton.css';
 
-const ShowPageReviews = () => {
+const ShowPageReviewButton = () => {
    const { itemId } = useParams();
    const history = useHistory();
 
@@ -20,4 +20,4 @@ const ShowPageReviews = () => {
    )
 }
 
-export default ShowPageReviews;
+export default ShowPageReviewButton;

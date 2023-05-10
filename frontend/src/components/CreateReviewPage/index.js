@@ -64,7 +64,10 @@ const CreateReviewPage = () => {
          <hr className="create-review-space image-space"/>
 
          <h5>Overall Rating</h5>
-         <ReactStars count={5} size={24} half={false} value={rating} onChange={e => setRating(e)} />
+         <div>
+            <ReactStars count={5} className='create-review-page-rating' half={false} value={rating} onChange={e => setRating(e)} />
+            <ReactStars className="create-review-rating-backer" value={5}/>
+         </div>
          <hr className="create-review-space"/>
 
          <h5>Add a headline</h5>

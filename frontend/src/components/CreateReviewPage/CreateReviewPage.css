@@ -38,3 +38,27 @@
 #review-submit {
    width: 64px;
 }
+
+.create-review-page-rating {
+   overflow: visible !important;
+}
+
+.create-review-page-rating > span {
+   font-size: 30px!important;
+   overflow: visible !important;
+   margin-left: 1.5px;
+   margin-right: 1.5px;
+}
+
+.create-review-rating-backer {
+   position: absolute!important;
+   overflow: visible!important;
+
+   z-index: -1;
+}
+
+.create-review-rating-backer > span {
+   color: rgb(161, 111, 32)!important;
+   font-size: 33px !important;
+   overflow: visible !important;
+}

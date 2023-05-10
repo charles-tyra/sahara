@@ -1,6 +1,7 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useHistory, useParams } from 'react-router-dom';
+import { deleteReview } from '../../../../store/reviews';
 import './ReviewShow.css'
 
 import ReactStars from 'react-stars';
@@ -9,14 +10,21 @@ import profilepic from '../../../../assets/images/profile-placeholder.png'
 const ReviewShow = ({review}) => {
    const currentUser = useSelector(state => state.session.user);
    const history = useHistory();
+   const dispatch = useDispatch();
    const {itemId} = useParams();
    
    const updateButton = () => {
       return (
          <>
-            <button className='update-review-button' onClick={() => history.push(`/items/${itemId}/reviews/create`, {review})}>
-               Update
-            </button>
+            <div id='update-button-container'>
+               <button className='update-review-button' onClick={() => history.push(`/items/${itemId}/reviews/create`, {review})}>
+                  Update
+               </button>
+               <div className='horizontal-break' />
+               <div id='delete-review' onClick={() => dispatch(deleteReview(review.id))}>
+                  Delete
+               </div>
+            </div>
          </>
       )
    }

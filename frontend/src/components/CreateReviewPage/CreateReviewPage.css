@@ -36,7 +36,11 @@
 }
 
 #review-submit {
-   width: 64px;
+   width: 66px;
+   background-color: rgb(254, 211, 60);
+
+   border: 1px solid transparent;
+   border-radius: 8px;
 }
 
 .create-review-page-rating {
@@ -61,4 +65,32 @@
    color: rgb(161, 111, 32)!important;
    font-size: 33px !important;
    overflow: visible !important;
+}
+
+#create-rating-container {
+   margin-top: 4px;
+   margin-bottom: 10px;
+}
+
+#create-title {
+   border: 1px solid gray;
+   border-radius: 4px;
+   
+   padding: 4px 8px;
+   margin: 6px 0;
+}
+
+#create-body {
+   height: 140px;
+   border: 1px solid gray;
+   border-radius: 4px;
+   display: flex;
+   
+   padding: 4px 8px;
+   margin: 6px 0;
+}
+
+#create-button-container {
+   display: flex;
+   justify-content: end;
 }

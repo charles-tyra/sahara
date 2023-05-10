@@ -64,7 +64,7 @@ const CreateReviewPage = () => {
          <hr className="create-review-space image-space"/>
 
          <h5>Overall Rating</h5>
-         <div>
+         <div id='create-rating-container'>
             <ReactStars count={5} className='create-review-page-rating' half={false} value={rating} onChange={e => setRating(e)} />
             <ReactStars className="create-review-rating-backer" value={5}/>
          </div>
@@ -72,19 +72,23 @@ const CreateReviewPage = () => {
 
          <h5>Add a headline</h5>
          <input  
+            id='create-title'
             placeholder="What's most important to know?"
             value={title}
             onChange={e => setTitle(e.target.value)} />
          <hr className="create-review-space"/>
 
          <h5>Add a written review</h5>
-         <input
+         <textarea
+            id='create-body'
             placeholder="What did you like or dislike? What did you use this product for?"
             value={body}
             onChange={e => setBody(e.target.value)} />
          <hr className="create-review-space"/>
 
-         <button id='review-submit' onClick={handleSubmit}>Submit</button>
+         <div id='create-button-container'>
+            <button id='review-submit' onClick={handleSubmit}>Submit</button>
+         </div>
       </div>
    )
 }

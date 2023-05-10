@@ -18,11 +18,9 @@ const CreateReviewPage = () => {
    const [body, setBody] = useState('');
    const [rating, setRating] = useState(0);
 
-   console.log(location.state.review)
-
    useEffect(() => {
       dispatch(fetchItem(itemId));
-      if(location.state.review) {
+      if(location?.state?.review) {
          setTitle(location.state.review.title);
          setBody(location.state.review.body);
          setRating(location.state.review.rating);
@@ -40,7 +38,7 @@ const CreateReviewPage = () => {
             title,
             body,
             rating
-         }))
+         }));
       } else {
          dispatch(createReview({
             item_id: itemId,
@@ -58,7 +56,7 @@ const CreateReviewPage = () => {
 
    return (
       <div id='create-review-page-container'>
-         {location.state.review ? <h4 id='create-review-header'>Update Review</h4> : <h4 id='create-review-header'>Create Review</h4>}
+         {location.state?.review ? <h4 id='create-review-header'>Update Review</h4> : <h4 id='create-review-header'>Create Review</h4>}
          <div id='create-review-item-info'>
             <img id='review-image'src={item.photoUrls[0]}/>
             <span>{item.itemName}</span>

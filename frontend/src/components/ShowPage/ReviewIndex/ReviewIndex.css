@@ -17,3 +17,13 @@ progress {
    width: 36px;
    text-align: end;
 }
+
+#review-index-header {
+   font-family: amber-thick;
+   font-size: 18px;
+   margin-bottom: 20px;
+}
+
+#right-show-review-column {
+   margin-left: 90px;
+}

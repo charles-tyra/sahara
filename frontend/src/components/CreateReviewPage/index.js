@@ -24,7 +24,7 @@ const CreateReviewPage = () => {
    if(!currentUser) return <Redirect to='/' />
 
    const handleSubmit = async () => {
-      await dispatch(createReview({
+      dispatch(createReview({
          item_id: itemId,
          author_id: currentUser.id,
          title,

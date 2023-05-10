@@ -69,7 +69,8 @@ const ReviewIndex = ({ reviews }) => {
                {!updateBoolean ? <ShowPageReviewButton /> : null}
             </div>
             <div id='right-show-review-column'>
-               {reviews.length !== 0 ? reviews.map(review => (<ReviewShow review={review} />)) : <h6>No customer reviews</h6>}
+               {reviews.length !== 0 ? <h6 id='review-index-header'>Top reviews</h6> : <h6>No customer reviews</h6>}
+               {reviews.length !== 0 ? reviews.map(review => (<ReviewShow review={review} />)) : null}
             </div>
          </div>
       </>

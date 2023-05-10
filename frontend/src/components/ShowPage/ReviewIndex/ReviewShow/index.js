@@ -1,19 +1,20 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { useHistory, useParams } from 'react-router-dom';
 import './ReviewShow.css'
 
 import ReactStars from 'react-stars';
 import profilepic from '../../../../assets/images/profile-placeholder.png'
-import { useHistory } from 'react-router-dom';
 
 const ReviewShow = ({review}) => {
    const currentUser = useSelector(state => state.session.user);
    const history = useHistory();
+   const {itemId} = useParams();
    
    const updateButton = () => {
       return (
          <>
-            <button className='update-review-button'>
+            <button className='update-review-button' onClick={() => history.push(`/items/${itemId}/reviews/create`, {review})}>
                Update
             </button>
          </>
@@ -25,7 +26,7 @@ const ReviewShow = ({review}) => {
    return (
       <>
          <div className='review-author'>
-            <img src={profilepic} className='prof-pic' /> {review.author.author} {review.authorId === currentUser.id ? <span>(Me)</span> : null}
+            <img src={profilepic} className='prof-pic' /> {review.author.author} {review.authorId === currentUser?.id ? <span>(Me)</span> : null}
          </div>
          <div className='review-rating'>
             <ReactStars className='review-show-rating' value={review.rating} /> <ReactStars className='review-show-backer' value={5} />
@@ -37,7 +38,7 @@ const ReviewShow = ({review}) => {
          </div>
          <div className='review-body'>
             {review.body}
-            {currentUser.id === review.authorId ? updateButton() : null}
+            {currentUser?.id === review.authorId ? updateButton() : null}
          </div>
       </>
    )

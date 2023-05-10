@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createReview } from "../../store/reviews";
-import { Redirect, useHistory, useParams } from "react-router-dom";
+import { Redirect, useHistory, useLocation, useParams } from "react-router-dom";
 import ReactStars from 'react-stars';
 import './CreateReviewPage.css';
 import { fetchItem, getItem } from "../../store/items";
@@ -9,6 +9,7 @@ import { fetchItem, getItem } from "../../store/items";
 const CreateReviewPage = () => {
    const dispatch = useDispatch();
    const history = useHistory();
+   const location = useLocation();
    const {itemId} = useParams();
    const currentUser = useSelector(state => state.session.user);
    const item = useSelector(getItem(itemId));
@@ -21,7 +22,7 @@ const CreateReviewPage = () => {
       dispatch(fetchItem(itemId));
    }, [])
    
-   if(!currentUser) return <Redirect to='/' />
+   if(!currentUser) return <Redirect to='/login' />
 
    const handleSubmit = async () => {
       dispatch(createReview({
@@ -34,7 +35,7 @@ const CreateReviewPage = () => {
 
       history.push(`/items/${itemId}`)
    }
-   console.log(item);
+   console.log(location);
 
    if(!item) return null;
 

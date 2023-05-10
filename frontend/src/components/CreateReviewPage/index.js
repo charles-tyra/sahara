@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { createReview } from "../../store/reviews";
+import { createReview, updateReview } from "../../store/reviews";
 import { Redirect, useHistory, useLocation, useParams } from "react-router-dom";
 import ReactStars from 'react-stars';
 import './CreateReviewPage.css';
@@ -18,30 +18,47 @@ const CreateReviewPage = () => {
    const [body, setBody] = useState('');
    const [rating, setRating] = useState(0);
 
+   console.log(location.state.review)
+
    useEffect(() => {
       dispatch(fetchItem(itemId));
+      if(location.state.review) {
+         setTitle(location.state.review.title);
+         setBody(location.state.review.body);
+         setRating(location.state.review.rating);
+      }
    }, [])
    
    if(!currentUser) return <Redirect to='/login' />
 
    const handleSubmit = async () => {
-      dispatch(createReview({
-         item_id: itemId,
-         author_id: currentUser.id,
-         title,
-         body,
-         rating
-      }));
-
+      if(location.state.review) {
+         dispatch(updateReview({
+            id: location.state.review.id,
+            item_id: itemId,
+            author_id:currentUser.id,
+            title,
+            body,
+            rating
+         }))
+      } else {
+         dispatch(createReview({
+            item_id: itemId,
+            author_id: currentUser.id,
+            title,
+            body,
+            rating
+         }));
+      }
+         
       history.push(`/items/${itemId}`)
    }
-   console.log(location);
 
    if(!item) return null;
 
    return (
       <div id='create-review-page-container'>
-         <h4 id='create-review-header'>Create Review</h4>
+         {location.state.review ? <h4 id='create-review-header'>Update Review</h4> : <h4 id='create-review-header'>Create Review</h4>}
          <div id='create-review-item-info'>
             <img id='review-image'src={item.photoUrls[0]}/>
             <span>{item.itemName}</span>
@@ -55,12 +72,14 @@ const CreateReviewPage = () => {
          <h5>Add a headline</h5>
          <input  
             placeholder="What's most important to know?"
+            value={title}
             onChange={e => setTitle(e.target.value)} />
          <hr className="create-review-space"/>
 
          <h5>Add a written review</h5>
          <input
             placeholder="What did you like or dislike? What did you use this product for?"
+            value={body}
             onChange={e => setBody(e.target.value)} />
          <hr className="create-review-space"/>
 

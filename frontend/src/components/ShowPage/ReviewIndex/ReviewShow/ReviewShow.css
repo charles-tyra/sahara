@@ -1,0 +1,22 @@
+.prof-pic {
+   width: 40px;
+}
+
+.review-rating {
+   display: flex;
+}
+
+.review-show-backer {
+   position: absolute!important;
+   z-index: -1;
+}
+
+.review-show-backer > span {
+   color: rgb(212, 129, 58) !important;
+}
+
+.edit-stars {
+   position: absolute;
+   width: 78px;
+   height: 20px;
+}

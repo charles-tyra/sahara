@@ -4,6 +4,7 @@ import './ReviewIndex.css';
 
 import ReactStars from "react-stars";
 import ShowPageReviewButton from "./ShowPageReviewButton";
+import ReviewShow from "./ReviewShow";
 
 const ReviewIndex = ({ reviews }) => {
    const currentUser = useSelector(state => state.session.user);
@@ -29,7 +30,8 @@ const ReviewIndex = ({ reviews }) => {
       progReviews[4] !== 0 ? progReviews[4] = Math.floor(progReviews[4] / reviews.length * 100) : progReviews[4] = 0;
       progReviews[5] !== 0 ? progReviews[5] = Math.floor(progReviews[5] / reviews.length * 100) : progReviews[5] = 0;
    }
-   console.log(progReviews)
+
+   console.log(reviews);
 
 
 
@@ -67,7 +69,7 @@ const ReviewIndex = ({ reviews }) => {
                {!updateBoolean ? <ShowPageReviewButton /> : null}
             </div>
             <div id='right-show-review-column'>
-
+               {reviews.length !== 0 ? reviews.map(review => (<ReviewShow review={review} />)) : <h6>No customer reviews</h6>}
             </div>
          </div>
       </>

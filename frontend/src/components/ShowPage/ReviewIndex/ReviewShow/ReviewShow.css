@@ -69,3 +69,8 @@
 
    margin-top: 10px;
 }
+
+#delete-review {
+   cursor: pointer;
+   color: rgb(76, 76, 76);
+}

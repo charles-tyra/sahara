@@ -33,6 +33,11 @@ const ReviewIndex = ({ reviews }) => {
 
    console.log(reviews);
 
+   const checkReviewPercentage = (percentage) => {
+      if (percentage === 0) return { width: '0'}
+      if (percentage === 100) return { width: '200px', border: '1px solid rgb(215, 111, 45)', borderRadius: '6px'}
+      return { width: `${percentage}` + '%', border: '1px solid rgb(215, 111, 45)', borderBottomLeftRadius: '6px', borderTopLeftRadius: '6px' }
+   }
 
 
    return (
@@ -60,7 +65,8 @@ const ReviewIndex = ({ reviews }) => {
                      3 Star <progress classname='review-percentage' max={100} value={progReviews[3]}></progress> <span>{progReviews[3]}% </span>
                   </div>
                   <div className="percentage-container">
-                     2 Star <progress classname='review-percentage' max={100} value={progReviews[2]}></progress> <span>{progReviews[2]}%</span>
+                     2 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[1])} /></div>
+                     <span>{progReviews[2]}%</span>
                   </div>
                   <div className="percentage-container">
                      1 Star <progress classname='review-percentage' max={100} value={progReviews[1]}></progress> <span>{progReviews[1]}%</span>
@@ -71,6 +77,9 @@ const ReviewIndex = ({ reviews }) => {
             <div id='right-show-review-column'>
                {reviews.length !== 0 ? <h6 id='review-index-header'>Top reviews</h6> : <h6>No customer reviews</h6>}
                {reviews.length !== 0 ? reviews.map(review => (<ReviewShow review={review} />)) : null}
+            </div>
+            <div className="review-rating-container">
+               <div className="review-rating-avg" style={checkReviewPercentage(100)} />
             </div>
          </div>
       </>

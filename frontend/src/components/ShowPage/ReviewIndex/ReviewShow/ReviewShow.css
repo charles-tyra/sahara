@@ -74,3 +74,22 @@
    cursor: pointer;
    color: rgb(76, 76, 76);
 }
+
+.review-rating-container {
+   width: 200px;
+   height: 24px;
+   background-color: rgb(243, 241, 241);
+
+   border: 1px solid rgb(191, 190, 190);
+   border-radius: 6px;
+}
+
+.review-rating-avg {
+   position: relative;
+   bottom: 1px;
+   right: 1px;
+   height: 24px;
+   background-color: rgb(252, 166, 62);
+
+   
+}

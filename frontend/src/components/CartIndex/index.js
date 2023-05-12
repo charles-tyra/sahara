@@ -88,8 +88,8 @@ function CartIndex() {
             </div>
             <div id='cart-checkout'> 
                {carts.length !== 0 ? showSubtotal(false) : null }
-               <button onClick={() => history.push('/carts/checkout', { carts})}>
-
+               <button id='cart-index-checkout' onClick={() => history.push('/carts/checkout', {carts})}>
+                  Proceed to checkout
                </button>
             </div>
          </div>

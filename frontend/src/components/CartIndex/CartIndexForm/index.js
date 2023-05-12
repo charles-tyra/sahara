@@ -50,7 +50,7 @@ const CartIndexForm = ({cartItem}) => {
                </div>
                <div className="cart-form-bottom-container">
                   <div className="cart-form-bottom">
-                     <select classname='cart-form-select' value={cartItem.quantity} onChange={handleUpdate}>
+                     <select className='cart-form-select' value={cartItem.quantity} onChange={handleUpdate}>
                         <option value='1'>1</option>
                         <option value='2'>2</option>
                         <option value='3'>3</option>

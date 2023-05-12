@@ -37,6 +37,16 @@
    margin: 6px 46px;
 }
 
+#cart-index-checkout {
+   border: 1px solid transparent;
+   border-radius: 8px;
+
+   background-color: rgb(254, 211, 60);
+   margin-bottom: 16px;
+
+   font-size: 13px;
+}
+
 #cart-index-container {
    flex-grow: 1;
    height: 100%;

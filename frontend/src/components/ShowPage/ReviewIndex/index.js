@@ -59,13 +59,14 @@ const ReviewIndex = ({ reviews }) => {
                      5 Star <progress classname='review-percentage' max={100} value={progReviews[5]}></progress> <span>{progReviews[5]}%</span>
                   </div>
                   <div className="percentage-container">
-                     4 Star <progress classname='review-percentage' max={100} value={progReviews[4]}></progress> <span>{progReviews[4]}%</span>
+                     4 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[4])} /></div>
+                     <span>{progReviews[4]}%</span>
                   </div>
                   <div className="percentage-container">
                      3 Star <progress classname='review-percentage' max={100} value={progReviews[3]}></progress> <span>{progReviews[3]}% </span>
                   </div>
                   <div className="percentage-container">
-                     2 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[1])} /></div>
+                     2 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[2])} /></div>
                      <span>{progReviews[2]}%</span>
                   </div>
                   <div className="percentage-container">
@@ -77,9 +78,6 @@ const ReviewIndex = ({ reviews }) => {
             <div id='right-show-review-column'>
                {reviews.length !== 0 ? <h6 id='review-index-header'>Top reviews</h6> : <h6>No customer reviews</h6>}
                {reviews.length !== 0 ? reviews.map(review => (<ReviewShow review={review} />)) : null}
-            </div>
-            <div className="review-rating-container">
-               <div className="review-rating-avg" style={checkReviewPercentage(100)} />
             </div>
          </div>
       </>

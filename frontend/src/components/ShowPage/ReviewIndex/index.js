@@ -55,22 +55,25 @@ const ReviewIndex = ({ reviews }) => {
                   <div id='total-ratings'> 
                      {reviews?.length ? reviews.length : '0'} global ratings
                   </div>
-                  <div className='percentage-container'>
-                     5 Star <progress classname='review-percentage' max={100} value={progReviews[5]}></progress> <span>{progReviews[5]}%</span>
+                  <div className="percentage-container">
+                     5 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[5])} /></div>
+                     <span>{progReviews[5]}%</span>
                   </div>
                   <div className="percentage-container">
                      4 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[4])} /></div>
                      <span>{progReviews[4]}%</span>
                   </div>
                   <div className="percentage-container">
-                     3 Star <progress classname='review-percentage' max={100} value={progReviews[3]}></progress> <span>{progReviews[3]}% </span>
+                     3 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[3])} /></div>
+                     <span>{progReviews[3]}%</span>
                   </div>
                   <div className="percentage-container">
                      2 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[2])} /></div>
                      <span>{progReviews[2]}%</span>
                   </div>
                   <div className="percentage-container">
-                     1 Star <progress classname='review-percentage' max={100} value={progReviews[1]}></progress> <span>{progReviews[1]}%</span>
+                     1 Star <div className="review-rating-container"><div className="review-rating-avg" style={checkReviewPercentage(progReviews[1])} /></div>
+                     <span>{progReviews[1]}%</span>
                   </div>
                </div>
                {!updateBoolean ? <ShowPageReviewButton /> : null}

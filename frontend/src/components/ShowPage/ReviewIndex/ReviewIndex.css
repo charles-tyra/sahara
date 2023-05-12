@@ -1,15 +1,10 @@
-progress {
-   accent-color: #ffa41c;
-   height: 40px;
-   width: 200px;
-}
-
 .percentage-container {
    display: flex;
    justify-content: space-between;
    align-items: center;
 
    width: 300px;
+   margin: 14px 0;
 }
 
 .percentage-container > span {
@@ -26,4 +21,8 @@ progress {
 
 #right-show-review-column {
    margin-left: 90px;
+}
+
+#review-average-container {
+   margin-bottom: 28px;
 }

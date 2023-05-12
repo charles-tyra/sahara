@@ -29,6 +29,7 @@ div#themes-container {
    width: 1300px;
    justify-content: space-between;
    margin-top: 315px;
+   margin-bottom: 54px;
 
    z-index: 1;
 }

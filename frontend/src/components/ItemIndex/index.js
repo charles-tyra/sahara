@@ -11,9 +11,10 @@ function ItemIndex() {
    const location = useLocation();
    const items = useSelector(getItems);
    const [sortPriority, setSortPriority] = useState('test');
+   const params = new URLSearchParams(location.search);
 
    useEffect(() => {
-      dispatch(fetchItems(location.search));
+      dispatch(fetchItems(params));
    }, []);
 
    if (items === []) {
@@ -21,7 +22,6 @@ function ItemIndex() {
          <div>loading...</div>
       );
    } else {
-      const params = new URLSearchParams(location.search);
 
       return (
          <>

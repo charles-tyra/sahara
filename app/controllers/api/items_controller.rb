@@ -4,6 +4,7 @@ class Api::ItemsController < ApplicationController
       puts('In Search Query')
       puts(params[:search])
       search = params[:search]
+      search ||= ''
       if search == ''
          @items = Item.all
          render 'api/items/index'

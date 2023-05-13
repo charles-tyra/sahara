@@ -31,7 +31,9 @@ export const getItem = itemId => state => {
 
 
 export const fetchItems = (search = '') => async dispatch => {
-   const response = await csrfFetch(`/api/items?${search}`);
+   const searchParams = new URLSearchParams(search);
+   console.log(searchParams)
+   const response = await csrfFetch(`/api/items?${searchParams}`);
 
    const data = await response.json();
    dispatch(receiveItems(data.items));

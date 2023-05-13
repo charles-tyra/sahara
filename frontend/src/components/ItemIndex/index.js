@@ -11,18 +11,18 @@ function ItemIndex() {
    const location = useLocation();
    const items = useSelector(getItems);
    const [sortPriority, setSortPriority] = useState('test');
-   const params = new URLSearchParams(location.search);
-
+   
    useEffect(() => {
-      dispatch(fetchItems(params));
+      dispatch(fetchItems(location.search));
    }, []);
-
+   
    if (items === []) {
       return (
          <div>loading...</div>
-      );
-   } else {
-
+         );
+      } else {
+      const params = new URLSearchParams(location.search);
+         
       return (
          <>
             <div id='item-index-header'>

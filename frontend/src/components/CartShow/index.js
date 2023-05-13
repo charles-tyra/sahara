@@ -23,8 +23,6 @@ const CartShow = () => {
 
    if (!currentUser) return <Redirect to="/carts" />;
 
-   console.log(carts);
-   
    if (!item) {
       return (
          null
@@ -40,8 +38,6 @@ const CartShow = () => {
          subtotal = subtotal + (parseInt(carts[i].quantity) * parseInt(carts[i].item.bells));
          itemTotal = itemTotal + parseInt(carts[i].quantity);
       }
-
-      console.log(item);
 
       return (
          <div id='cart-background'>

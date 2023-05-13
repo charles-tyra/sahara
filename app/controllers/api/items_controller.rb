@@ -1,17 +1,12 @@
 class Api::ItemsController < ApplicationController
    def index
       # Search Query - - if no search query just fetch all items
-      puts('In Search Query')
-      puts(params[:search])
       search = params[:search]
-      search ||= ''
-      if search == ''
+      if search == '' || !search
          @items = Item.all
          render 'api/items/index'
       else
-         @items = Item.where(id: search)
-         puts(@items)
-         @items = @items[0, 10]
+         @items = Item.where('lower(item_name) LIKE ?', '%' + search.downcase + '%')
          render 'api/items/index'
       end
    end

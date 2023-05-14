@@ -30,7 +30,7 @@ const CreateReviewPage = () => {
    if(!currentUser) return <Redirect to='/login' />
 
    const handleSubmit = async () => {
-      if(location.state.review) {
+      if(location?.state?.review) {
          dispatch(updateReview({
             id: location.state.review.id,
             item_id: itemId,

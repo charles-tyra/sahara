@@ -9,15 +9,6 @@ import bells from '../../../assets/images/bells.png';
 import ratings from '../../../assets/images/rating_placeholder.png'
 
 function ItemIndexDiv( {item} ) {
-   // const reviews = useSelector(getReviews);
-   // const dispatch = useDispatch();
-
-   // useEffect(() => {
-   //    dispatch(fetchReviews(item.id))
-   // },[])
-
-   // let reviewAvg = 0;
-   // reviews?.forEach(review => reviewAvg = reviewAvg + review.rating);
 
    return (
       <div className="item-index-div">

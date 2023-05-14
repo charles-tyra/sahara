@@ -128,8 +128,14 @@ button#buy-button {
 #review-stars {
    display: flex;
    flex-direction: row;
-
+   width: 600px;
    font-size: 18px;
+}
+
+#review-stars > span {
+   display: inline-block;
+   width: 120px;
+   margin-left: 10px;
 }
 
 .customer {
@@ -140,6 +146,10 @@ button#buy-button {
 span[style*="color: rgb(255, 215, 0)"] {
    font-size: 24px;
    color: rgb(252, 155, 52)!important;
+}
+
+span[style*="color: gray"]::before {
+   color: rgb(252, 155, 52) !important;
 }
 
 span[style*="color: gray"] {
@@ -166,7 +176,7 @@ span[style*="color: gray"] {
 }
 
 .top-blocker {
-   width: 100px;
+   width: 110px;
 }
 
 .stars > span {
@@ -175,7 +185,7 @@ span[style*="color: gray"] {
 
 .backer {
    position: relative;
-   right: 170px;
+   right: 210.5px;
    z-index: -1;
 }
 

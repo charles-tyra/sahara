@@ -49,7 +49,7 @@ const ReviewIndex = ({ reviews }) => {
                   <h4 id='bold-span' className='customer'>Customer reviews</h4>
                   <div id='review-stars'>
                      <div className="review-blocker" />
-                     <ReactStars className='stars' color={'#FC9B90'} value={avgReview} /> &nbsp; {avgReview} out of 5
+                     <ReactStars className='stars' color={'#FC9B90'} value={avgReview} /> <span>{avgReview} out of 5</span>
                      <ReactStars className="backer" value={5} />
                   </div>
                   <div id='total-ratings'> 

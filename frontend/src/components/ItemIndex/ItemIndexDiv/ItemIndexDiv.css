@@ -40,3 +40,35 @@
 .item-index-name:hover {
    color: #c7511f;
 }
+
+.item-index-reviews {
+   display: flex;
+   flex-direction: row;
+}
+
+.item-index-reviews > span {
+   display: inline-block;
+   width: 40px;
+   margin-left: 4px;
+}
+
+.index-star > span {
+   margin-left: .5px;
+   margin-right: .5px;
+}
+
+.index-star-backer {
+   right: 124px;
+   bottom: .5px;
+   z-index: -1;
+}
+
+.index-star-backer > span {
+   font-size: 16px !important;
+   
+   color: rgb(212, 129, 58) !important;
+}
+
+.index-blocker {
+   height: 30px!important;
+}

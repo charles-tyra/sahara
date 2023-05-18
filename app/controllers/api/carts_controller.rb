@@ -5,7 +5,6 @@ class Api::CartsController < ApplicationController
    end
 
    def show
-      puts(params)
       @cart = Cart.find(params[:id])
 
       if @cart

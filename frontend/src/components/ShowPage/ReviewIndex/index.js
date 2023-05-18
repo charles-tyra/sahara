@@ -31,8 +31,6 @@ const ReviewIndex = ({ reviews }) => {
       progReviews[5] !== 0 ? progReviews[5] = Math.floor(progReviews[5] / reviews.length * 100) : progReviews[5] = 0;
    }
 
-   console.log(reviews);
-
    const checkReviewPercentage = (percentage) => {
       if (percentage === 0) return { width: '0'}
       if (percentage === 100) return { width: '200px', border: '1px solid rgb(215, 111, 45)', borderRadius: '6px'}

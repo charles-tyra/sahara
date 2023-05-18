@@ -12,8 +12,6 @@ class Api::ItemsController < ApplicationController
    end
 
    def show
-      puts('In Item Show')
-      puts(params)
       @item = Item.find(params[:id])
 
       if @item

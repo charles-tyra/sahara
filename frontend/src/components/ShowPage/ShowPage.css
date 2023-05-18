@@ -150,6 +150,7 @@ span[style*="color: rgb(255, 215, 0)"] {
 
 span[style*="color: gray"]::before {
    color: rgb(252, 155, 52) !important;
+   cursor:default!important;
 }
 
 span[style*="color: gray"] {

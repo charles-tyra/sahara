@@ -3,7 +3,6 @@ import './ItemIndexDiv.css';
 import { Link } from "react-router-dom";
 
 import bells from '../../../assets/images/bells.png';
-import ratings from '../../../assets/images/rating_placeholder.png'
 import ReactStars from "react-stars";
 
 function ItemIndexDiv( {item} ) {

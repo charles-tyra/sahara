@@ -15,20 +15,25 @@ function ItemIndex() {
    useEffect(() => {
       dispatch(fetchItems(location.search));
    }, []);
+
    
-   if (items === []) {
+   const params = new URLSearchParams(location.search);
+   
+   if (items === {}) {
       return (
-         <div>loading...</div>
+         <>
+            <div>No results for {params.toString().split('=').splice(1).join(' ').split('+').join(' ')}</div>
+            <div>{location.search}</div>
+         </>
+         
          );
       } else {
-      const params = new URLSearchParams(location.search);
-         
       return (
          <>
             <div id='item-index-header'>
                <div id='header-container'>
                   <div id="results-container">
-                     {items.length} results for&nbsp;<span id='search-placeholder'>"{params.toString().split('=').splice(1).join(' ').split('+').join(' ')}"</span>
+                     {items.length} results for&nbsp;&nbsp;<span id='search-placeholder'>"{params.toString().split('=').splice(1).join(' ').split('+').join(' ')}"</span>
                   </div>
                   <select id='search-select' value={``}> 
                      <option value=''> Sort by: {sortPriority}</option>
@@ -37,7 +42,9 @@ function ItemIndex() {
             </div>
             <div id='item-index-page'>
                <div id='filter-sidebar'>
-                  testing
+                  <div id='review-filter'>
+                     <h5>Customer Reviews</h5>
+                  </div>
                </div>
                <div id='item-index-item-container'>
                   <div id='item-index-item-header'>
